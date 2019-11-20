@@ -3,8 +3,8 @@
 import Foundation
 import RxRequester
 
-final class RootVm: ViewModelProtocol {
-    public var rxRequester: RxRequester!
+final class RootViewModel: ViewModelProtocol {
+    var rxRequester: RxRequester!
 
     public init(rxRequester: RxRequester) {
         self.rxRequester = rxRequester

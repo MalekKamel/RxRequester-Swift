@@ -8,7 +8,7 @@ struct RootBuilder {
     static func make() -> RootViewController {
         let storyboard = UIStoryboard(name: "Root", bundle: nil)
         let vc = storyboard.instantiateInitialViewController() as! RootViewController
-        vc.vm = RootVm(rxRequester: RxRequester(presentable: vc))
+        vc.vm = RootViewModel(rxRequester: RxRequester(presentable: vc))
         return vc
     }
 

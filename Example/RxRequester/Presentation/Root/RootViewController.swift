@@ -10,7 +10,7 @@ var rootViewController: RootViewController!
 
 final class RootViewController: NavigationController, ViewControllerProtocol {
     var current: UIViewController?
-    var vm: RootVm!
+    var vm: RootViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

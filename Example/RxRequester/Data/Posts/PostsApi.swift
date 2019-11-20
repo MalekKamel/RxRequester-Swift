@@ -6,25 +6,7 @@
 import Foundation
 import Moya
 
-private func jsonResponseDataFormatter(_ data: Data) -> Data {
-    do {
-        let dataAsJSON = try JSONSerialization.jsonObject(with: data)
-        let prettyData =  try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
-        return prettyData
-    } catch {
-        return data // fallback to original data if it can't be serialized.
-    }
-}
-
-let postsApi = MoyaProvider<Api>(
-        plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: jsonResponseDataFormatter)]
-)
-
-enum Api {
-    case posts
-}
-
-extension Api: TargetType {
+extension PostsApi: TargetType {
 
     public var path: String {
         switch self {
@@ -59,8 +41,22 @@ extension Api: TargetType {
 
 }
 
-public func url(_ route: TargetType) -> String {
-    route.baseURL.appendingPathComponent(route.path).absoluteString
+// MARK: - Response Handlers
+
+private func jsonResponseDataFormatter(_ data: Data) -> Data {
+    do {
+        let dataAsJSON = try JSONSerialization.jsonObject(with: data)
+        let prettyData =  try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
+        return prettyData
+    } catch { return data }
+}
+
+let postsApi = MoyaProvider<PostsApi>(
+        plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: jsonResponseDataFormatter)]
+)
+
+enum PostsApi {
+    case posts
 }
 
 // MARK: - Response Handlers
@@ -77,4 +73,8 @@ extension Moya.Response {
 
 private extension String {
     var urlEscaped: String { self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)! }
+}
+
+public func url(_ route: TargetType) -> String {
+    route.baseURL.appendingPathComponent(route.path).absoluteString
 }

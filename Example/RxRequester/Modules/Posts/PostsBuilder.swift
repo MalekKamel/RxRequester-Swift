@@ -11,7 +11,7 @@ struct PostsBuilder {
     static func make() -> PostsViewController {
         let storyboard = UIStoryboard(name: "Posts", bundle: nil)
         let vc = storyboard.instantiateInitialViewController() as! PostsViewController
-        let repo = PostsRepository(api: postsApi)
+        let repo = PostsRepository(dataSource: PostsDataSource(api: postsApi))
         vc.vm = PostsViewModel(rxRequester: RxRequester(presentable: vc), postsRepository: repo)
         return vc
     }

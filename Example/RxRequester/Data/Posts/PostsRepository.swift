@@ -9,15 +9,12 @@ import Moya
 import RxSwift
 
 public class PostsRepository {
-    private let api: MoyaProvider<Api>!
+    private let dataSource: PostsDataSource!
 
-    init(api: MoyaProvider<Api>) {
-        self.api = api
+    init(dataSource: PostsDataSource) {
+        self.dataSource = dataSource
     }
 
-    func all() -> Single<[PostResponse]> {
-       let request: Single<Response> = api.rx.request(.posts)
-       return request.map([PostResponse].self, failsOnEmptyData: false)
-    }
+    func all() -> Single<[PostResponse]> { dataSource.all() }
 }
 

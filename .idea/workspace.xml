@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c4801185-1692-427a-8471-3f3713904545" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alamofire/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alamofire/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alamofire/Assets.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alamofire/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alamofire/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alamofire/RxRequesterTests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alamofire/RxRequesterTests/RxRequesterTests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alamofire/RxRequesterUITests/RxRequesterUITests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alamofire/SceneDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alamofire/ViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlamofireTests/AlamofireTests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlamofireUITests/AlamofireUITests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlamofireUITests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Moya/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Moya/Assets.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Moya/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Moya/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Moya/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Moya/MoyaTests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Moya/MoyaTests/MoyaTests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Moya/MoyaUITests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Moya/MoyaUITests/MoyaUITests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Moya/ViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HttpErrorProcessor.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/Alamofire/ErrorProcessor+Alamofire.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/Core/RxRequester.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/Moya/ErrorProcessor+Moya.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/.idea/Example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RxRequester.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/.idea/runConfigurations/RxRequester_Example.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/.idea/xcode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xcode.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Podfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Podfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/AFError.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/Alamofire.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/MultipartFormData.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/NetworkReachabilityManager.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/Notifications.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/ParameterEncoding.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/Request.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/Response.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/ResponseSerialization.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/Result.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/ServerTrustPolicy.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/SessionDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/SessionManager.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/TaskDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/Timeline.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Alamofire/Source/Validation.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Local Podspecs/RxRequester.podspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Manifest.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/License.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/AnyEncodable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/Cancellable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/Endpoint.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/Image.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/Moya+Alamofire.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/MoyaError.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/MoyaProvider+Defaults.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/MoyaProvider+Internal.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/MoyaProvider.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/MultiTarget.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/MultipartFormData.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/Plugin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/Plugins/AccessTokenPlugin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/Plugins/CredentialsPlugin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/Plugins/NetworkActivityPlugin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/Plugins/NetworkLoggerPlugin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/Response.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/TargetType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/Task.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/URL+Moya.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/URLRequest+Encoding.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/Moya/ValidationType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/RxMoya/MoyaProvider+Rx.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/RxMoya/Observable+Response.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Moya/Sources/RxMoya/Single+Response.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Carthage/Checkouts/CwlCatchException/Sources/CwlCatchException/CwlCatchException.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Carthage/Checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/CwlCatchException.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Carthage/Checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include/CwlCatchException.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/CwlMachBadInstructionHandler.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include/CwlMachBadInstructionHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/mach_excServer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/mach_excServer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlBadInstructionException.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlCatchBadInstruction.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlDarwinDefinitions.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/Mach/CwlPreconditionTesting.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Adapters/AdapterProtocols.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Adapters/AssertionDispatcher.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Adapters/AssertionRecorder.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Adapters/NMBExpectation.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Adapters/NMBObjCMatcher.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Adapters/NimbleEnvironment.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Adapters/NimbleXCTestHandler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/DSL+Wait.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/DSL.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Expectation.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/ExpectationMessage.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Expression.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/FailureMessage.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/AllPass.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/Async.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeAKindOf.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeAnInstanceOf.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeCloseTo.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeEmpty.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeGreaterThan.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeIdenticalTo.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeLessThan.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeLessThanOrEqual.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeLogical.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeNil.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeVoid.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/BeginWith.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/Contain.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/ContainElementSatisfying.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/EndWith.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/Equal.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/HaveCount.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/Match.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/MatchError.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/MatcherFunc.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/MatcherProtocols.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/PostNotification.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/Predicate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/RaisesException.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/SatisfyAllOf.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/SatisfyAnyOf.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/ThrowAssertion.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/ThrowError.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Matchers/ToSucceed.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Nimble.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Utils/Await.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Utils/Errors.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Utils/Functional.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Utils/SourceLocation.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/Nimble/Utils/Stringers.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/NimbleObjectiveC/DSL.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/NimbleObjectiveC/DSL.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/NimbleObjectiveC/NMBExceptionCapture.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/NimbleObjectiveC/NMBExceptionCapture.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/NimbleObjectiveC/NMBStringify.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/NimbleObjectiveC/NMBStringify.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Nimble/Sources/NimbleObjectiveC/XCTestObservationCenter+Register.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/Behavior.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/Callsite.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/Configuration/Configuration.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/DSL/DSL.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/DSL/World+DSL.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/ErrorUtility.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/Example.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/ExampleGroup.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/ExampleMetadata.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/Filter.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/Hooks/Closures.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/Hooks/ExampleHooks.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/Hooks/HooksPhase.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/Hooks/SuiteHooks.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/NSBundle+CurrentTestBundle.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/NSString+C99ExtendedIdentifier.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/QuickSelectedTestSuiteBuilder.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/QuickTestSuite.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/URL+FileName.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/Quick/World.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/QuickObjectiveC/Configuration/QuickConfiguration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/QuickObjectiveC/Configuration/QuickConfiguration.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/QuickObjectiveC/DSL/QCKDSL.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/QuickObjectiveC/DSL/QCKDSL.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/QuickObjectiveC/DSL/World+DSL.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/QuickObjectiveC/Quick.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/QuickObjectiveC/QuickSpec.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/QuickObjectiveC/QuickSpec.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/QuickObjectiveC/World.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/QuickObjectiveC/XCTestSuite+QuickTestSuiteBuilder.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/QuickSpecBase/QuickSpecBase.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Quick/Sources/QuickSpecBase/include/QuickSpecBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Result/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Result/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Result/Result/AnyError.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Result/Result/NoError.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Result/Result/Result.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Result/Result/ResultProtocol.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/Platform/AtomicInt.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/Platform/DataStructures/Bag.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/Platform/DataStructures/InfiniteSequence.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/Platform/DataStructures/PriorityQueue.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/Platform/DataStructures/Queue.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/Platform/DeprecationWarner.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/Platform/DispatchQueue+Extensions.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/Platform/Platform.Darwin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/Platform/Platform.Linux.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/Platform/RecursiveLock.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/AnyObserver.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Cancelable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Concurrency/AsyncLock.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Concurrency/Lock.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Concurrency/LockOwnerType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Concurrency/SynchronizedDisposeType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Concurrency/SynchronizedOnType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Concurrency/SynchronizedUnsubscribeType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/ConnectableObservableType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Deprecated.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/AnonymousDisposable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/BinaryDisposable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/BooleanDisposable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/CompositeDisposable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/Disposables.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/DisposeBag.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/DisposeBase.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/NopDisposable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/RefCountDisposable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/ScheduledDisposable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/SerialDisposable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/SingleAssignmentDisposable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Disposables/SubscriptionDisposable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Errors.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Event.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Extensions/Bag+Rx.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Extensions/String+Rx.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/GroupedObservable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/ImmediateSchedulerType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/ObservableConvertibleType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/ObservableType+Extensions.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/ObservableType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/AddRef.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Amb.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/AsMaybe.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/AsSingle.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Buffer.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Catch.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/CombineLatest+Collection.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/CombineLatest+arity.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/CombineLatest.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Concat.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Create.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Debounce.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Debug.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/DefaultIfEmpty.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Deferred.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Delay.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/DelaySubscription.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Dematerialize.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/DistinctUntilChanged.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Do.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/ElementAt.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Empty.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Enumerated.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Error.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Filter.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/First.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Generate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/GroupBy.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Just.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Map.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Materialize.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Merge.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Multicast.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Never.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/ObserveOn.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Optional.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Producer.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Range.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Reduce.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Repeat.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/RetryWhen.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Sample.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Scan.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Sequence.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/ShareReplayScope.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/SingleAsync.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Sink.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Skip.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/SkipUntil.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/SkipWhile.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/StartWith.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/SubscribeOn.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Switch.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/SwitchIfEmpty.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Take.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/TakeLast.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/TakeUntil.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/TakeWhile.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Throttle.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Timeout.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Timer.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/ToArray.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Using.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Window.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/WithLatestFrom.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Zip+Collection.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Zip+arity.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observables/Zip.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/ObserverType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observers/AnonymousObserver.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observers/ObserverBase.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Observers/TailRecursiveSink.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Reactive.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Rx.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/RxMutableBox.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/SchedulerType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/ConcurrentDispatchQueueScheduler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/ConcurrentMainScheduler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/CurrentThreadScheduler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/HistoricalScheduler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/HistoricalSchedulerTimeConverter.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/Internal/DispatchQueueConfiguration.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/Internal/InvocableScheduledItem.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/Internal/InvocableType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/Internal/ScheduledItem.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/Internal/ScheduledItemType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/MainScheduler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/OperationQueueScheduler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/RecursiveScheduler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/SchedulerServices+Emulation.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/SerialDispatchQueueScheduler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/VirtualTimeConverterType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Schedulers/VirtualTimeScheduler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Subjects/AsyncSubject.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Subjects/BehaviorSubject.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Subjects/PublishSubject.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Subjects/ReplaySubject.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Subjects/SubjectType.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/SwiftSupport/SwiftSupport.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Traits/Completable+AndThen.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Traits/Completable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Traits/Maybe.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Traits/ObservableType+PrimitiveSequence.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Traits/PrimitiveSequence+Zip+arity.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Traits/PrimitiveSequence.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/RxSwift/RxSwift/Traits/Single.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/AccessibleMessage.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Animator.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Array+Utils.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/BackgroundViewable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/BaseView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/CALayer+Utils.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/CornerRoundingView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Error.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Identifiable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/MarginAdjustable+Animation.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/MarginAdjustable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/MaskingView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/MessageView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/NSBundle+Utils.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/PassthroughView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/PassthroughWindow.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/PhysicsAnimation.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/PhysicsPanHandler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Presenter.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/CardView.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/CenteredView.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/MessageView.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/StatusLine.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/TabView.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/errorIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/errorIcon@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/errorIcon@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/errorIconLight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/errorIconLight@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/errorIconLight@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/errorIconSubtle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/errorIconSubtle@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/errorIconSubtle@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/infoIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/infoIcon@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/infoIcon@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/infoIconLight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/infoIconLight@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/infoIconLight@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/infoIconSubtle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/infoIconSubtle@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/infoIconSubtle@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/successIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/successIcon@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/successIcon@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/successIconLight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/successIconLight@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/successIconLight@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/successIconSubtle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/successIconSubtle@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/successIconSubtle@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/warningIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/warningIcon@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/warningIcon@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/warningIconLight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/warningIconLight@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/warningIconLight@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/warningIconSubtle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/warningIconSubtle@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Resources/warningIconSubtle@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/SwiftMessages.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/SwiftMessagesSegue.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Theme.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/TopBottomAnimation.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/UIEdgeInsets+Utils.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/UIViewController+Utils.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/ViewControllerContainerView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/Weak.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/SwiftMessages/SwiftMessages/WindowViewController.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Alamofire/Alamofire-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Alamofire/Alamofire-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Alamofire/Alamofire.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Alamofire/Alamofire.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Moya/Moya-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Moya/Moya-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Moya/Moya-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Moya/Moya-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Moya/Moya.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Moya/Moya.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Nimble/Nimble-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Nimble/Nimble-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Nimble/Nimble-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Nimble/Nimble-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Nimble/Nimble.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Nimble/Nimble.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Example/Pods-RxRequester_Example-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Example/Pods-RxRequester_Example-acknowledgements.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Example/Pods-RxRequester_Example-acknowledgements.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Example/Pods-RxRequester_Example-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Example/Pods-RxRequester_Example-frameworks.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Example/Pods-RxRequester_Example-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Example/Pods-RxRequester_Example.debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Example/Pods-RxRequester_Example.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Example/Pods-RxRequester_Example.release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Tests/Pods-RxRequester_Tests-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Tests/Pods-RxRequester_Tests-acknowledgements.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Tests/Pods-RxRequester_Tests-acknowledgements.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Tests/Pods-RxRequester_Tests-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Tests/Pods-RxRequester_Tests-frameworks.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Tests/Pods-RxRequester_Tests-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Tests/Pods-RxRequester_Tests.debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Tests/Pods-RxRequester_Tests.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Pods-RxRequester_Tests/Pods-RxRequester_Tests.release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Quick/Quick-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Quick/Quick-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Quick/Quick-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Quick/Quick-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Quick/Quick.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Quick/Quick.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Result/Result-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Result/Result-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Result/Result-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Result/Result-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Result/Result.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/Result/Result.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/RxRequester/RxRequester-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/RxRequester/RxRequester-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/RxRequester/RxRequester-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/RxRequester/RxRequester-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/RxRequester/RxRequester.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/RxRequester/RxRequester.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/RxSwift/RxSwift-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/RxSwift/RxSwift-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/RxSwift/RxSwift-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/RxSwift/RxSwift.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/RxSwift/RxSwift.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/SwiftMessages/ResourceBundle-SwiftMessages-SwiftMessages-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/SwiftMessages/SwiftMessages-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/SwiftMessages/SwiftMessages-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/SwiftMessages/SwiftMessages-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/SwiftMessages/SwiftMessages-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/SwiftMessages/SwiftMessages.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Target Support Files/SwiftMessages/SwiftMessages.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequester.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester.xcodeproj/xcshareddata/xcschemes/RxRequester-Example.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequester.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/AppDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Base.lproj/LaunchScreen.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Data/Model/Post.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Data/Model/PostResponse.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Data/Posts/PostsApi.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Data/Posts/PostsDataSource.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Data/Posts/PostsRepository.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Images.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Moya/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Images.xcassets/More.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Images.xcassets/More.imageset/more (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Images.xcassets/UserPlaceholder.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Images.xcassets/UserPlaceholder.imageset/profile.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Alamofire/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Modules/Posts/PostCell.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Modules/Posts/PostCell.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Modules/Posts/Posts.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Modules/Posts/PostsBuilder.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Modules/Posts/PostsViewController.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Modules/Posts/PostsViewModel.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Presentation/ActivityIndicatable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Presentation/NavigationController.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Presentation/Reportable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Presentation/Root/Root.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Presentation/Root/RootBuilder.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Presentation/Root/RootViewController.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Presentation/Root/RootViewModel.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Presentation/ViewControllerProtocol.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/Presentation/ViewModelProtocol.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/RxRequester/SceneDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Moya/SceneDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Tests/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/AlamofireTests/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Tests/Tests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequester.podspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/ErrorProcessor.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/ErrorProcessor.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/Handler/Error/ErrorHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/Handler/Error/ErrorHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/Handler/Http/HttpErrorHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/Handler/Http/HttpErrorHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/Handler/NSErrorHandler/NSErrorHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/Handler/NSErrorHandler/NSErrorHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/Handler/Resumable/ResumableHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/Handler/Resumable/ResumableHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Alamofire/RxRequesterUITests/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/Observable+Resumable.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/Observable+Resumable.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/Presentable.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/Presentable.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/ReplaceMe.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/RequestOptions.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/RequestOptions.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/RxRequester.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/RxRequester.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester/Classes/SchedulerProvider.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/SchedulerProvider.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_Pods.xcodeproj" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_B048D844-FE9F-40D1-8222-E39FA49FB094" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1TtZf3VB4psSQGesE2K7KFOuV64" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="Moya" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Moya" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="Moya" CONFIG_NAME="Debug" SCHEME_NAME="Moya" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="RxRequester" RUN_TARGET_NAME="Moya" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4801185-1692-427a-8471-3f3713904545" name="Default Changelist" comment="" />
+      <created>1574281451972</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574281451972</updated>
+      <workItem from="1574281457092" duration="586000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RxRequester'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RxRequester.'
+  s.summary          = 'Simple & Clean RxJava requester for Android'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,37 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+Simple & Clean RxJava requester for Android
+DESC
 
-  s.homepage         = 'https://github.com/ShabanKamell/RxRequester'
+  s.homepage         = 'https://github.com/ShabanKamell/RxRequester-iOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'ShabanKamell' => 'sh3ban.kamel@gmail.com' }
-  s.source           = { :git => 'https://github.com/ShabanKamell/RxRequester.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/ShabanKamell/RxRequester-iOS.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/ShaAhKa'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'RxRequester/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'RxRequester' => ['RxRequester/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.swift_version = '5.1.2'
+  s.default_subspec = "Core"
+
+  s.subspec "Core" do |ss|
+    ss.source_files  = "Sources/Core/**/*"
+    ss.framework  = "Foundation"
+    ss.dependency "RxSwift", "~> 4.0"
+  end
+
+  s.subspec "Alamofire" do |ss|
+    ss.source_files  = "Sources/Alamofire/**/*"
+    ss.dependency "RxRequester/Core"
+  end
+
+  s.subspec "Moya" do |ss|
+    ss.source_files  = "Sources/Moya/**/*"
+    ss.dependency "RxRequester/Core"
+    ss.dependency "Moya", "~> 13.0"
+  end
+
 end

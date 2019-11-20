@@ -1,0 +1,30 @@
+{
+  "name": "RxRequester",
+  "version": "0.1.0",
+  "summary": "Simple & Clean RxJava requester for Android",
+  "description": "Simple & Clean RxJava requester for Android",
+  "homepage": "https://github.com/ShabanKamell/RxRequester-iOS",
+  "license": {
+    "type": "Apache 2.0",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ShabanKamell": "sh3ban.kamel@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ShabanKamell/RxRequester-iOS.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/ShaAhKa",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RxRequester/**/*",
+  "dependencies": {
+    "RxSwift": [
+      "~> 4"
+    ]
+  },
+  "swift_versions": "5.1.2",
+  "swift_version": "5.1.2"
+}

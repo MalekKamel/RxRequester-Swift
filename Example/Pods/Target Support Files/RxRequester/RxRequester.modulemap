@@ -1,0 +1,6 @@
+framework module RxRequester {
+  umbrella header "RxRequester-umbrella.h"
+
+  export *
+  module * { export * }
+}

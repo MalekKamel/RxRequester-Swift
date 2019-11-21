@@ -5,7 +5,7 @@
 
 import Foundation
 
-extension ErrorProcessor: HttpErrorProcessor {
+extension ErrorProcessor: MoyaErrorProcessor {
     func handle(httpError: Error) -> Bool {
         false
     }

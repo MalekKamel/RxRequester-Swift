@@ -5,7 +5,7 @@
 
 import Foundation
 
-extension ErrorProcessor: HttpErrorProcessor {
+extension ErrorProcessor: AlamofireErrorProcessor {
     func handle(httpError: Error) -> Bool {
         false
     }

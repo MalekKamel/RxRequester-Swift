@@ -2,72 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4801185-1692-427a-8471-3f3713904545" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Data/Model/Post.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Data/Model/PostResponse.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Data/Posts/PostsApi.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Data/Posts/PostsDataSource.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Data/Posts/PostsRepository.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Modules/Posts/PostCell.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Modules/Posts/PostCell.xib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Modules/Posts/Posts.storyboard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Modules/Posts/PostsBuilder.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Modules/Posts/PostsViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Modules/Posts/PostsViewModel.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Presentation/ActivityIndicatable.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Presentation/NavigationController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Presentation/Reportable.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Presentation/Root/Root.storyboard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Presentation/Root/RootBuilder.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Presentation/Root/RootViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Presentation/Root/RootViewModel.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Presentation/ViewControllerProtocol.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Presentation/ViewModelProtocol.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/BadRequestHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/ConnectivityHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/RxRequesterSetup.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/TimeoutHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/UnauthorizedHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/Alamofire/Alamofire.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/Alamofire/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/Core/AlamofireErrorProcessor.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/Core/Core.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/Core/MoyaErrorProcessor.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/Moya/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/Moya/Moya.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alamofire/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alamofire/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alamofire/Assets.xcassets/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Assets.xcassets/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alamofire/Base.lproj/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alamofire/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Base.lproj/Main.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alamofire/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alamofire/RxRequesterTests/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Alamofire/AlamofireTests/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alamofire/RxRequesterTests/RxRequesterTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/CoreTests/CoreTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alamofire/RxRequesterUITests/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/CoreTests/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alamofire/RxRequesterUITests/RxRequesterUITests.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alamofire/SceneDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/SceneDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alamofire/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/ViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlamofireTests/AlamofireTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Alamofire/AlamofireTests/AlamofireTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlamofireTests/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Moya/MoyaTests/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlamofireUITests/AlamofireUITests.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlamofireUITests/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Moya/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Moya/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Moya/Assets.xcassets/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/Assets.xcassets/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Moya/Base.lproj/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Moya/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/Base.lproj/Main.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Moya/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Moya/MoyaTests/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Moya/MoyaTests/MoyaTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Moya/MoyaTests/MoyaTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Moya/MoyaUITests/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Moya/MoyaUITests/MoyaUITests.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Moya/SceneDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/SceneDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Moya/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/ViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpErrorProcessor.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/Alamofire/ErrorProcessor+Alamofire.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Alamofire/ErrorProcessor+Alamofire.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/Core/Observable+Resumable.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Core/Observable+Resumable.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/Moya/ErrorProcessor+Moya.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Moya/ErrorProcessor+Moya.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,8 +37,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Moya" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="Moya" CONFIG_NAME="Debug" SCHEME_NAME="Moya" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="RxRequester" RUN_TARGET_NAME="MoyaExample" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+  <component name="RunManager" selected="Application.AlamofireExample">
+    <configuration name="AlamofireExample" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="AlamofireExample" CONFIG_NAME="Debug" SCHEME_NAME="AlamofireExample" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="RxRequester" RUN_TARGET_NAME="AlamofireExample" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
@@ -112,6 +47,19 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MoyaExample" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="MoyaExample" CONFIG_NAME="Debug" SCHEME_NAME="MoyaExample" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="RxRequester" RUN_TARGET_NAME="MoyaExample" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MoyaExample" />
+      <item itemvalue="Application.AlamofireExample" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -124,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574281451972</updated>
       <workItem from="1574281457092" duration="801000" />
-      <workItem from="1574337739905" duration="658000" />
+      <workItem from="1574337739905" duration="1319000" />
     </task>
     <servers />
   </component>

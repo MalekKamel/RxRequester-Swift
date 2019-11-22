@@ -28,6 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         RxRequesterSetup.setup()
 
         rootViewController = RootBuilder.make()
+        rootViewController.dataSource = AlamofireDataSource()
         window?.rootViewController = rootViewController
         self.window?.makeKeyAndVisible()
     }

@@ -1,0 +1,6 @@
+github "Alamofire/Alamofire" "4.9.1"
+github "Moya/Moya" "13.0.1"
+github "ReactiveCocoa/ReactiveSwift" "5.0.1"
+github "ReactiveX/RxSwift" "4.5.0"
+github "SwiftKickMobile/SwiftMessages" "7.0.1"
+github "antitypical/Result" "4.1.0"

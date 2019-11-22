@@ -1,0 +1,6 @@
+framework module Pods_RxRequesterAlamofire {
+  umbrella header "Pods-RxRequesterAlamofire-umbrella.h"
+
+  export *
+  module * { export * }
+}

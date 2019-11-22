@@ -1,0 +1,2 @@
+github "SwiftKickMobile/SwiftMessages"
+github "Moya/Moya" ~> 13.0

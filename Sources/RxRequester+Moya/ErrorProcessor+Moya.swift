@@ -7,7 +7,7 @@ import Foundation
 import RxRequester
 
 extension ErrorProcessor: MoyaErrorProcessor {
-    public func handle(httpError: Error) -> Bool {
+    public func handle(moyaError: Error) -> Bool {
         false
     }
 }

@@ -6,5 +6,5 @@
 import Foundation
 
 public protocol AlamofireErrorProcessor {
-    func handle(httpError: Error) -> Bool
+    func handle(alamofireError: Error) -> Bool
 }

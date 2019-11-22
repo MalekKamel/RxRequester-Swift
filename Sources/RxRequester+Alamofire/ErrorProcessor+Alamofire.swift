@@ -7,7 +7,7 @@ import Foundation
 import RxRequester
 
 extension ErrorProcessor: AlamofireErrorProcessor {
-    public func handle(httpError: Error) -> Bool {
+    public func handle(alamofireError: Error) -> Bool {
         false
     }
 }

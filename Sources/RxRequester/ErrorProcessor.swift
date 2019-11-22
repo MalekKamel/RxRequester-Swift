@@ -11,6 +11,12 @@ public class ErrorProcessor {
     static let shared = ErrorProcessor()
 
     func process(error: Error, presentable: Presentable?) {
+        guard let alamofireHandler = self as? AlamofireErrorProcessor,
+              alamofireHandler.handle(alamofireError: error) else { return }
+
+        guard let moyaHandler = self as? MoyaErrorProcessor,
+              moyaHandler.handle(moyaError: error) else { return }
+
         if error is HTTPURLResponse {
             handle(httpError: error, presentable: presentable)
             return

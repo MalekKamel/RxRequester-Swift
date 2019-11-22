@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol MoyaErrorProcessor {
-    func handle(httpError: Error) -> Bool
+    func handle(moyaError: Error) -> Bool
 }

@@ -31,7 +31,7 @@ extension ViewControllerProtocol {
     }
 
     public func onHandleErrorFailed(error: Error) {
-        show(error: "Oops, something went wrong!") // should be localized in production
+        show(error: "Oops, something went wrong! \(String(describing: error))") // should be localized in production
     }
 
 }

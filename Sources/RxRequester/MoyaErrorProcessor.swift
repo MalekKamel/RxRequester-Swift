@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol MoyaErrorProcessor {
-    func handle(moyaError: Error) -> Bool
+    func handle(error: Error, presentable: Presentable?) -> Bool
 }

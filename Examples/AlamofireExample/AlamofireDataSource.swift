@@ -12,7 +12,7 @@ class AlamofireDataSource: PostsDataSource {
 
     func all() -> Single<[PostResponse]> {
         Single.create(subscribe: { single in
-            guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else {
+            guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts/101") else {
                 let error = NSError (
                         domain: "Alamofire Error",
                         code: 100,
@@ -22,8 +22,7 @@ class AlamofireDataSource: PostsDataSource {
             }
 
             Alamofire.request(url,
-                            method: .get,
-                            parameters: ["_limit": "30", "_start" : "0"])
+                            method: .get)
                     .debugLog()
                     .validate()
                     .responseJSON { response in
@@ -32,9 +31,8 @@ class AlamofireDataSource: PostsDataSource {
                             return
                         }
 
-                        let decoder = JSONDecoder()
                         do {
-                            let posts = try decoder.decode([PostResponse].self, from: response.data! )
+                            let posts = try JSONDecoder().decode([PostResponse].self, from: response.data! )
                             return single(.success(posts))
                         } catch let e {
                             return single(.error(e))

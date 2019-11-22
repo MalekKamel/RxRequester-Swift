@@ -6,5 +6,5 @@
 import Foundation
 
 public protocol AlamofireErrorProcessor {
-    func handle(alamofireError: Error) -> Bool
+    func handle(error: Error, presentable: Presentable?) -> Bool
 }

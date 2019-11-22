@@ -13,9 +13,7 @@ public protocol NSErrorHandler {
 
 public extension NSErrorHandler {
     func canHandle(error: NSError) -> Bool {
-        let handler = supportedErrors.firstIndex(where: {
-            $0 == error.code
-        } )
+        let handler = supportedErrors.firstIndex(where: { $0 == error.code } )
         return handler != nil
     }
 }

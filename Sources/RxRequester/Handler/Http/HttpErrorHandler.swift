@@ -13,9 +13,7 @@ public protocol HttpErrorHandler {
 
 public extension HttpErrorHandler {
     func canHandle(error: HTTPURLResponse) -> Bool {
-       let handler = supportedErrors.first(where: {
-             $0 == error.statusCode
-        })
-        return handler != nil
+       let supportedError = supportedErrors.first(where: { $0 == error.statusCode })
+        return supportedError != nil
     }
 }

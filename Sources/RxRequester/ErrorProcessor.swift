@@ -10,17 +10,12 @@ let errorProcessor = ErrorProcessor()
 public class ErrorProcessor {
     static let shared = ErrorProcessor()
 
-    func process(error: Error, presentable: Presentable?) {
-        guard let alamofireHandler = self as? AlamofireErrorProcessor,
-              alamofireHandler.handle(alamofireError: error) else { return }
+    func process(error: Swift.Error, presentable: Presentable?) {
+        if let alamo = self as? AlamofireErrorProcessor,
+              alamo.handle(error: error, presentable: presentable) { return }
 
-        guard let moyaHandler = self as? MoyaErrorProcessor,
-              moyaHandler.handle(moyaError: error) else { return }
-
-        if error is HTTPURLResponse {
-            handle(httpError: error, presentable: presentable)
-            return
-        }
+        if let moya = self as? MoyaErrorProcessor,
+              moya.handle(error: error, presentable: presentable) { return }
 
         if handle(nsError: error as NSError, presentable: presentable) { return }
 
@@ -30,7 +25,7 @@ public class ErrorProcessor {
     }
 }
 
-private func handle(httpError: Error, presentable: Presentable?) {
+private func handle(httpError: Swift.Error, presentable: Presentable?) {
     let handler: HttpErrorHandler? = RxRequester.httpErrorHandlers.first(where: {
         $0.canHandle(error: httpError as! HTTPURLResponse)
     })
@@ -41,7 +36,7 @@ private func handle(httpError: Error, presentable: Presentable?) {
     handler!.handle(error: httpError as! HTTPURLResponse, presentable: presentable)
 }
 
-private func handle(error: Error, presentable: Presentable?) -> Bool {
+private func handle(error: Swift.Error, presentable: Presentable?) -> Bool {
     let handler: ErrorHandler? = RxRequester.errorHandlers.first(where: {
         $0.canHandle(error: error)
     })
@@ -67,7 +62,7 @@ private func handle(nsError: NSError, presentable: Presentable?) -> Bool {
     return true
 }
 
-func unknownError(error: Error, presentable: Presentable?) {
+public func unknownError(error: Swift.Error, presentable: Presentable?) {
     presentable?.onHandleErrorFailed(error: error)
 }
 

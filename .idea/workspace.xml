@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4801185-1692-427a-8471-3f3713904545" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/AlamofireHandlers.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Handler/AlamofireErrorHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Handler/AlamofireStatusCodeHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Handler/AlamofireUnderlyingErrorHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/Handler/MoyaErrorHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/Handler/MoyaStatusCodeHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/Handler/MoyaUnderlyingErrorHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/MoyaHandlers.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Shared/Presentation/ViewControllerProtocol.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/Presentation/ViewControllerProtocol.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/ErrorProcessor+Alamofire.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/ErrorProcessor+Alamofire.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Moya/ErrorProcessor+Moya.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/ErrorProcessor+Moya.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/RxRequester/AlamofireErrorProcessor.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/AlamofireErrorProcessor.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/RxRequester/ErrorProcessor.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/ErrorProcessor.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/Handler/Error/ErrorHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/Handler/Error/ErrorHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/Handler/Http/HttpErrorHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/Handler/Http/HttpErrorHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/Handler/NSErrorHandler/NSErrorHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/Handler/NSError/NSErrorHandler.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/RxRequester/MoyaErrorProcessor.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/MoyaErrorProcessor.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,12 +38,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="RxRequesterAlamofire" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/RxRequester+Moya/Handler" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Sources/RxRequester+Moya/Handler" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -85,7 +102,9 @@
       <updated>1574281451972</updated>
       <workItem from="1574281457092" duration="801000" />
       <workItem from="1574337739905" duration="3701000" />
-      <workItem from="1574434953821" duration="7788000" />
+      <workItem from="1574434953821" duration="14768000" />
+      <workItem from="1574453245387" duration="22000" />
+      <workItem from="1574453306592" duration="3946000" />
     </task>
     <servers />
   </component>
@@ -113,7 +132,52 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Sources/RxRequester/ErrorProcessor.swift</url>
-          <line>19</line>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Sources/RxRequester/ErrorProcessor.swift</url>
+          <line>14</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Sources/RxRequester/ErrorProcessor.swift</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift</url>
+          <line>28</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift</url>
+          <line>29</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift</url>
+          <line>34</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift</url>
+          <line>35</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift</url>
+          <line>36</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Sources/RxRequester+Alamofire/ErrorProcessor+Alamofire.swift</url>
+          <line>11</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Sources/RxRequester+Alamofire/ErrorProcessor+Alamofire.swift</url>
+          <line>13</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>

@@ -14,11 +14,7 @@ public protocol ErrorHandler {
 public extension ErrorHandler {
     func canHandle(error: Swift.Error) -> Bool {
         let errorType = type(of: error)
-
-        let handler = supportedErrors.first(where: {
-           $0 == errorType
-        })
-
+        let handler = supportedErrors.first(where: { $0 == errorType })
         return handler != nil
     }
 }

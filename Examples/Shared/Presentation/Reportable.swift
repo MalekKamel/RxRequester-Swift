@@ -50,17 +50,7 @@ public extension Reportable {
 
     func show(error: String, title: String = "") {
         UINotificationFeedbackGenerator().notificationOccurred(.error)
-
-        let nsError = NSError (
-                domain: "Internal client error",
-                code: 100,
-                userInfo: [NSLocalizedDescriptionKey: error]
-        )
-        
-        showError(
-                title: title,
-                message: error
-        )
+        showError(title: title, message: error)
     }
 
     func show(error: Error, title: String = "") {

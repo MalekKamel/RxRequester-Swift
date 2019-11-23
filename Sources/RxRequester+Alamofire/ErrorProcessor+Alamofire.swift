@@ -7,21 +7,26 @@ import Foundation
 import RxRequester
 import Alamofire
 
-extension ErrorProcessor: AlamofireErrorProcessor {
+extension ErrorProcessor: PluggableErrorProcessor {
+    
     public func handle(error: Error, presentable: Presentable?) -> Bool {
-        guard let alamofireError = error as? AFError else { return false }
+        guard let afError = error as? AFError else { return false }
 
-        if let underlyingError = alamofireError.underlyingError,
+        if let underlyingError = afError.underlyingError,
            handle(underlyingError: underlyingError, presentable: presentable) { return false }
 
-        switch alamofireError {
+        func defaultHandling() -> Bool { handle(afError: afError, presentable: presentable) }
+        
+        switch afError {
+        
         case .responseValidationFailed(let reason):
             switch reason {
-            case .unacceptableStatusCode(let _):
-                return handle(statusCode: alamofireError, presentable: presentable)
-            default: return handle(error: alamofireError, presentable: presentable)
+            case .unacceptableStatusCode(_):
+                return handle(statusCode: afError, presentable: presentable) ? true : defaultHandling()
+            default: return defaultHandling()
             }
-        default: return handle(error: alamofireError, presentable: presentable)
+            
+        default: return defaultHandling()
         }
     }
 
@@ -43,12 +48,12 @@ extension ErrorProcessor: AlamofireErrorProcessor {
         return true
     }
 
-//    private func handle(error: AFError, presentable: Presentable?) -> Bool {
-//        let handler: AFErrorHandler? = AlamofireHandlers.errorHandlers.first(where: {
-//            $0.canHandle(error: error)
-//        })
-//        guard handler != nil else { return false }
-//        handler!.handle(error: error, presentable: presentable)
-//        return true
-//    }
+    private func handle(afError: AFError, presentable: Presentable?) -> Bool {
+        let handler: AlamofireErrorHandler? = AlamofireHandlers.errorHandlers.first(where: {
+            $0.canHandle(error: afError)
+        })
+        guard handler != nil else { return false }
+        handler!.handle(error: afError, presentable: presentable)
+        return true
+    }
 }

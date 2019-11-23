@@ -11,11 +11,8 @@ public class ErrorProcessor {
     static let shared = ErrorProcessor()
 
     func process(error: Swift.Error, presentable: Presentable?) {
-        if let alamo = self as? AlamofireErrorProcessor,
-              alamo.handle(error: error, presentable: presentable) { return }
-
-        if let moya = self as? MoyaErrorProcessor,
-              moya.handle(error: error, presentable: presentable) { return }
+        if let pluggableProcessor = self as? PluggableErrorProcessor,
+           pluggableProcessor.handle(error: error, presentable: presentable) { return }
 
         if handle(nsError: error as NSError, presentable: presentable) { return }
 

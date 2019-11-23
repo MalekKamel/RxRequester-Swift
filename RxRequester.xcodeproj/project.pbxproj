@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0433BF362389969B00293728 /* RxRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF352389969B00293728 /* RxRequesterTests.swift */; };
+		0433BF382389969B00293728 /* RxRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2B72386A8CC002446DA /* RxRequester.framework */; };
+		0433BF3F2389973B00293728 /* RxRequesterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF3E2389973B00293728 /* RxRequesterTest.swift */; };
+		0433BF4A23899CE100293728 /* RxRequesterAlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF4923899CE100293728 /* RxRequesterAlamofireTests.swift */; };
+		0433BF4C23899CE200293728 /* RxRequesterAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2D32386AA89002446DA /* RxRequesterAlamofire.framework */; };
+		0433BF5923899CF000293728 /* RxRequesterMoyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF5823899CF000293728 /* RxRequesterMoyaTests.swift */; };
+		0433BF5B23899CF000293728 /* RxRequesterMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2EF2386AAC1002446DA /* RxRequesterMoya.framework */; };
+		0433BF6223899D5A00293728 /* RxRequesterMoyaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF6123899D5A00293728 /* RxRequesterMoyaTest.swift */; };
+		0433BF6423899DA800293728 /* RxRequesterMoyaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF6323899DA800293728 /* RxRequesterMoyaTest.swift */; };
+		0433BF6523899DA800293728 /* RxRequesterMoyaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF6323899DA800293728 /* RxRequesterMoyaTest.swift */; };
+		0433BF6723899DE900293728 /* RxRequesterAlamofireTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF6623899DE900293728 /* RxRequesterAlamofireTest.swift */; };
 		0468CE9423882B33005415EC /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FEE3492386B282002446DA /* Posts.storyboard */; };
 		0468CE9523882B37005415EC /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE34A2386B282002446DA /* PostsViewController.swift */; };
 		0468CE9623882B39005415EC /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE34B2386B282002446DA /* PostsViewModel.swift */; };
@@ -62,14 +73,8 @@
 		04CF89EF23873A4900E42FB2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE3862387053C002446DA /* RxSwift.framework */; };
 		04CF89F023873A4900E42FB2 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE3862387053C002446DA /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04CF89F323873BE800E42FB2 /* PluggableErrorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F19353AEEEA0D7C9A9D4 /* PluggableErrorProcessor.swift */; };
-		04FEE2C02386A8CC002446DA /* RxRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2B72386A8CC002446DA /* RxRequester.framework */; };
-		04FEE2C52386A8CC002446DA /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE2C42386A8CC002446DA /* CoreTests.swift */; };
 		04FEE2C72386A8CC002446DA /* RxRequester.h in Headers */ = {isa = PBXBuildFile; fileRef = 04FEE2B92386A8CC002446DA /* RxRequester.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04FEE2DC2386AA89002446DA /* RxRequesterAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2D32386AA89002446DA /* RxRequesterAlamofire.framework */; };
-		04FEE2E12386AA89002446DA /* AlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE2E02386AA89002446DA /* AlamofireTests.swift */; };
 		04FEE2E32386AA89002446DA /* RxRequesterAlamofire.h in Headers */ = {isa = PBXBuildFile; fileRef = 04FEE2D52386AA89002446DA /* RxRequesterAlamofire.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04FEE2F82386AAC1002446DA /* RxRequesterMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2EF2386AAC1002446DA /* RxRequesterMoya.framework */; };
-		04FEE2FD2386AAC1002446DA /* MoyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE2FC2386AAC1002446DA /* MoyaTests.swift */; };
 		04FEE2FF2386AAC1002446DA /* RxRequesterMoya.h in Headers */ = {isa = PBXBuildFile; fileRef = 04FEE2F12386AAC1002446DA /* RxRequesterMoya.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04FEE30D2386AB22002446DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE30C2386AB22002446DA /* AppDelegate.swift */; };
 		04FEE30F2386AB22002446DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE30E2386AB22002446DA /* SceneDelegate.swift */; };
@@ -89,7 +94,6 @@
 		04FEE3712386B282002446DA /* ConnectivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3532386B282002446DA /* ConnectivityHandler.swift */; };
 		04FEE3722386B282002446DA /* UnauthorizedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3542386B282002446DA /* UnauthorizedHandler.swift */; };
 		04FEE3732386B282002446DA /* PostsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3572386B282002446DA /* PostsDataSource.swift */; };
-		04FEE3742386B282002446DA /* PostsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3582386B282002446DA /* PostsApi.swift */; };
 		04FEE3752386B282002446DA /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3592386B282002446DA /* PostsRepository.swift */; };
 		04FEE3762386B282002446DA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE35B2386B282002446DA /* Post.swift */; };
 		04FEE3772386B282002446DA /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE35C2386B282002446DA /* PostResponse.swift */; };
@@ -111,15 +115,34 @@
 		1A54F5C0C2A13A61C464ABB9 /* MoyaUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F01E65BF6142B23EF9FE /* MoyaUnderlyingErrorHandler.swift */; };
 		1A54F779312A5A27BBBE3388 /* MoyaStatusCodeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FA859F50F83A1F59A30B /* MoyaStatusCodeHandler.swift */; };
 		1A54FF280033E75A18076FCF /* AlamofireErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6B794E5BE536F248527 /* AlamofireErrorHandler.swift */; };
-		1D7E5DEA8C86344F8D131FA9 /* Pods_RxRequester_RxRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560B4F9DB970CFF20395F5D5 /* Pods_RxRequester_RxRequesterTests.framework */; };
 		24F3FD7709E9B82B439EA04F /* Pods_RxRequesterAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BA80F17B54B42523875A74 /* Pods_RxRequesterAlamofire.framework */; };
-		80118920E173E1BA55EE02AC /* Pods_RxRequester_RxRequesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82ACE7ECD946E7980B0467B3 /* Pods_RxRequester_RxRequesterUITests.framework */; };
 		C580A7DC888B52B67085B56B /* Pods_AlamofireExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCD0EB721F2D86C5FEEFC8B /* Pods_AlamofireExample.framework */; };
 		CF69ACF6A6458AD9A88A9C52 /* Pods_RxRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22613BD468B5013D00572346 /* Pods_RxRequester.framework */; };
 		E064958C0D463137F00D396D /* Pods_MoyaExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14285E1A42BBA8CA315F6155 /* Pods_MoyaExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0433BF392389969B00293728 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0446C61A2385B00E00195C17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FEE2B62386A8CC002446DA;
+			remoteInfo = RxRequester;
+		};
+		0433BF4D23899CE200293728 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0446C61A2385B00E00195C17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FEE2D22386AA89002446DA;
+			remoteInfo = RxRequesterAlamofire;
+		};
+		0433BF5C23899CF000293728 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0446C61A2385B00E00195C17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FEE2EE2386AAC1002446DA;
+			remoteInfo = RxRequesterMoya;
+		};
 		04CF89CE2387392700E42FB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0446C61A2385B00E00195C17 /* Project object */;
@@ -161,27 +184,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 04FEE2B62386A8CC002446DA;
 			remoteInfo = RxRequester;
-		};
-		04FEE2C12386A8CC002446DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0446C61A2385B00E00195C17 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 04FEE2B62386A8CC002446DA;
-			remoteInfo = Core;
-		};
-		04FEE2DD2386AA89002446DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0446C61A2385B00E00195C17 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 04FEE2D22386AA89002446DA;
-			remoteInfo = Alamofire;
-		};
-		04FEE2F92386AAC1002446DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0446C61A2385B00E00195C17 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 04FEE2EE2386AAC1002446DA;
-			remoteInfo = Moya;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -246,36 +248,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0446C6382385B01100195C17 /* RxRequesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxRequesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0446C6432385B01200195C17 /* RxRequesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxRequesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0446C6D92385C2B500195C17 /* XTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0446C6E42385C2B500195C17 /* XUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0446C70D2385C2F500195C17 /* AlamoFireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamoFireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0446C7182385C2F500195C17 /* AlamoFireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamoFireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0446C7412385C33A00195C17 /* MoyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0446C74C2385C33A00195C17 /* MoyaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoyaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0446C7792385D01000195C17 /* AlamofireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0446C7842385D01000195C17 /* AlamofireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0433BF332389969B00293728 /* RxRequesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxRequesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0433BF352389969B00293728 /* RxRequesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRequesterTests.swift; sourceTree = "<group>"; };
+		0433BF372389969B00293728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0433BF3E2389973B00293728 /* RxRequesterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RxRequesterTest.swift; path = Sources/RxRequester/Tests/RxRequesterTest.swift; sourceTree = SOURCE_ROOT; };
+		0433BF4723899CE100293728 /* RxRequesterAlamofireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxRequesterAlamofireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0433BF4923899CE100293728 /* RxRequesterAlamofireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRequesterAlamofireTests.swift; sourceTree = "<group>"; };
+		0433BF4B23899CE100293728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0433BF5623899CF000293728 /* RxRequesterMoyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxRequesterMoyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0433BF5823899CF000293728 /* RxRequesterMoyaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRequesterMoyaTests.swift; sourceTree = "<group>"; };
+		0433BF5A23899CF000293728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0433BF6123899D5A00293728 /* RxRequesterMoyaTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RxRequesterMoyaTest.swift; path = "Sources/RxRequester+Moya/Tests/RxRequesterMoyaTest.swift"; sourceTree = "<group>"; };
+		0433BF6323899DA800293728 /* RxRequesterMoyaTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxRequesterMoyaTest.swift; sourceTree = "<group>"; };
+		0433BF6623899DE900293728 /* RxRequesterAlamofireTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRequesterAlamofireTest.swift; sourceTree = "<group>"; };
 		0468CEB323882E8D005415EC /* AlamofireDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlamofireDataSource.swift; path = /Users/mac/Desktop/iOS/projects/lib/RxRequester/Examples/AlamofireExample/AlamofireDataSource.swift; sourceTree = "<absolute>"; };
 		0468CEB523883132005415EC /* MoyaDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaDataSource.swift; sourceTree = "<group>"; };
 		04FEE2B72386A8CC002446DA /* RxRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FEE2B92386A8CC002446DA /* RxRequester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxRequester.h; sourceTree = "<group>"; };
 		04FEE2BA2386A8CC002446DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04FEE2BF2386A8CC002446DA /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04FEE2C42386A8CC002446DA /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
-		04FEE2C62386A8CC002446DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FEE2D32386AA89002446DA /* RxRequesterAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRequesterAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FEE2D52386AA89002446DA /* RxRequesterAlamofire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxRequesterAlamofire.h; sourceTree = "<group>"; };
 		04FEE2D62386AA89002446DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04FEE2DB2386AA89002446DA /* AlamofireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04FEE2E02386AA89002446DA /* AlamofireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireTests.swift; sourceTree = "<group>"; };
-		04FEE2E22386AA89002446DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FEE2EF2386AAC1002446DA /* RxRequesterMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRequesterMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FEE2F12386AAC1002446DA /* RxRequesterMoya.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxRequesterMoya.h; sourceTree = "<group>"; };
 		04FEE2F22386AAC1002446DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04FEE2F72386AAC1002446DA /* MoyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04FEE2FC2386AAC1002446DA /* MoyaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaTests.swift; sourceTree = "<group>"; };
-		04FEE2FE2386AAC1002446DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FEE30A2386AB22002446DA /* AlamofireExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FEE30C2386AB22002446DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FEE30E2386AB22002446DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -358,75 +354,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0446C6352385B01100195C17 /* Frameworks */ = {
+		0433BF302389969B00293728 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D7E5DEA8C86344F8D131FA9 /* Pods_RxRequester_RxRequesterTests.framework in Frameworks */,
+				0433BF382389969B00293728 /* RxRequester.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0446C6402385B01200195C17 /* Frameworks */ = {
+		0433BF4423899CE100293728 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80118920E173E1BA55EE02AC /* Pods_RxRequester_RxRequesterUITests.framework in Frameworks */,
+				0433BF4C23899CE200293728 /* RxRequesterAlamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0446C6D62385C2B500195C17 /* Frameworks */ = {
+		0433BF5323899CF000293728 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C6E12385C2B500195C17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C70A2385C2F500195C17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C7152385C2F500195C17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C73E2385C33A00195C17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C7492385C33A00195C17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C7762385D01000195C17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C7812385D01000195C17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0433BF5B23899CF000293728 /* RxRequesterMoya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,14 +387,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04FEE2BC2386A8CC002446DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04FEE2C02386A8CC002446DA /* RxRequester.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04FEE2D02386AA89002446DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,28 +396,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04FEE2D82386AA89002446DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04FEE2DC2386AA89002446DA /* RxRequesterAlamofire.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04FEE2EC2386AAC1002446DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04CF89EA23873A1400E42FB2 /* RxRequester.framework in Frameworks */,
 				062369DFCC3959E796417B9C /* Pods_RxRequesterMoya.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04FEE2F42386AAC1002446DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04FEE2F82386AAC1002446DA /* RxRequesterMoya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,11 +428,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0433BF342389969B00293728 /* RxRequesterTests */ = {
+			isa = PBXGroup;
+			children = (
+				0433BF352389969B00293728 /* RxRequesterTests.swift */,
+				0433BF372389969B00293728 /* Info.plist */,
+			);
+			path = RxRequesterTests;
+			sourceTree = "<group>";
+		};
+		0433BF402389974300293728 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0433BF3E2389973B00293728 /* RxRequesterTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0433BF4123899C4B00293728 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0433BF6623899DE900293728 /* RxRequesterAlamofireTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0433BF4223899C5D00293728 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0433BF6323899DA800293728 /* RxRequesterMoyaTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0433BF4823899CE100293728 /* RxRequesterAlamofireTests */ = {
+			isa = PBXGroup;
+			children = (
+				0433BF4923899CE100293728 /* RxRequesterAlamofireTests.swift */,
+				0433BF4B23899CE100293728 /* Info.plist */,
+			);
+			path = RxRequesterAlamofireTests;
+			sourceTree = "<group>";
+		};
+		0433BF5723899CF000293728 /* RxRequesterMoyaTests */ = {
+			isa = PBXGroup;
+			children = (
+				0433BF5823899CF000293728 /* RxRequesterMoyaTests.swift */,
+				0433BF5A23899CF000293728 /* Info.plist */,
+			);
+			path = RxRequesterMoyaTests;
+			sourceTree = "<group>";
+		};
 		0446C6192385B00E00195C17 = {
 			isa = PBXGroup;
 			children = (
+				0433BF6123899D5A00293728 /* RxRequesterMoyaTest.swift */,
 				0446C75C2385C60D00195C17 /* Sources */,
 				0446C6242385B00E00195C17 /* Examples */,
+				0433BF342389969B00293728 /* RxRequesterTests */,
+				0433BF4823899CE100293728 /* RxRequesterAlamofireTests */,
+				0433BF5723899CF000293728 /* RxRequesterMoyaTests */,
 				0446C6232385B00E00195C17 /* Products */,
 				04FEE38123870519002446DA /* Frameworks */,
 				04CCB22C62635C3CD04E7A95 /* Pods */,
@@ -518,24 +497,14 @@
 		0446C6232385B00E00195C17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0446C6382385B01100195C17 /* RxRequesterTests.xctest */,
-				0446C6432385B01200195C17 /* RxRequesterUITests.xctest */,
-				0446C6D92385C2B500195C17 /* XTests.xctest */,
-				0446C6E42385C2B500195C17 /* XUITests.xctest */,
-				0446C70D2385C2F500195C17 /* AlamoFireTests.xctest */,
-				0446C7182385C2F500195C17 /* AlamoFireUITests.xctest */,
-				0446C7412385C33A00195C17 /* MoyaTests.xctest */,
-				0446C74C2385C33A00195C17 /* MoyaUITests.xctest */,
-				0446C7792385D01000195C17 /* AlamofireTests.xctest */,
-				0446C7842385D01000195C17 /* AlamofireUITests.xctest */,
 				04FEE2B72386A8CC002446DA /* RxRequester.framework */,
-				04FEE2BF2386A8CC002446DA /* CoreTests.xctest */,
 				04FEE2D32386AA89002446DA /* RxRequesterAlamofire.framework */,
-				04FEE2DB2386AA89002446DA /* AlamofireTests.xctest */,
 				04FEE2EF2386AAC1002446DA /* RxRequesterMoya.framework */,
-				04FEE2F72386AAC1002446DA /* MoyaTests.xctest */,
 				04FEE30A2386AB22002446DA /* AlamofireExample.app */,
 				04FEE3222386AB48002446DA /* MoyaExample.app */,
+				0433BF332389969B00293728 /* RxRequesterTests.xctest */,
+				0433BF4723899CE100293728 /* RxRequesterAlamofireTests.xctest */,
+				0433BF5623899CF000293728 /* RxRequesterMoyaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -597,8 +566,8 @@
 		04FEE2B82386A8CC002446DA /* RxRequester */ = {
 			isa = PBXGroup;
 			children = (
-				04FEE3442386AC90002446DA /* ErrorProcessor.swift */,
 				04FEE3372386AC90002446DA /* Handler */,
+				04FEE3442386AC90002446DA /* ErrorProcessor.swift */,
 				04FEE3412386AC90002446DA /* Observable+Resumable.swift */,
 				04FEE3402386AC90002446DA /* Presentable.swift */,
 				04FEE3422386AC90002446DA /* RequestOptions.swift */,
@@ -606,63 +575,36 @@
 				04FEE3452386AC90002446DA /* SchedulerProvider.swift */,
 				04FEE2B92386A8CC002446DA /* RxRequester.h */,
 				04FEE2BA2386A8CC002446DA /* Info.plist */,
-				04FEE2C32386A8CC002446DA /* CoreTests */,
 				1A54F19353AEEEA0D7C9A9D4 /* PluggableErrorProcessor.swift */,
+				0433BF402389974300293728 /* Tests */,
 			);
 			path = RxRequester;
-			sourceTree = "<group>";
-		};
-		04FEE2C32386A8CC002446DA /* CoreTests */ = {
-			isa = PBXGroup;
-			children = (
-				04FEE2C42386A8CC002446DA /* CoreTests.swift */,
-				04FEE2C62386A8CC002446DA /* Info.plist */,
-			);
-			path = CoreTests;
 			sourceTree = "<group>";
 		};
 		04FEE2D42386AA89002446DA /* RxRequester+Alamofire */ = {
 			isa = PBXGroup;
 			children = (
+				1A54FA3CC68CC6289D6038EA /* Handler */,
 				04FEE3462386ACA0002446DA /* ErrorProcessor+Alamofire.swift */,
 				04FEE2D52386AA89002446DA /* RxRequesterAlamofire.h */,
 				04FEE2D62386AA89002446DA /* Info.plist */,
-				04FEE2DF2386AA89002446DA /* AlamofireTests */,
-				1A54FA3CC68CC6289D6038EA /* Handler */,
 				1A54F434A86AA243B3097BF5 /* AlamofireHandlers.swift */,
+				0433BF4123899C4B00293728 /* Tests */,
 			);
 			path = "RxRequester+Alamofire";
-			sourceTree = "<group>";
-		};
-		04FEE2DF2386AA89002446DA /* AlamofireTests */ = {
-			isa = PBXGroup;
-			children = (
-				04FEE2E02386AA89002446DA /* AlamofireTests.swift */,
-				04FEE2E22386AA89002446DA /* Info.plist */,
-			);
-			path = AlamofireTests;
 			sourceTree = "<group>";
 		};
 		04FEE2F02386AAC1002446DA /* RxRequester+Moya */ = {
 			isa = PBXGroup;
 			children = (
+				1A54FB7AF0E4335927E98315 /* Handler */,
 				04FEE3362386AC6C002446DA /* ErrorProcessor+Moya.swift */,
 				04FEE2F12386AAC1002446DA /* RxRequesterMoya.h */,
 				04FEE2F22386AAC1002446DA /* Info.plist */,
-				04FEE2FB2386AAC1002446DA /* MoyaTests */,
 				1A54F0136DE4771DAA723A2D /* MoyaHandlers.swift */,
-				1A54FB7AF0E4335927E98315 /* Handler */,
+				0433BF4223899C5D00293728 /* Tests */,
 			);
 			path = "RxRequester+Moya";
-			sourceTree = "<group>";
-		};
-		04FEE2FB2386AAC1002446DA /* MoyaTests */ = {
-			isa = PBXGroup;
-			children = (
-				04FEE2FC2386AAC1002446DA /* MoyaTests.swift */,
-				04FEE2FE2386AAC1002446DA /* Info.plist */,
-			);
-			path = MoyaTests;
 			sourceTree = "<group>";
 		};
 		04FEE30B2386AB22002446DA /* AlamofireExample */ = {
@@ -679,6 +621,7 @@
 		04FEE3232386AB48002446DA /* MoyaExample */ = {
 			isa = PBXGroup;
 			children = (
+				04FEE3582386B282002446DA /* PostsApi.swift */,
 				0468CEB523883132005415EC /* MoyaDataSource.swift */,
 				04FEE3242386AB48002446DA /* AppDelegate.swift */,
 				04FEE3262386AB48002446DA /* SceneDelegate.swift */,
@@ -776,7 +719,6 @@
 			isa = PBXGroup;
 			children = (
 				04FEE3572386B282002446DA /* PostsDataSource.swift */,
-				04FEE3582386B282002446DA /* PostsApi.swift */,
 				04FEE3592386B282002446DA /* PostsRepository.swift */,
 			);
 			path = Posts;
@@ -881,179 +823,59 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0446C6372385B01100195C17 /* RxRequesterTests */ = {
+		0433BF322389969B00293728 /* RxRequesterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0446C64F2385B01200195C17 /* Build configuration list for PBXNativeTarget "RxRequesterTests" */;
+			buildConfigurationList = 0433BF3B2389969B00293728 /* Build configuration list for PBXNativeTarget "RxRequesterTests" */;
 			buildPhases = (
-				969897E6622D5C6491CFABF4 /* [CP] Check Pods Manifest.lock */,
-				0446C6342385B01100195C17 /* Sources */,
-				0446C6352385B01100195C17 /* Frameworks */,
-				0446C6362385B01100195C17 /* Resources */,
-				3160A786D3944C68F5175222 /* [CP] Embed Pods Frameworks */,
+				0433BF2F2389969B00293728 /* Sources */,
+				0433BF302389969B00293728 /* Frameworks */,
+				0433BF312389969B00293728 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0433BF3A2389969B00293728 /* PBXTargetDependency */,
 			);
 			name = RxRequesterTests;
 			productName = RxRequesterTests;
-			productReference = 0446C6382385B01100195C17 /* RxRequesterTests.xctest */;
+			productReference = 0433BF332389969B00293728 /* RxRequesterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0446C6422385B01200195C17 /* RxRequesterUITests */ = {
+		0433BF4623899CE100293728 /* RxRequesterAlamofireTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0446C6522385B01200195C17 /* Build configuration list for PBXNativeTarget "RxRequesterUITests" */;
+			buildConfigurationList = 0433BF4F23899CE200293728 /* Build configuration list for PBXNativeTarget "RxRequesterAlamofireTests" */;
 			buildPhases = (
-				7BE4FB360C2F92B8E863697E /* [CP] Check Pods Manifest.lock */,
-				0446C63F2385B01200195C17 /* Sources */,
-				0446C6402385B01200195C17 /* Frameworks */,
-				0446C6412385B01200195C17 /* Resources */,
-				C63095AEAA879E0D69B1F9D5 /* [CP] Embed Pods Frameworks */,
+				0433BF4323899CE100293728 /* Sources */,
+				0433BF4423899CE100293728 /* Frameworks */,
+				0433BF4523899CE100293728 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0433BF4E23899CE200293728 /* PBXTargetDependency */,
 			);
-			name = RxRequesterUITests;
-			productName = RxRequesterUITests;
-			productReference = 0446C6432385B01200195C17 /* RxRequesterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		0446C6D82385C2B500195C17 /* XTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0446C6EE2385C2B500195C17 /* Build configuration list for PBXNativeTarget "XTests" */;
-			buildPhases = (
-				0446C6D52385C2B500195C17 /* Sources */,
-				0446C6D62385C2B500195C17 /* Frameworks */,
-				0446C6D72385C2B500195C17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = XTests;
-			productName = XTests;
-			productReference = 0446C6D92385C2B500195C17 /* XTests.xctest */;
+			name = RxRequesterAlamofireTests;
+			productName = RxRequesterAlamofireTests;
+			productReference = 0433BF4723899CE100293728 /* RxRequesterAlamofireTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0446C6E32385C2B500195C17 /* XUITests */ = {
+		0433BF5523899CF000293728 /* RxRequesterMoyaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0446C6F12385C2B500195C17 /* Build configuration list for PBXNativeTarget "XUITests" */;
+			buildConfigurationList = 0433BF5E23899CF000293728 /* Build configuration list for PBXNativeTarget "RxRequesterMoyaTests" */;
 			buildPhases = (
-				0446C6E02385C2B500195C17 /* Sources */,
-				0446C6E12385C2B500195C17 /* Frameworks */,
-				0446C6E22385C2B500195C17 /* Resources */,
+				0433BF5223899CF000293728 /* Sources */,
+				0433BF5323899CF000293728 /* Frameworks */,
+				0433BF5423899CF000293728 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0433BF5D23899CF000293728 /* PBXTargetDependency */,
 			);
-			name = XUITests;
-			productName = XUITests;
-			productReference = 0446C6E42385C2B500195C17 /* XUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		0446C70C2385C2F500195C17 /* AlamoFireTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0446C7222385C2F500195C17 /* Build configuration list for PBXNativeTarget "AlamoFireTests" */;
-			buildPhases = (
-				0446C7092385C2F500195C17 /* Sources */,
-				0446C70A2385C2F500195C17 /* Frameworks */,
-				0446C70B2385C2F500195C17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AlamoFireTests;
-			productName = AlamoFireTests;
-			productReference = 0446C70D2385C2F500195C17 /* AlamoFireTests.xctest */;
+			name = RxRequesterMoyaTests;
+			productName = RxRequesterMoyaTests;
+			productReference = 0433BF5623899CF000293728 /* RxRequesterMoyaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0446C7172385C2F500195C17 /* AlamoFireUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0446C7252385C2F500195C17 /* Build configuration list for PBXNativeTarget "AlamoFireUITests" */;
-			buildPhases = (
-				0446C7142385C2F500195C17 /* Sources */,
-				0446C7152385C2F500195C17 /* Frameworks */,
-				0446C7162385C2F500195C17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AlamoFireUITests;
-			productName = AlamoFireUITests;
-			productReference = 0446C7182385C2F500195C17 /* AlamoFireUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		0446C7402385C33A00195C17 /* MoyaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0446C7562385C33A00195C17 /* Build configuration list for PBXNativeTarget "MoyaTests" */;
-			buildPhases = (
-				0446C73D2385C33A00195C17 /* Sources */,
-				0446C73E2385C33A00195C17 /* Frameworks */,
-				0446C73F2385C33A00195C17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MoyaTests;
-			productName = MoyaTests;
-			productReference = 0446C7412385C33A00195C17 /* MoyaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0446C74B2385C33A00195C17 /* MoyaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0446C7592385C33A00195C17 /* Build configuration list for PBXNativeTarget "MoyaUITests" */;
-			buildPhases = (
-				0446C7482385C33A00195C17 /* Sources */,
-				0446C7492385C33A00195C17 /* Frameworks */,
-				0446C74A2385C33A00195C17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MoyaUITests;
-			productName = MoyaUITests;
-			productReference = 0446C74C2385C33A00195C17 /* MoyaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		0446C7782385D01000195C17 /* AlamofireTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0446C78E2385D01000195C17 /* Build configuration list for PBXNativeTarget "AlamofireTests" */;
-			buildPhases = (
-				0446C7752385D01000195C17 /* Sources */,
-				0446C7762385D01000195C17 /* Frameworks */,
-				0446C7772385D01000195C17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AlamofireTests;
-			productName = AlamofireTests;
-			productReference = 0446C7792385D01000195C17 /* AlamofireTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0446C7832385D01000195C17 /* AlamofireUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0446C7912385D01000195C17 /* Build configuration list for PBXNativeTarget "AlamofireUITests" */;
-			buildPhases = (
-				0446C7802385D01000195C17 /* Sources */,
-				0446C7812385D01000195C17 /* Frameworks */,
-				0446C7822385D01000195C17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AlamofireUITests;
-			productName = AlamofireUITests;
-			productReference = 0446C7842385D01000195C17 /* AlamofireUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		04FEE2B62386A8CC002446DA /* RxRequester */ = {
 			isa = PBXNativeTarget;
@@ -1074,24 +896,6 @@
 			productName = Core;
 			productReference = 04FEE2B72386A8CC002446DA /* RxRequester.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		04FEE2BE2386A8CC002446DA /* CoreTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 04FEE2CB2386A8CC002446DA /* Build configuration list for PBXNativeTarget "CoreTests" */;
-			buildPhases = (
-				04FEE2BB2386A8CC002446DA /* Sources */,
-				04FEE2BC2386A8CC002446DA /* Frameworks */,
-				04FEE2BD2386A8CC002446DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				04FEE2C22386A8CC002446DA /* PBXTargetDependency */,
-			);
-			name = CoreTests;
-			productName = CoreTests;
-			productReference = 04FEE2BF2386A8CC002446DA /* CoreTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		04FEE2D22386AA89002446DA /* RxRequesterAlamofire */ = {
 			isa = PBXNativeTarget;
@@ -1114,24 +918,6 @@
 			productReference = 04FEE2D32386AA89002446DA /* RxRequesterAlamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		04FEE2DA2386AA89002446DA /* AlamofireTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 04FEE2E72386AA89002446DA /* Build configuration list for PBXNativeTarget "AlamofireTests" */;
-			buildPhases = (
-				04FEE2D72386AA89002446DA /* Sources */,
-				04FEE2D82386AA89002446DA /* Frameworks */,
-				04FEE2D92386AA89002446DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				04FEE2DE2386AA89002446DA /* PBXTargetDependency */,
-			);
-			name = AlamofireTests;
-			productName = AlamofireTests;
-			productReference = 04FEE2DB2386AA89002446DA /* AlamofireTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		04FEE2EE2386AAC1002446DA /* RxRequesterMoya */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04FEE3002386AAC1002446DA /* Build configuration list for PBXNativeTarget "RxRequesterMoya" */;
@@ -1152,24 +938,6 @@
 			productName = Moya;
 			productReference = 04FEE2EF2386AAC1002446DA /* RxRequesterMoya.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		04FEE2F62386AAC1002446DA /* MoyaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 04FEE3032386AAC1002446DA /* Build configuration list for PBXNativeTarget "MoyaTests" */;
-			buildPhases = (
-				04FEE2F32386AAC1002446DA /* Sources */,
-				04FEE2F42386AAC1002446DA /* Frameworks */,
-				04FEE2F52386AAC1002446DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				04FEE2FA2386AAC1002446DA /* PBXTargetDependency */,
-			);
-			name = MoyaTests;
-			productName = MoyaTests;
-			productReference = 04FEE2F72386AAC1002446DA /* MoyaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		04FEE3092386AB22002446DA /* AlamofireExample */ = {
 			isa = PBXNativeTarget;
@@ -1226,62 +994,22 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = sha;
 				TargetAttributes = {
-					0446C6372385B01100195C17 = {
+					0433BF322389969B00293728 = {
 						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0446C6212385B00E00195C17;
 					};
-					0446C6422385B01200195C17 = {
+					0433BF4623899CE100293728 = {
 						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0446C6212385B00E00195C17;
 					};
-					0446C6D82385C2B500195C17 = {
+					0433BF5523899CF000293728 = {
 						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0446C6C32385C2B300195C17;
-					};
-					0446C6E32385C2B500195C17 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0446C6C32385C2B300195C17;
-					};
-					0446C70C2385C2F500195C17 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0446C6F72385C2F300195C17;
-					};
-					0446C7172385C2F500195C17 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0446C6F72385C2F300195C17;
-					};
-					0446C7402385C33A00195C17 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0446C72B2385C33800195C17;
-					};
-					0446C74B2385C33A00195C17 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0446C72B2385C33800195C17;
-					};
-					0446C7782385D01000195C17 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0446C7632385D00E00195C17;
-					};
-					0446C7832385D01000195C17 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 0446C7632385D00E00195C17;
 					};
 					04FEE2B62386A8CC002446DA = {
-						CreatedOnToolsVersion = 11.2.1;
-					};
-					04FEE2BE2386A8CC002446DA = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 					04FEE2D22386AA89002446DA = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
-					04FEE2DA2386AA89002446DA = {
-						CreatedOnToolsVersion = 11.2.1;
-					};
 					04FEE2EE2386AAC1002446DA = {
-						CreatedOnToolsVersion = 11.2.1;
-					};
-					04FEE2F62386AAC1002446DA = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 					04FEE3092386AB22002446DA = {
@@ -1310,88 +1038,29 @@
 				04FEE2B62386A8CC002446DA /* RxRequester */,
 				04FEE2D22386AA89002446DA /* RxRequesterAlamofire */,
 				04FEE2EE2386AAC1002446DA /* RxRequesterMoya */,
-				0446C6372385B01100195C17 /* RxRequesterTests */,
-				0446C6422385B01200195C17 /* RxRequesterUITests */,
-				0446C6D82385C2B500195C17 /* XTests */,
-				0446C6E32385C2B500195C17 /* XUITests */,
-				0446C70C2385C2F500195C17 /* AlamoFireTests */,
-				0446C7172385C2F500195C17 /* AlamoFireUITests */,
-				0446C7402385C33A00195C17 /* MoyaTests */,
-				0446C74B2385C33A00195C17 /* MoyaUITests */,
-				0446C7782385D01000195C17 /* AlamofireTests */,
-				0446C7832385D01000195C17 /* AlamofireUITests */,
-				04FEE2BE2386A8CC002446DA /* CoreTests */,
-				04FEE2DA2386AA89002446DA /* AlamofireTests */,
-				04FEE2F62386AAC1002446DA /* MoyaTests */,
+				0433BF322389969B00293728 /* RxRequesterTests */,
+				0433BF4623899CE100293728 /* RxRequesterAlamofireTests */,
+				0433BF5523899CF000293728 /* RxRequesterMoyaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0446C6362385B01100195C17 /* Resources */ = {
+		0433BF312389969B00293728 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0446C6412385B01200195C17 /* Resources */ = {
+		0433BF4523899CE100293728 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0446C6D72385C2B500195C17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C6E22385C2B500195C17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C70B2385C2F500195C17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C7162385C2F500195C17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C73F2385C33A00195C17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C74A2385C33A00195C17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C7772385D01000195C17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C7822385D01000195C17 /* Resources */ = {
+		0433BF5423899CF000293728 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1405,13 +1074,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04FEE2BD2386A8CC002446DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04FEE2D12386AA89002446DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1419,21 +1081,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04FEE2D92386AA89002446DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04FEE2ED2386AAC1002446DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04FEE2F52386AAC1002446DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1528,23 +1176,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3160A786D3944C68F5175222 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxRequester-RxRequesterTests/Pods-RxRequester-RxRequesterTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxRequester-RxRequesterTests/Pods-RxRequester-RxRequesterTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxRequester-RxRequesterTests/Pods-RxRequester-RxRequesterTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		32564267472167B5974F29F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1589,50 +1220,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7BE4FB360C2F92B8E863697E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxRequester-RxRequesterUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		969897E6622D5C6491CFABF4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxRequester-RxRequesterTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9F334BADBCC1760DF9459531 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1648,23 +1235,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlamofireExample/Pods-AlamofireExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C63095AEAA879E0D69B1F9D5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxRequester-RxRequesterUITests/Pods-RxRequester-RxRequesterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxRequester-RxRequesterUITests/Pods-RxRequester-RxRequesterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxRequester-RxRequesterUITests/Pods-RxRequester-RxRequesterUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D4D6592190D6167F0AD656A5 /* [CP] Embed Pods Frameworks */ = {
@@ -1709,73 +1279,31 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0446C6342385B01100195C17 /* Sources */ = {
+		0433BF2F2389969B00293728 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0433BF3F2389973B00293728 /* RxRequesterTest.swift in Sources */,
+				0433BF362389969B00293728 /* RxRequesterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0446C63F2385B01200195C17 /* Sources */ = {
+		0433BF4323899CE100293728 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0433BF4A23899CE100293728 /* RxRequesterAlamofireTests.swift in Sources */,
+				0433BF6723899DE900293728 /* RxRequesterAlamofireTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0446C6D52385C2B500195C17 /* Sources */ = {
+		0433BF5223899CF000293728 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C6E02385C2B500195C17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C7092385C2F500195C17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C7142385C2F500195C17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C73D2385C33A00195C17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C7482385C33A00195C17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C7752385D01000195C17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0446C7802385D01000195C17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0433BF6223899D5A00293728 /* RxRequesterMoyaTest.swift in Sources */,
+				0433BF5923899CF000293728 /* RxRequesterMoyaTests.swift in Sources */,
+				0433BF6523899DA800293728 /* RxRequesterMoyaTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1797,14 +1325,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04FEE2BB2386A8CC002446DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04FEE2C52386A8CC002446DA /* CoreTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04FEE2CF2386AA89002446DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1814,14 +1334,6 @@
 				1A54F5BAAE11A23012D83FE0 /* AlamofireStatusCodeHandler.swift in Sources */,
 				1A54F37A14AC4ACA5D444525 /* AlamofireUnderlyingErrorHandler.swift in Sources */,
 				1A54F5229C28B9A5BDE59C57 /* AlamofireHandlers.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04FEE2D72386AA89002446DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04FEE2E12386AA89002446DA /* AlamofireTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1837,14 +1349,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04FEE2F32386AAC1002446DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04FEE2FD2386AAC1002446DA /* MoyaTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04FEE3062386AB22002446DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1856,6 +1360,7 @@
 				04FEE36E2386B282002446DA /* BadRequestHandler.swift in Sources */,
 				04FEE36D2386B282002446DA /* PostCell.swift in Sources */,
 				04FEE3692386B282002446DA /* PostsViewController.swift in Sources */,
+				0433BF6423899DA800293728 /* RxRequesterMoyaTest.swift in Sources */,
 				04FEE3802386B282002446DA /* NavigationController.swift in Sources */,
 				04FEE36B2386B282002446DA /* PostsBuilder.swift in Sources */,
 				04FEE3702386B282002446DA /* TimeoutHandler.swift in Sources */,
@@ -1871,7 +1376,6 @@
 				04FEE30D2386AB22002446DA /* AppDelegate.swift in Sources */,
 				04FEE3792386B282002446DA /* ActivityIndicatable.swift in Sources */,
 				04FEE3782386B282002446DA /* Reportable.swift in Sources */,
-				04FEE3742386B282002446DA /* PostsApi.swift in Sources */,
 				04FEE30F2386AB22002446DA /* SceneDelegate.swift in Sources */,
 				04FEE37F2386B282002446DA /* RootBuilder.swift in Sources */,
 			);
@@ -1912,6 +1416,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0433BF3A2389969B00293728 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FEE2B62386A8CC002446DA /* RxRequester */;
+			targetProxy = 0433BF392389969B00293728 /* PBXContainerItemProxy */;
+		};
+		0433BF4E23899CE200293728 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FEE2D22386AA89002446DA /* RxRequesterAlamofire */;
+			targetProxy = 0433BF4D23899CE200293728 /* PBXContainerItemProxy */;
+		};
+		0433BF5D23899CF000293728 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FEE2EE2386AAC1002446DA /* RxRequesterMoya */;
+			targetProxy = 0433BF5C23899CF000293728 /* PBXContainerItemProxy */;
+		};
 		04CF89CF2387392700E42FB2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 04FEE2B62386A8CC002446DA /* RxRequester */;
@@ -1942,21 +1461,6 @@
 			target = 04FEE2B62386A8CC002446DA /* RxRequester */;
 			targetProxy = 04CF89EC23873A1400E42FB2 /* PBXContainerItemProxy */;
 		};
-		04FEE2C22386A8CC002446DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 04FEE2B62386A8CC002446DA /* RxRequester */;
-			targetProxy = 04FEE2C12386A8CC002446DA /* PBXContainerItemProxy */;
-		};
-		04FEE2DE2386AA89002446DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 04FEE2D22386AA89002446DA /* RxRequesterAlamofire */;
-			targetProxy = 04FEE2DD2386AA89002446DA /* PBXContainerItemProxy */;
-		};
-		04FEE2FA2386AAC1002446DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 04FEE2EE2386AAC1002446DA /* RxRequesterMoya */;
-			targetProxy = 04FEE2F92386AAC1002446DA /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1971,6 +1475,108 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0433BF3C2389969B00293728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxRequesterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sha.RxRequesterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0433BF3D2389969B00293728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxRequesterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sha.RxRequesterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0433BF5023899CE200293728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxRequesterAlamofireTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sha.RxRequesterAlamofireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0433BF5123899CE200293728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxRequesterAlamofireTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sha.RxRequesterAlamofireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0433BF5F23899CF000293728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxRequesterMoyaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sha.RxRequesterMoyaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0433BF6023899CF000293728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxRequesterMoyaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sha.RxRequesterMoyaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		0446C64A2385B01200195C17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2085,394 +1691,6 @@
 			};
 			name = Release;
 		};
-		0446C6502385B01200195C17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E4ABC665A2BE9C28601636E /* Pods-RxRequester-RxRequesterTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RxRequesterTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.RxRequesterTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxRequester.app/RxRequester";
-			};
-			name = Debug;
-		};
-		0446C6512385B01200195C17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB7E952F150B724D33DFB595 /* Pods-RxRequester-RxRequesterTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RxRequesterTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.RxRequesterTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxRequester.app/RxRequester";
-			};
-			name = Release;
-		};
-		0446C6532385B01200195C17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E03F601C41F5760EDCC01A4 /* Pods-RxRequester-RxRequesterUITests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RxRequesterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.RxRequesterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RxRequester;
-			};
-			name = Debug;
-		};
-		0446C6542385B01200195C17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C02A567250BCD43A7B18D09 /* Pods-RxRequester-RxRequesterUITests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RxRequesterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.RxRequesterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RxRequester;
-			};
-			name = Release;
-		};
-		0446C6EF2385C2B500195C17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = XTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.XTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/X.app/X";
-			};
-			name = Debug;
-		};
-		0446C6F02385C2B500195C17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = XTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.XTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/X.app/X";
-			};
-			name = Release;
-		};
-		0446C6F22385C2B500195C17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = XUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.XUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = X;
-			};
-			name = Debug;
-		};
-		0446C6F32385C2B500195C17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = XUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.XUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = X;
-			};
-			name = Release;
-		};
-		0446C7232385C2F500195C17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlamoFireTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.AlamoFireTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlamoFire.app/AlamoFire";
-			};
-			name = Debug;
-		};
-		0446C7242385C2F500195C17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlamoFireTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.AlamoFireTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlamoFire.app/AlamoFire";
-			};
-			name = Release;
-		};
-		0446C7262385C2F500195C17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlamoFireUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.AlamoFireUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AlamoFire;
-			};
-			name = Debug;
-		};
-		0446C7272385C2F500195C17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlamoFireUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.AlamoFireUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AlamoFire;
-			};
-			name = Release;
-		};
-		0446C7572385C33A00195C17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MoyaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.MoyaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moya.app/Moya";
-			};
-			name = Debug;
-		};
-		0446C7582385C33A00195C17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MoyaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.MoyaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moya.app/Moya";
-			};
-			name = Release;
-		};
-		0446C75A2385C33A00195C17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MoyaUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.MoyaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Moya;
-			};
-			name = Debug;
-		};
-		0446C75B2385C33A00195C17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MoyaUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.MoyaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Moya;
-			};
-			name = Release;
-		};
-		0446C78F2385D01000195C17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlamofireTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.AlamofireTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alamofire.app/Alamofire";
-			};
-			name = Debug;
-		};
-		0446C7902385D01000195C17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlamofireTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.AlamofireTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alamofire.app/Alamofire";
-			};
-			name = Release;
-		};
-		0446C7922385D01000195C17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlamofireUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.AlamofireUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Alamofire;
-			};
-			name = Debug;
-		};
-		0446C7932385D01000195C17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlamofireUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.AlamofireUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Alamofire;
-			};
-			name = Release;
-		};
 		04FEE2C92386A8CC002446DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21E9594B46ECA4B3034EC10D /* Pods-RxRequester.debug.xcconfig */;
@@ -2539,42 +1757,6 @@
 			};
 			name = Release;
 		};
-		04FEE2CC2386A8CC002446DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CoreTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.CoreTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		04FEE2CD2386A8CC002446DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CoreTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.CoreTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		04FEE2E52386AA89002446DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1929AA761FAD8E2090CAB388 /* Pods-RxRequesterAlamofire.debug.xcconfig */;
@@ -2629,42 +1811,6 @@
 			};
 			name = Release;
 		};
-		04FEE2E82386AA89002446DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlamofireTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.AlamofireTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		04FEE2E92386AA89002446DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlamofireTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.AlamofireTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		04FEE3012386AAC1002446DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38C27D8B1F1AD100C55533FE /* Pods-RxRequesterMoya.debug.xcconfig */;
@@ -2716,42 +1862,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		04FEE3042386AAC1002446DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MoyaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.MoyaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		04FEE3052386AAC1002446DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MoyaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sha.MoyaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -2838,101 +1948,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0433BF3B2389969B00293728 /* Build configuration list for PBXNativeTarget "RxRequesterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0433BF3C2389969B00293728 /* Debug */,
+				0433BF3D2389969B00293728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0433BF4F23899CE200293728 /* Build configuration list for PBXNativeTarget "RxRequesterAlamofireTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0433BF5023899CE200293728 /* Debug */,
+				0433BF5123899CE200293728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0433BF5E23899CF000293728 /* Build configuration list for PBXNativeTarget "RxRequesterMoyaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0433BF5F23899CF000293728 /* Debug */,
+				0433BF6023899CF000293728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		0446C61D2385B00E00195C17 /* Build configuration list for PBXProject "RxRequester" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0446C64A2385B01200195C17 /* Debug */,
 				0446C64B2385B01200195C17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		0446C64F2385B01200195C17 /* Build configuration list for PBXNativeTarget "RxRequesterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0446C6502385B01200195C17 /* Debug */,
-				0446C6512385B01200195C17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		0446C6522385B01200195C17 /* Build configuration list for PBXNativeTarget "RxRequesterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0446C6532385B01200195C17 /* Debug */,
-				0446C6542385B01200195C17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		0446C6EE2385C2B500195C17 /* Build configuration list for PBXNativeTarget "XTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0446C6EF2385C2B500195C17 /* Debug */,
-				0446C6F02385C2B500195C17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		0446C6F12385C2B500195C17 /* Build configuration list for PBXNativeTarget "XUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0446C6F22385C2B500195C17 /* Debug */,
-				0446C6F32385C2B500195C17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		0446C7222385C2F500195C17 /* Build configuration list for PBXNativeTarget "AlamoFireTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0446C7232385C2F500195C17 /* Debug */,
-				0446C7242385C2F500195C17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		0446C7252385C2F500195C17 /* Build configuration list for PBXNativeTarget "AlamoFireUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0446C7262385C2F500195C17 /* Debug */,
-				0446C7272385C2F500195C17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		0446C7562385C33A00195C17 /* Build configuration list for PBXNativeTarget "MoyaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0446C7572385C33A00195C17 /* Debug */,
-				0446C7582385C33A00195C17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		0446C7592385C33A00195C17 /* Build configuration list for PBXNativeTarget "MoyaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0446C75A2385C33A00195C17 /* Debug */,
-				0446C75B2385C33A00195C17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		0446C78E2385D01000195C17 /* Build configuration list for PBXNativeTarget "AlamofireTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0446C78F2385D01000195C17 /* Debug */,
-				0446C7902385D01000195C17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		0446C7912385D01000195C17 /* Build configuration list for PBXNativeTarget "AlamofireUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0446C7922385D01000195C17 /* Debug */,
-				0446C7932385D01000195C17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -2946,15 +1993,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		04FEE2CB2386A8CC002446DA /* Build configuration list for PBXNativeTarget "CoreTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04FEE2CC2386A8CC002446DA /* Debug */,
-				04FEE2CD2386A8CC002446DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		04FEE2E42386AA89002446DA /* Build configuration list for PBXNativeTarget "RxRequesterAlamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2964,29 +2002,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		04FEE2E72386AA89002446DA /* Build configuration list for PBXNativeTarget "AlamofireTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04FEE2E82386AA89002446DA /* Debug */,
-				04FEE2E92386AA89002446DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		04FEE3002386AAC1002446DA /* Build configuration list for PBXNativeTarget "RxRequesterMoya" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04FEE3012386AAC1002446DA /* Debug */,
 				04FEE3022386AAC1002446DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		04FEE3032386AAC1002446DA /* Build configuration list for PBXNativeTarget "MoyaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04FEE3042386AAC1002446DA /* Debug */,
-				04FEE3052386AAC1002446DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

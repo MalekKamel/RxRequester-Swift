@@ -1,15 +1,14 @@
 //
-//  MoyaTests.swift
-//  MoyaTests
+//  RxRequesterAlamofireTest.swift
+//  RxRequesterAlamofireTests
 //
-//  Created by mac on 11/21/19.
+//  Created by mac on 11/23/19.
 //  Copyright © 2019 sha. All rights reserved.
 //
 
 import XCTest
-@testable import Moya
 
-class MoyaTests: XCTestCase {
+class RxRequesterAlamofireTest: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

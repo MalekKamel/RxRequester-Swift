@@ -1,5 +1,5 @@
 //
-//  FileManager+AlamofireTests.swift
+//  FileManager+RxReqeusterAlamofireTests.swift
 //
 //  Copyright (c) 2014 Alamofire Software Foundation (http://alamofire.org/)
 //

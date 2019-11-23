@@ -1,5 +1,5 @@
 //
-//  AFError+AlamofireTests.swift
+//  AFError+RxReqeusterAlamofireTests.swift
 //
 //  Copyright (c) 2014 Alamofire Software Foundation (http://alamofire.org/)
 //

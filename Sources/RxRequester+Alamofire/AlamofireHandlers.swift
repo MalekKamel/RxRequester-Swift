@@ -4,6 +4,7 @@
 //
 
 import Foundation
+
 class AlamofireHandlers {
     public static var errorHandlers: Array<AlamofireErrorHandler> = []
     public static var statusCodeHandlers: Array<AlamofireStatusCodeHandler> = []

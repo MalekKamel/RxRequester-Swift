@@ -12,7 +12,7 @@ class AlamofireDataSource: PostsDataSource {
 
     func all() -> Single<[PostResponse]> {
         Single.create(subscribe: { single in
-            guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts/101") else {
+            guard let url = URL(string: "https://jsonplaceholder.typicode.com/error/501") else {
                 let error = NSError (
                         domain: "Alamofire Error",
                         code: 100,

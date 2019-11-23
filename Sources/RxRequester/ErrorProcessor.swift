@@ -59,7 +59,7 @@ private func handle(nsError: NSError, presentable: Presentable?) -> Bool {
     return true
 }
 
-public func unknownError(error: Swift.Error, presentable: Presentable?) {
+private func unknownError(error: Swift.Error, presentable: Presentable?) {
     presentable?.onHandleErrorFailed(error: error)
 }
 

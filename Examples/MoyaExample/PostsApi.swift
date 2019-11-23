@@ -12,7 +12,7 @@ extension PostsApi: TargetType {
         switch self {
 
         case .posts:
-            return "/posts"
+            return "/error/404"
         }
     }
 

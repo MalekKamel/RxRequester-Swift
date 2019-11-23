@@ -12,11 +12,11 @@ extension ErrorProcessor: PluggableErrorProcessor {
     public func handle(error: Error, presentable: Presentable?) -> Bool {
         guard let afError = error as? AFError else { return false }
 
-        if let underlyingError = afError.underlyingError,
-           handle(underlyingError: underlyingError, presentable: presentable) { return false }
-
         func defaultHandling() -> Bool { handle(afError: afError, presentable: presentable) }
-        
+
+        if let underlyingError = afError.underlyingError,
+           handle(underlyingError: underlyingError, presentable: presentable) { return defaultHandling() }
+
         switch afError {
         
         case .responseValidationFailed(let reason):

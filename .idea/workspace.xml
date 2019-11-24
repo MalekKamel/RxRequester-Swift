@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4801185-1692-427a-8471-3f3713904545" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/Tests/RxRequesterTest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/RxRequesterTest.swift" afterDir="false" />
-    </list>
+    <list default="true" id="c4801185-1692-427a-8471-3f3713904545" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +25,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="CocoaPods" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -108,7 +105,7 @@
       <workItem from="1574453245387" duration="22000" />
       <workItem from="1574453306592" duration="4254000" />
       <workItem from="1574520150632" duration="6239000" />
-      <workItem from="1574609471858" duration="1901000" />
+      <workItem from="1574609471858" duration="2139000" />
     </task>
     <servers />
   </component>

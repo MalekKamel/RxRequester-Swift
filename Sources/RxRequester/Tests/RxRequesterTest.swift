@@ -11,8 +11,11 @@ import XCTest
 
 class RxRequesterTest: XCTestCase {
 
+    let requester: RxRequester!
+    let presentable: Presentable!
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        presentable = mock
+        requester = RxRequester()
     }
 
     override func tearDown() {

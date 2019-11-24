@@ -4,8 +4,6 @@
     <list default="true" id="c4801185-1692-427a-8471-3f3713904545" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Tests/RxRequesterAlamofireTest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Tests/RxRequesterAlamofireTest.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Moya/Tests/RxRequesterMoyaTest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/Tests/RxRequesterMoyaTest.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/RxRequester/Tests/RxRequesterTest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/RxRequesterTest.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,7 +108,7 @@
       <workItem from="1574453245387" duration="22000" />
       <workItem from="1574453306592" duration="4254000" />
       <workItem from="1574520150632" duration="6239000" />
-      <workItem from="1574609471858" duration="463000" />
+      <workItem from="1574609471858" duration="1901000" />
     </task>
     <servers />
   </component>

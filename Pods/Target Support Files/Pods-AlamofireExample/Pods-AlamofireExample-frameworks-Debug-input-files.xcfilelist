@@ -2,5 +2,3 @@ ${PODS_ROOT}/Target Support Files/Pods-AlamofireExample/Pods-AlamofireExample-fr
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
 ${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework
-${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
-${BUILT_PRODUCTS_DIR}/Result/Result.framework

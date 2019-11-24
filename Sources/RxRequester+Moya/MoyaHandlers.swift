@@ -6,7 +6,7 @@
 import Foundation
 
 public class MoyaHandlers {
-    public static var errorHandlers: Array<MoyaErrorHandler> = []
     public static var statusCodeHandlers: Array<MoyaStatusCodeHandler> = []
     public static var underlyingErrorHandlers: Array<MoyaUnderlyingErrorHandler> = []
+    public static var errorHandlers: Array<MoyaErrorHandler> = []
 }

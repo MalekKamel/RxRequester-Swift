@@ -4,11 +4,12 @@
 //
 
 import RxRequester
+import RxRequesterMoya
+import RxRequesterAlamofire
 
 class RxRequesterSetup {
 
     static func setup() {
-        RxRequester.httpErrorHandlers = [BadRequestHandler()]
         RxRequester.nsErrorHandlers = [ConnectivityHandler(), TimeoutHandler()]
         RxRequester.errorHandlers = []
         RxRequester.resumableHandlers = [UnauthorizedHandler()]

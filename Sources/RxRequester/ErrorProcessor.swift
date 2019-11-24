@@ -22,17 +22,6 @@ public class ErrorProcessor {
     }
 }
 
-private func handle(httpError: Swift.Error, presentable: Presentable?) {
-    let handler: HttpErrorHandler? = RxRequester.httpErrorHandlers.first(where: {
-        $0.canHandle(error: httpError as! HTTPURLResponse)
-    })
-    guard handler != nil else {
-        unknownError(error: httpError, presentable: presentable)
-        return
-    }
-    handler!.handle(error: httpError as! HTTPURLResponse, presentable: presentable)
-}
-
 private func handle(error: Swift.Error, presentable: Presentable?) -> Bool {
     let handler: ErrorHandler? = RxRequester.errorHandlers.first(where: {
         $0.canHandle(error: error)
@@ -45,10 +34,6 @@ private func handle(error: Swift.Error, presentable: Presentable?) -> Bool {
 }
 
 private func handle(nsError: NSError, presentable: Presentable?) -> Bool {
-    if nsError.domain != NSURLErrorDomain {
-        return false
-    }
-
     let handler: NSErrorHandler? = RxRequester.nsErrorHandlers.first(where: {
         $0.canHandle(error: nsError)
     })

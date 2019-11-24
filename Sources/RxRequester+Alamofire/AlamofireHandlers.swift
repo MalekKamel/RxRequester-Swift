@@ -6,7 +6,7 @@
 import Foundation
 
 class AlamofireHandlers {
-    public static var errorHandlers: Array<AlamofireErrorHandler> = []
     public static var statusCodeHandlers: Array<AlamofireStatusCodeHandler> = []
     public static var underlyingErrorHandlers: Array<AlamofireUnderlyingErrorHandler> = []
+    public static var errorHandlers: Array<AlamofireErrorHandler> = []
 }

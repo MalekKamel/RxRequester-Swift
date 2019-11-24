@@ -13,10 +13,9 @@ public typealias CompletableRequest = () -> Completable
 public class RxRequester {
     var presentable: Presentable?
 
-    public static var httpErrorHandlers: Array<HttpErrorHandler> = []
     public static var nsErrorHandlers: Array<NSErrorHandler> = []
-    public static var errorHandlers: Array<ErrorHandler> = []
     public static var resumableHandlers: Array<ResumableHandler> = []
+    public static var errorHandlers: Array<ErrorHandler> = []
 
     public init(presentable: Presentable) {
         self.presentable = presentable

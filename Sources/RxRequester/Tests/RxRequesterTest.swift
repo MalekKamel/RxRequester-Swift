@@ -7,31 +7,48 @@
 //
 
 import XCTest
+import RxSwift
+import RxTest
+import RxBlocking
 @testable import RxRequester
 
 class RxRequesterTest: XCTestCase {
 
-    let requester: RxRequester!
-    let presentable: Presentable!
+    var requester: RxRequester!
+    var presentable: MockPresentable!
+    var scheduler: TestScheduler!
+
     override func setUp() {
-        presentable = mock
-        requester = RxRequester()
+        scheduler = TestScheduler(initialClock: 0)
+        presentable = MockPresentable()
+        requester = RxRequester(presentable: presentable)
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testRequest_succeedsAndLoadingToggles() {
+        let result = try! requester.request(request: { Observable.just("foo") })
+                .toBlocking()
+                .single()
+        XCTAssertEqual(result, "foo")
+        XCTAssert(presentable.isShowLoadingCalled)
+        XCTAssert(presentable.isHideLoadingCalled)
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testRequestSingle_succeedsAndLoadingToggles() {
+        let result = try! requester.request(singleRequest: { Single.just("foo") })
+                .toBlocking()
+                .single()
+        XCTAssertEqual(result, "foo")
+        XCTAssert(presentable.isShowLoadingCalled)
+        XCTAssert(presentable.isHideLoadingCalled)
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testRequestCompletable_succeedsAndLoadingToggles() {
+        let result = try! requester.request(singleRequest: { Single.just("foo") })
+                .toBlocking()
+                .single()
+        XCTAssertEqual(result, "foo")
+        XCTAssert(presentable.isShowLoadingCalled)
+        XCTAssert(presentable.isHideLoadingCalled)
     }
 
 }

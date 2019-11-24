@@ -6,7 +6,7 @@
 import Foundation
 import RxRequester
 
-struct BadRequestHandler: HttpErrorHandler {
+struct BadRequestHandler: HTTPURLResponseHandler {
     var supportedErrors: [Int] = [400]
 
     func handle(error: HTTPURLResponse, presentable: Presentable?) {

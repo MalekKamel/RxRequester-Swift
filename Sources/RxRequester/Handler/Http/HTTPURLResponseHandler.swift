@@ -5,13 +5,13 @@
 
 import Foundation
 
-public protocol HttpErrorHandler {
+public protocol HTTPURLResponseHandler {
     var supportedErrors: [Int] { get set }
     func canHandle(error: HTTPURLResponse) -> Bool
     func handle(error: HTTPURLResponse, presentable: Presentable?)
 }
 
-public extension HttpErrorHandler {
+public extension HTTPURLResponseHandler {
     func canHandle(error: HTTPURLResponse) -> Bool {
        let supportedError = supportedErrors.first(where: { $0 == error.statusCode })
         return supportedError != nil

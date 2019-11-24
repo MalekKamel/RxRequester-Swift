@@ -6,25 +6,14 @@
 import Foundation
 import RxSwift
 
-protocol SchedulerProvider {
+public protocol SchedulerProvider {
     var observeOn: ImmediateSchedulerType { get }
     var subscribeOn: ImmediateSchedulerType { get }
 }
 
-class DefSchedulerProvider: SchedulerProvider {
+public class DefSchedulerProvider: SchedulerProvider {
     static let shared = DefSchedulerProvider()
 
-    var observeOn: ImmediateSchedulerType = MainScheduler.instance
-    var subscribeOn: ImmediateSchedulerType = ConcurrentDispatchQueueScheduler(qos: .background)
-}
-
-class TestSchedulerProvider: SchedulerProvider {
-    static let shared = TestSchedulerProvider()
-
-    var observeOn: ImmediateSchedulerType = MainScheduler.instance
-    var subscribeOn: ImmediateSchedulerType = ConcurrentDispatchQueueScheduler(qos: .background)
-}
-
-func defaultSubscriber() -> SchedulerProvider {
-      DefSchedulerProvider.shared
+    public var observeOn: ImmediateSchedulerType = MainScheduler.instance
+    public var subscribeOn: ImmediateSchedulerType = ConcurrentDispatchQueueScheduler(qos: .background)
 }

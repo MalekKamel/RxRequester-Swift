@@ -3,9 +3,10 @@
 // Copyright (c) 2019 sha. All rights reserved.
 //
 
+import Alamofire
 import RxRequester
 
 public protocol AlamofireErrorHandler {
-    func canHandle(error: Swift.Error) -> Bool
-    func handle(error: Swift.Error, presentable: Presentable?)
+    func canHandle(error: AFError) -> Bool
+    func handle(error: AFError, presentable: Presentable?)
 }

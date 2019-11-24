@@ -1,9 +1,20 @@
 # platform :ios, '9.0'
 
-def examples_pods
-  pod 'RxSwift', '~> 4.0'
-  pod 'SwiftMessages', '6.0.1'
+def alamofire
   pod 'Alamofire', '~> 4.1'
+end
+
+def rxSwift
+  pod 'RxSwift', '~> 4.0'
+end
+
+def moya
+  pod 'Moya/RxSwift', '~> 13.0.0'
+end
+
+def examples_pods
+  rxSwift
+  pod 'SwiftMessages', '6.0.1'
 end
 
 def test_pods
@@ -13,19 +24,22 @@ def test_pods
   pod 'Nimble'
 end
 
+
 target 'AlamofireExample' do
   use_frameworks!
   examples_pods
+  alamofire
 end
 
 target 'MoyaExample' do
   use_frameworks!
   examples_pods
+  moya
 end
 
 target 'RxRequester' do
   use_frameworks!
-  pod 'RxSwift', '~> 4.0'
+  rxSwift
 
   target 'RxRequesterTests' do
     test_pods
@@ -35,7 +49,7 @@ end
 
 target 'RxRequesterAlamofire' do
   use_frameworks!
-  pod 'Alamofire', '~> 4.1'
+  alamofire
 
   target 'RxRequesterAlamofireTests' do
     test_pods
@@ -45,7 +59,7 @@ end
 
 target 'RxRequesterMoya' do
   use_frameworks!
-  pod 'Moya/RxSwift', '~> 13.0.0'
+  moya
 
   target 'RxRequesterMoyaTests' do
     test_pods

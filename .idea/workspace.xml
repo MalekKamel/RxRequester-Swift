@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4801185-1692-427a-8471-3f3713904545" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RxRequesterAlamofireTests/RxRequesterAlamofireTests.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxRequesterMoyaTests/RxRequesterMoyaTests.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxRequesterTests/RxRequesterTests.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Carthage/Checkouts/Alamofire/Tests/AFError+AlamofireTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Carthage/Checkouts/Alamofire/Tests/AFError+AlamofireTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Carthage/Checkouts/Alamofire/Tests/FileManager+AlamofireTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Carthage/Checkouts/Alamofire/Tests/FileManager+AlamofireTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Shared/Data/Posts/PostsApi.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/PostsApi.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RxRequester.xcodeproj/xcshareddata/xcschemes/Requester.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequester.xcodeproj/xcshareddata/xcschemes/Requester.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/AlamofireHandlers.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/AlamofireHandlers.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/AlamofireTests/AlamofireTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Tests/RxRequesterAlamofireTest.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/AlamofireTests/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequesterAlamofireTests/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/ErrorProcessor+Alamofire.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/ErrorProcessor+Alamofire.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Moya/MoyaTests/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequesterMoyaTests/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Moya/MoyaTests/MoyaTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/Tests/RxRequesterMoyaTest.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/CoreTests/CoreTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/RxRequesterTest.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/CoreTests/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequesterTests/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/ErrorProcessor.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/ErrorProcessor.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Tests/RxRequesterAlamofireTest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Tests/RxRequesterAlamofireTest.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Moya/Tests/RxRequesterMoyaTest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/Tests/RxRequesterMoyaTest.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/Tests/RxRequesterTest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/RxRequesterTest.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +14,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_B048D844-FE9F-40D1-8222-E39FA49FB094" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -62,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="XCTest.RxRequesterAlamofireTests.testExample">
+  <component name="RunManager" selected="XCTest.All in RxRequesterMoyaTests">
     <configuration name="AlamofireExample" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="AlamofireExample" CONFIG_NAME="Debug" SCHEME_NAME="AlamofireExample" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="RxRequester" RUN_TARGET_NAME="AlamofireExample" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
@@ -81,12 +68,17 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlamofireTests.testExample" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="RxRequesterAlamofireTests" CONFIG_NAME="Debug" SCHEME_NAME="AlamofireTests.testExample" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="AlamofireTests" TEST_METHOD="testExample" TEST_MODE="SUITE_TEST">
+    <configuration name="All in RxRequesterAlamofireTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" nameIsGenerated="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="RxRequesterAlamofireTests" CONFIG_NAME="Debug" SCHEME_NAME="All in RxRequesterAlamofireTests" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST" XCODE_TESTS_HASH_CODE="0">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RxRequesterAlamofireTests.testExample" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" SCHEME_NAME="RxRequesterAlamofireTests.testExample" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="RxRequesterAlamofireTests" TEST_METHOD="testExample" TEST_MODE="SUITE_TEST">
+    <configuration name="All in RxRequesterMoyaTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" nameIsGenerated="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="RxRequesterMoyaTests" CONFIG_NAME="Debug" SCHEME_NAME="All in RxRequesterMoyaTests" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST" XCODE_TESTS_HASH_CODE="0">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in RxRequesterTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" nameIsGenerated="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="RxRequesterTests" CONFIG_NAME="Debug" SCHEME_NAME="All in RxRequesterTests" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST" XCODE_TESTS_HASH_CODE="0">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -97,15 +89,10 @@
       <item itemvalue="Application.Requester" />
       <item itemvalue="Application.RxReqeusterAlamofire" />
       <item itemvalue="Application.RxReqeusterMoya" />
-      <item itemvalue="XCTest.AlamofireTests.testExample" />
-      <item itemvalue="XCTest.RxRequesterAlamofireTests.testExample" />
+      <item itemvalue="XCTest.All in RxRequesterTests" />
+      <item itemvalue="XCTest.All in RxRequesterAlamofireTests" />
+      <item itemvalue="XCTest.All in RxRequesterMoyaTests" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="XCTest.RxRequesterAlamofireTests.testExample" />
-        <item itemvalue="XCTest.AlamofireTests.testExample" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -122,7 +109,8 @@
       <workItem from="1574434953821" duration="14768000" />
       <workItem from="1574453245387" duration="22000" />
       <workItem from="1574453306592" duration="4254000" />
-      <workItem from="1574520150632" duration="5323000" />
+      <workItem from="1574520150632" duration="6239000" />
+      <workItem from="1574609471858" duration="463000" />
     </task>
     <servers />
   </component>

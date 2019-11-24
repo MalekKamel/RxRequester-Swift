@@ -14,7 +14,6 @@
 		0433BF4C23899CE200293728 /* RxRequesterAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2D32386AA89002446DA /* RxRequesterAlamofire.framework */; };
 		0433BF5923899CF000293728 /* RxRequesterMoyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF5823899CF000293728 /* RxRequesterMoyaTests.swift */; };
 		0433BF5B23899CF000293728 /* RxRequesterMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2EF2386AAC1002446DA /* RxRequesterMoya.framework */; };
-		0433BF6223899D5A00293728 /* RxRequesterMoyaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF6123899D5A00293728 /* RxRequesterMoyaTest.swift */; };
 		0433BF6423899DA800293728 /* RxRequesterMoyaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF6323899DA800293728 /* RxRequesterMoyaTest.swift */; };
 		0433BF6523899DA800293728 /* RxRequesterMoyaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF6323899DA800293728 /* RxRequesterMoyaTest.swift */; };
 		0433BF6723899DE900293728 /* RxRequesterAlamofireTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF6623899DE900293728 /* RxRequesterAlamofireTest.swift */; };
@@ -258,7 +257,6 @@
 		0433BF5623899CF000293728 /* RxRequesterMoyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxRequesterMoyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0433BF5823899CF000293728 /* RxRequesterMoyaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRequesterMoyaTests.swift; sourceTree = "<group>"; };
 		0433BF5A23899CF000293728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0433BF6123899D5A00293728 /* RxRequesterMoyaTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RxRequesterMoyaTest.swift; path = "Sources/RxRequester+Moya/Tests/RxRequesterMoyaTest.swift"; sourceTree = "<group>"; };
 		0433BF6323899DA800293728 /* RxRequesterMoyaTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxRequesterMoyaTest.swift; sourceTree = "<group>"; };
 		0433BF6623899DE900293728 /* RxRequesterAlamofireTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRequesterAlamofireTest.swift; sourceTree = "<group>"; };
 		0468CEB323882E8D005415EC /* AlamofireDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlamofireDataSource.swift; path = /Users/mac/Desktop/iOS/projects/lib/RxRequester/Examples/AlamofireExample/AlamofireDataSource.swift; sourceTree = "<absolute>"; };
@@ -482,7 +480,6 @@
 		0446C6192385B00E00195C17 = {
 			isa = PBXGroup;
 			children = (
-				0433BF6123899D5A00293728 /* RxRequesterMoyaTest.swift */,
 				0446C75C2385C60D00195C17 /* Sources */,
 				0446C6242385B00E00195C17 /* Examples */,
 				0433BF342389969B00293728 /* RxRequesterTests */,
@@ -1301,7 +1298,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0433BF6223899D5A00293728 /* RxRequesterMoyaTest.swift in Sources */,
 				0433BF5923899CF000293728 /* RxRequesterMoyaTests.swift in Sources */,
 				0433BF6523899DA800293728 /* RxRequesterMoyaTest.swift in Sources */,
 			);

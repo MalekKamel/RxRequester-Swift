@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import RxRequester
 
 class RxRequesterTest: XCTestCase {
 

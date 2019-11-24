@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import RxRequesterAlamofire
 
 class RxRequesterAlamofireTest: XCTestCase {
 

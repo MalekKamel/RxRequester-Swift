@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import RxRequesterMoya
 
 class RxRequesterMoyaTest: XCTestCase {
 

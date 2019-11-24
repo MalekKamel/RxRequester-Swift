@@ -13,7 +13,6 @@ import RxBlocking
 @testable import RxRequester
 
 class RxRequesterTest: XCTestCase {
-
     var requester: RxRequester!
     var presentable: MockPresentable!
     var scheduler: TestScheduler!

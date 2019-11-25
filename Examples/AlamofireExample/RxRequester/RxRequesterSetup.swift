@@ -15,7 +15,7 @@ class RxRequesterSetup {
         RxRequester.resumableHandlers = [UnauthorizedHandler()]
 
         // Alamofire Handlers
-        AlamofireHandlers.statusCodeHandlers = [BadRequestHandler()]
+        AlamofireHandlers.statusCodeHandlers = [NotFoundHandler()]
         AlamofireHandlers.underlyingErrorHandlers = [MyUnderlyingErrorHandler()]
         AlamofireHandlers.errorHandlers = [JsonSerializationFailedHandler()]
     }

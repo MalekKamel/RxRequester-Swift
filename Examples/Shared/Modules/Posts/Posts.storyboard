@@ -10,7 +10,7 @@
         <!--Posts View Controller-->
         <scene sceneID="bE7-DK-avh">
             <objects>
-                <viewController id="adG-9N-UDP" customClass="PostsViewController" customModule="RxRequester_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="adG-9N-UDP" customClass="PostsViewController" customModule="AlamofireExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Rg-tk-P7r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,13 +19,27 @@
                                 <rect key="frame" x="20" y="44" width="374" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIb-6w-5T1">
+                                <rect key="frame" x="334" y="782" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="KC0-yV-Cve"/>
+                                    <constraint firstAttribute="width" constant="60" id="a8Q-bN-GRw"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Plus"/>
+                                <connections>
+                                    <action selector="showOptions:" destination="adG-9N-UDP" eventType="touchUpInside" id="TpB-Z1-PG6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RuZ-7D-FM5" firstAttribute="bottom" secondItem="4OS-GG-3kl" secondAttribute="bottom" id="2wG-v7-NWw"/>
-                            <constraint firstItem="4OS-GG-3kl" firstAttribute="trailing" secondItem="RuZ-7D-FM5" secondAttribute="trailing" constant="20" id="6Xn-XT-sjo"/>
-                            <constraint firstItem="RuZ-7D-FM5" firstAttribute="top" secondItem="4OS-GG-3kl" secondAttribute="top" id="M4V-jb-PM1"/>
-                            <constraint firstItem="RuZ-7D-FM5" firstAttribute="leading" secondItem="4OS-GG-3kl" secondAttribute="leading" constant="20" id="nU4-Uo-Bnc"/>
+                            <constraint firstItem="RuZ-7D-FM5" firstAttribute="leading" secondItem="4OS-GG-3kl" secondAttribute="leading" constant="20" id="5BO-Xm-xGK"/>
+                            <constraint firstItem="RuZ-7D-FM5" firstAttribute="bottom" secondItem="4OS-GG-3kl" secondAttribute="bottom" id="Hnq-1C-fUK"/>
+                            <constraint firstItem="4OS-GG-3kl" firstAttribute="trailing" secondItem="OIb-6w-5T1" secondAttribute="trailing" constant="20" id="JPL-hZ-mQB"/>
+                            <constraint firstItem="RuZ-7D-FM5" firstAttribute="top" secondItem="4OS-GG-3kl" secondAttribute="top" id="PHc-WV-2Dw"/>
+                            <constraint firstItem="4OS-GG-3kl" firstAttribute="trailing" secondItem="OIb-6w-5T1" secondAttribute="trailing" constant="20" id="TW9-kP-T49"/>
+                            <constraint firstItem="4OS-GG-3kl" firstAttribute="trailing" secondItem="RuZ-7D-FM5" secondAttribute="trailing" constant="20" id="V5C-xP-zDq"/>
+                            <constraint firstItem="OIb-6w-5T1" firstAttribute="bottom" secondItem="4OS-GG-3kl" secondAttribute="bottom" constant="-20" id="erW-b0-vhB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4OS-GG-3kl"/>
                     </view>
@@ -38,4 +52,7 @@
             <point key="canvasLocation" x="-265.21739130434787" y="119.86607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Plus" width="512" height="512"/>
+    </resources>
 </document>

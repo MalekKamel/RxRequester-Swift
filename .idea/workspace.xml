@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4801185-1692-427a-8471-3f3713904545" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/Handlers/BadRequestHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/Handlers/JsonSerializationFailedHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/Handlers/MyUnderlyingErrorHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/Handlers/BadRequestHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/Handlers/EncodableMappingErrorHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/Handlers/MyUnderlyingErrorHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/RxRequesterSetup.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/Shared/RxRequester/Handlers/MyErrorHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Shared/Assets.xcassets/Plus.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Shared/Assets.xcassets/Plus.imageset/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Shared/Data/Defaults/Defaults.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Shared/Data/Endpoint.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Shared/RxRequester/BadRequestHandler.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Shared/RxRequester/ConnectivityHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/RxRequester/Handlers/ConnectivityHandler.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Shared/RxRequester/RxRequesterSetup.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/RxRequesterSetup.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Shared/RxRequester/TimeoutHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/RxRequester/Handlers/TimeoutHandler.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Shared/RxRequester/UnauthorizedHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/RxRequester/Handlers/UnauthorizedHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/Handlers/BadRequestHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/Handlers/NotFoundHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/RxRequesterSetup.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/RxRequesterSetup.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/MoyaExample/MoyaDataSource.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/MoyaDataSource.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/MoyaExample/PostsApi.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/PostsApi.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/Handlers/BadRequestHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/Handlers/NotFoundHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/RxRequesterSetup.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/RxRequesterSetup.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Shared/Modules/Posts/Posts.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/Modules/Posts/Posts.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Shared/Modules/Posts/PostsViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/Modules/Posts/PostsViewController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/AlamofireHandlers.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/AlamofireHandlers.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/Tests/Handlers/MyErrorHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/Handlers/MyErrorHandler.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +34,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="AlamofireExample" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="AlamofireExample,,,MoyaExample" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/RxRequester+Moya/Handler" />
@@ -163,7 +161,7 @@
       <workItem from="1574453306592" duration="4254000" />
       <workItem from="1574520150632" duration="6239000" />
       <workItem from="1574609471858" duration="17725000" />
-      <workItem from="1574693271832" duration="2549000" />
+      <workItem from="1574693271832" duration="9813000" />
     </task>
     <servers />
   </component>
@@ -190,26 +188,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift</url>
-          <line>34</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift</url>
-          <line>35</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift</url>
-          <line>36</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Sources/RxRequester/ErrorProcessor.swift</url>
-          <line>13</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Sources/RxRequester/Tests/Handlers/ConnectivityHandler.swift</url>
           <line>16</line>
           <option name="timeStamp" value="15" />
@@ -218,16 +196,6 @@
           <url>file://$PROJECT_DIR$/Sources/RxRequester/Tests/MockPresentable.swift</url>
           <line>16</line>
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Sources/RxRequester/ErrorProcessor.swift</url>
-          <line>36</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Sources/RxRequester/ErrorProcessor.swift</url>
-          <line>37</line>
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

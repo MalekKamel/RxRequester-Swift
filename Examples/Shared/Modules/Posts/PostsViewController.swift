@@ -11,6 +11,7 @@ final class PostsViewController: UIViewController, ViewControllerProtocol {
     var list: [Post] = []
     private let disposeBag = DisposeBag()
 
+  
     @IBOutlet weak var tableView: UITableView!{
         didSet {
             tableView.register(UINib(nibName: "PostCell", bundle: nil), forCellReuseIdentifier: "PostCell")
@@ -44,6 +45,33 @@ extension PostsViewController: UITableViewDataSource {
         return cell
     }
 
+}
+
+// MARK: Options
+extension PostsViewController {
+    
+    @IBAction func showOptions(_ sender: UIButton) {
+        let loadPostsAction = UIAlertAction(title: "Load Posts", style: .default) {
+            [weak self] alert -> Void in
+            Defaults.shared.endpoint = .posts
+            self?.loadPosts()
+        }
+        let error404Action = UIAlertAction(title: "404 Error", style: .default){
+            [weak self] alert -> Void in
+            Defaults.shared.endpoint = .error404
+            self?.loadPosts()
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel)
+
+        let alertController = UIAlertController(
+                title: title,
+                message: "Options",
+                preferredStyle: .actionSheet
+        )
+
+        [loadPostsAction, error404Action, cancel].forEach { alertController.addAction($0) }
+        present(alertController, animated: true)
+    }
 }
 
 

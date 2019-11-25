@@ -100,12 +100,13 @@
 		04FEE37F2386B282002446DA /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3662386B282002446DA /* RootBuilder.swift */; };
 		04FEE3802386B282002446DA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3672386B282002446DA /* NavigationController.swift */; };
 		062369DFCC3959E796417B9C /* Pods_RxRequesterMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B4C56DCF71458C98F81BC /* Pods_RxRequesterMoya.framework */; };
+		1A54F0365A3335AF6C87A143 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6B97FBF01FA29DBE52D /* Endpoint.swift */; };
 		1A54F08712B1CBB8C21E58AD /* TimeoutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F7B0FAB4E1A009DBB877 /* TimeoutHandler.swift */; };
 		1A54F26077D18114273C19A2 /* MoyaErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F061865F7D5634FE848E /* MoyaErrorHandler.swift */; };
 		1A54F34369A72B447E5A7B38 /* MoyaHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F0136DE4771DAA723A2D /* MoyaHandlers.swift */; };
 		1A54F37A14AC4ACA5D444525 /* AlamofireUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FD1D0C414423DE26D555 /* AlamofireUnderlyingErrorHandler.swift */; };
 		1A54F3EBE6263D373D23D735 /* MyErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FD4911B301576FF61C3D /* MyErrorHandler.swift */; };
-		1A54F3FE24245D5A62E83010 /* BadRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FB70AA5150694495292C /* BadRequestHandler.swift */; };
+		1A54F3FE24245D5A62E83010 /* NotFoundHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FB70AA5150694495292C /* NotFoundHandler.swift */; };
 		1A54F410D34FBCB12387363A /* JsonSerializationFailedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6C96103C74258016B2D /* JsonSerializationFailedHandler.swift */; };
 		1A54F5229C28B9A5BDE59C57 /* AlamofireHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F434A86AA243B3097BF5 /* AlamofireHandlers.swift */; };
 		1A54F57D808266198DECDF9E /* UnauthorizedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F9CD2C54CADC038CD62E /* UnauthorizedHandler.swift */; };
@@ -114,22 +115,25 @@
 		1A54F5FBAF3E5CD1233AF4FE /* RxRequesterSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F1CBF6A9ABF85C3493D4 /* RxRequesterSetup.swift */; };
 		1A54F64290CD534D90DF92D0 /* EncodableMappingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F1110F9EF4E18FCE26B7 /* EncodableMappingErrorHandler.swift */; };
 		1A54F655C5674B344B474A6E /* MoyaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FBCDAF3CA744AA9F3262 /* MoyaTest.swift */; };
+		1A54F7570C4990554A6B220A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6B97FBF01FA29DBE52D /* Endpoint.swift */; };
 		1A54F779312A5A27BBBE3388 /* MoyaStatusCodeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FA859F50F83A1F59A30B /* MoyaStatusCodeHandler.swift */; };
 		1A54F8C1CF6CE9DE27062CE4 /* RxRequesterSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FF4F5FCC4EAD58FEB37E /* RxRequesterSetup.swift */; };
 		1A54F8EA0CEFFBDD5BAF163A /* MyUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FA1AB182E042B981331A /* MyUnderlyingErrorHandler.swift */; };
 		1A54F9249DC1F39BAB5089C5 /* JsonSerializationFailedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FB07390D518775CDA293 /* JsonSerializationFailedHandler.swift */; };
+		1A54F96FF8DA3A5B0BF3C37D /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F97DFBA0EF14A6929943 /* Defaults.swift */; };
 		1A54FA5F97E4BC0D6CA66F9D /* MyUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FA686F63820FBEBF00DA /* MyUnderlyingErrorHandler.swift */; };
 		1A54FAA8223048F92411D29D /* ConnectivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F379865E14E428051B13 /* ConnectivityHandler.swift */; };
 		1A54FAE44EEBF5A9FE5862A8 /* EncodableMappingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FF9789B7138CD734C26E /* EncodableMappingErrorHandler.swift */; };
 		1A54FB9C455A7E15D36FEAAA /* MyErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F0B93FFDC435982AC25C /* MyErrorHandler.swift */; };
 		1A54FC5236FB7C18964D17D1 /* MyErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FD4911B301576FF61C3D /* MyErrorHandler.swift */; };
 		1A54FCE122CC69FB10FB5697 /* ConnectivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F379865E14E428051B13 /* ConnectivityHandler.swift */; };
+		1A54FD241DC09C8155011A14 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F97DFBA0EF14A6929943 /* Defaults.swift */; };
 		1A54FD7F4E6D0B71EAC64642 /* TimeoutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F7B0FAB4E1A009DBB877 /* TimeoutHandler.swift */; };
 		1A54FE16A131E5D83D341E88 /* MockPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6ADB38F4C972234511C /* MockPresentable.swift */; };
 		1A54FF280033E75A18076FCF /* AlamofireErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6B794E5BE536F248527 /* AlamofireErrorHandler.swift */; };
 		1A54FF6259BD59BB8A988070 /* MyUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FA25D46EFFD5A46A85DC /* MyUnderlyingErrorHandler.swift */; };
 		1A54FF7A7F22711C58C91FF4 /* UnauthorizedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F9CD2C54CADC038CD62E /* UnauthorizedHandler.swift */; };
-		1A54FFCEC8746CA2F1B245D9 /* BadRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F46DCDE3D5B525D4D2C5 /* BadRequestHandler.swift */; };
+		1A54FFCEC8746CA2F1B245D9 /* NotFoundHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F46DCDE3D5B525D4D2C5 /* NotFoundHandler.swift */; };
 		24F3FD7709E9B82B439EA04F /* Pods_RxRequesterAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BA80F17B54B42523875A74 /* Pods_RxRequesterAlamofire.framework */; };
 		38C93CE539D645267C6B096F /* Pods_RxRequesterAlamofire_RxRequesterAlamofireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8F0CC71B253F748CBA64C2 /* Pods_RxRequesterAlamofire_RxRequesterAlamofireTests.framework */; };
 		534D24D3D5D6894477D87FB3 /* Pods_RxRequesterMoya_RxRequesterMoyaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74CF4E1DB6095DCEAA8EA58 /* Pods_RxRequesterMoya_RxRequesterMoyaTests.framework */; };
@@ -347,12 +351,14 @@
 		1A54F1CBF6A9ABF85C3493D4 /* RxRequesterSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxRequesterSetup.swift; sourceTree = "<group>"; };
 		1A54F379865E14E428051B13 /* ConnectivityHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityHandler.swift; sourceTree = "<group>"; };
 		1A54F434A86AA243B3097BF5 /* AlamofireHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHandlers.swift; sourceTree = "<group>"; };
-		1A54F46DCDE3D5B525D4D2C5 /* BadRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadRequestHandler.swift; sourceTree = "<group>"; };
+		1A54F46DCDE3D5B525D4D2C5 /* NotFoundHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotFoundHandler.swift; sourceTree = "<group>"; };
 		1A54F6ADB38F4C972234511C /* MockPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPresentable.swift; sourceTree = "<group>"; };
 		1A54F6B794E5BE536F248527 /* AlamofireErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireErrorHandler.swift; sourceTree = "<group>"; };
+		1A54F6B97FBF01FA29DBE52D /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		1A54F6C96103C74258016B2D /* JsonSerializationFailedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializationFailedHandler.swift; sourceTree = "<group>"; };
 		1A54F7B0FAB4E1A009DBB877 /* TimeoutHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeoutHandler.swift; sourceTree = "<group>"; };
 		1A54F8153D8039499673AEB2 /* MyUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
+		1A54F97DFBA0EF14A6929943 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		1A54F9CD2C54CADC038CD62E /* UnauthorizedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnauthorizedHandler.swift; sourceTree = "<group>"; };
 		1A54FA1AB182E042B981331A /* MyUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
 		1A54FA25D46EFFD5A46A85DC /* MyUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
@@ -360,7 +366,7 @@
 		1A54FA859F50F83A1F59A30B /* MoyaStatusCodeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaStatusCodeHandler.swift; sourceTree = "<group>"; };
 		1A54FAACF86B471BE4A4185B /* AlamofireStatusCodeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireStatusCodeHandler.swift; sourceTree = "<group>"; };
 		1A54FB07390D518775CDA293 /* JsonSerializationFailedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializationFailedHandler.swift; sourceTree = "<group>"; };
-		1A54FB70AA5150694495292C /* BadRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadRequestHandler.swift; sourceTree = "<group>"; };
+		1A54FB70AA5150694495292C /* NotFoundHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotFoundHandler.swift; sourceTree = "<group>"; };
 		1A54FBCDAF3CA744AA9F3262 /* MoyaTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaTest.swift; sourceTree = "<group>"; };
 		1A54FD1D0C414423DE26D555 /* AlamofireUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
 		1A54FD4911B301576FF61C3D /* MyErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyErrorHandler.swift; sourceTree = "<group>"; };
@@ -765,6 +771,8 @@
 			children = (
 				04FEE3562386B282002446DA /* Posts */,
 				04FEE35A2386B282002446DA /* Model */,
+				1A54F47C0FDB67A86067F5F6 /* Defaults */,
+				1A54F6B97FBF01FA29DBE52D /* Endpoint.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -858,10 +866,18 @@
 			path = Handlers;
 			sourceTree = "<group>";
 		};
+		1A54F47C0FDB67A86067F5F6 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				1A54F97DFBA0EF14A6929943 /* Defaults.swift */,
+			);
+			path = Defaults;
+			sourceTree = "<group>";
+		};
 		1A54F5B8D67CDE742BD833AE /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
-				1A54F46DCDE3D5B525D4D2C5 /* BadRequestHandler.swift */,
+				1A54F46DCDE3D5B525D4D2C5 /* NotFoundHandler.swift */,
 				1A54FA686F63820FBEBF00DA /* MyUnderlyingErrorHandler.swift */,
 				1A54FF9789B7138CD734C26E /* EncodableMappingErrorHandler.swift */,
 			);
@@ -871,7 +887,7 @@
 		1A54F9BE917AB5F45318E1E1 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
-				1A54FB70AA5150694495292C /* BadRequestHandler.swift */,
+				1A54FB70AA5150694495292C /* NotFoundHandler.swift */,
 				1A54FA1AB182E042B981331A /* MyUnderlyingErrorHandler.swift */,
 				1A54FB07390D518775CDA293 /* JsonSerializationFailedHandler.swift */,
 			);
@@ -1614,10 +1630,12 @@
 				1A54F57D808266198DECDF9E /* UnauthorizedHandler.swift in Sources */,
 				1A54FD7F4E6D0B71EAC64642 /* TimeoutHandler.swift in Sources */,
 				1A54FC5236FB7C18964D17D1 /* MyErrorHandler.swift in Sources */,
-				1A54F3FE24245D5A62E83010 /* BadRequestHandler.swift in Sources */,
+				1A54F3FE24245D5A62E83010 /* NotFoundHandler.swift in Sources */,
 				1A54F8EA0CEFFBDD5BAF163A /* MyUnderlyingErrorHandler.swift in Sources */,
 				1A54F9249DC1F39BAB5089C5 /* JsonSerializationFailedHandler.swift in Sources */,
 				1A54F8C1CF6CE9DE27062CE4 /* RxRequesterSetup.swift in Sources */,
+				1A54F0365A3335AF6C87A143 /* Endpoint.swift in Sources */,
+				1A54F96FF8DA3A5B0BF3C37D /* Defaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1649,10 +1667,12 @@
 				1A54FF7A7F22711C58C91FF4 /* UnauthorizedHandler.swift in Sources */,
 				1A54F08712B1CBB8C21E58AD /* TimeoutHandler.swift in Sources */,
 				1A54F3EBE6263D373D23D735 /* MyErrorHandler.swift in Sources */,
-				1A54FFCEC8746CA2F1B245D9 /* BadRequestHandler.swift in Sources */,
+				1A54FFCEC8746CA2F1B245D9 /* NotFoundHandler.swift in Sources */,
 				1A54FA5F97E4BC0D6CA66F9D /* MyUnderlyingErrorHandler.swift in Sources */,
 				1A54FAE44EEBF5A9FE5862A8 /* EncodableMappingErrorHandler.swift in Sources */,
 				1A54F5FBAF3E5CD1233AF4FE /* RxRequesterSetup.swift in Sources */,
+				1A54F7570C4990554A6B220A /* Endpoint.swift in Sources */,
+				1A54FD241DC09C8155011A14 /* Defaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

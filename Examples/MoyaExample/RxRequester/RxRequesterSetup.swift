@@ -15,7 +15,7 @@ class RxRequesterSetup {
         RxRequester.resumableHandlers = [UnauthorizedHandler()]
 
         // Moya Handlers
-        MoyaHandlers.statusCodeHandlers = [BadRequestHandler()]
+        MoyaHandlers.statusCodeHandlers = [NotFoundHandler()]
         MoyaHandlers.underlyingErrorHandlers = [MyUnderlyingErrorHandler()]
         MoyaHandlers.errorHandlers = [EncodableMappingErrorHandler()]
     }

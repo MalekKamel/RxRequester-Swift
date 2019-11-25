@@ -5,14 +5,14 @@
 
 import Foundation
 import Moya
+import RxSwift
 
 extension PostsApi: TargetType {
 
     public var path: String {
         switch self {
-
         case .posts:
-            return "/error/404"
+            return Defaults.shared.endpoint.rawValue
         }
     }
 
@@ -77,4 +77,16 @@ private extension String {
 
 public func url(_ route: TargetType) -> String {
     route.baseURL.appendingPathComponent(route.path).absoluteString
+}
+
+public extension Reactive where Base: MoyaProviderType {
+    func requestMappingSuccess(_ token: Base.Target, callbackQueue: DispatchQueue? = nil) -> Single<Response> {
+        request(token, callbackQueue: callbackQueue).map({ response in
+            guard (200...299).contains(response.statusCode)
+                    else {
+                throw MoyaError.statusCode(response)
+            }
+            return response
+        })
+    }
 }

@@ -7,11 +7,11 @@ import RxRequester
 import RxRequesterAlamofire
 import Alamofire
 
-struct BadRequestHandler: AlamofireStatusCodeHandler {
-    var supportedErrorCodes: [Int] = [400]
+struct NotFoundHandler: AlamofireStatusCodeHandler {
+    var supportedErrorCodes: [Int] = [404]
 
     func handle(error: AFError, presentable: Presentable?) {
-        presentable?.showError(error: error.localizedDescription)
+        presentable?.showError(error: "Sorry, posts not found!")
     }
 
 }

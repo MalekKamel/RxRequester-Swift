@@ -18,7 +18,7 @@ class MoyaDataSource: PostsDataSource {
     }
 
     func all() -> Single<[PostResponse]> {
-        let request: Single<Response> = api.rx.request(.posts)
-        return request.map([PostResponse].self, failsOnEmptyData: false)
+         api.rx.requestMappingSuccess(.posts)
+                 .map([PostResponse].self, failsOnEmptyData: false)
     }
 }

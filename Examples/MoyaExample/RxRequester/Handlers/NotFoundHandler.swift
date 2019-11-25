@@ -7,11 +7,11 @@ import Moya
 import RxRequester
 import RxRequesterMoya
 
-struct BadRequestHandler: MoyaStatusCodeHandler {
-    var supportedErrorCodes: [Int] = [400]
+struct NotFoundHandler: MoyaStatusCodeHandler {
+    var supportedErrorCodes: [Int] = [404]
 
     func handle(error: MoyaError, presentable: Presentable?) {
-        presentable?.showError(error: error.localizedDescription)
+        presentable?.showError(error: "Sorry, posts not found!")
     }
 
 }

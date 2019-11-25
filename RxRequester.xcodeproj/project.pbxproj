@@ -33,11 +33,6 @@
 		0468CEA723882B9C005415EC /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FEE3652386B282002446DA /* Root.storyboard */; };
 		0468CEA823882B9E005415EC /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3662386B282002446DA /* RootBuilder.swift */; };
 		0468CEA923882BA1005415EC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3672386B282002446DA /* NavigationController.swift */; };
-		0468CEAA23882BA9005415EC /* BadRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3502386B282002446DA /* BadRequestHandler.swift */; };
-		0468CEAB23882BAB005415EC /* RxRequesterSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3512386B282002446DA /* RxRequesterSetup.swift */; };
-		0468CEAC23882BAE005415EC /* TimeoutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3522386B282002446DA /* TimeoutHandler.swift */; };
-		0468CEAD23882BB1005415EC /* ConnectivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3532386B282002446DA /* ConnectivityHandler.swift */; };
-		0468CEAE23882BB3005415EC /* UnauthorizedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3542386B282002446DA /* UnauthorizedHandler.swift */; };
 		0468CEAF23882CC4005415EC /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FEE34D2386B282002446DA /* PostCell.xib */; };
 		0468CEB423882E8D005415EC /* AlamofireDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468CEB323882E8D005415EC /* AlamofireDataSource.swift */; };
 		0468CEB623883132005415EC /* MoyaDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468CEB523883132005415EC /* MoyaDataSource.swift */; };
@@ -75,7 +70,6 @@
 		04EC6208238B1B3A005643F5 /* BadRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC6206238B1B3A005643F5 /* BadRequestHandler.swift */; };
 		04EC620C238B1B48005643F5 /* BadRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC620A238B1B48005643F5 /* BadRequestHandler.swift */; };
 		04EC6212238B1BF6005643F5 /* UnauthorizedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC620F238B1BC9005643F5 /* UnauthorizedHandler.swift */; };
-		04EC6222238B23DE005643F5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04EC6221238B23DE005643F5 /* Info.plist */; };
 		04EC6236238B453A005643F5 /* MyUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F8153D8039499673AEB2 /* MyUnderlyingErrorHandler.swift */; };
 		04FEE2C72386A8CC002446DA /* RxRequester.h in Headers */ = {isa = PBXBuildFile; fileRef = 04FEE2B92386A8CC002446DA /* RxRequester.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04FEE2E32386AA89002446DA /* RxRequesterAlamofire.h in Headers */ = {isa = PBXBuildFile; fileRef = 04FEE2D52386AA89002446DA /* RxRequesterAlamofire.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -92,11 +86,6 @@
 		04FEE36B2386B282002446DA /* PostsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE34C2386B282002446DA /* PostsBuilder.swift */; };
 		04FEE36C2386B282002446DA /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FEE34D2386B282002446DA /* PostCell.xib */; };
 		04FEE36D2386B282002446DA /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE34E2386B282002446DA /* PostCell.swift */; };
-		04FEE36E2386B282002446DA /* BadRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3502386B282002446DA /* BadRequestHandler.swift */; };
-		04FEE36F2386B282002446DA /* RxRequesterSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3512386B282002446DA /* RxRequesterSetup.swift */; };
-		04FEE3702386B282002446DA /* TimeoutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3522386B282002446DA /* TimeoutHandler.swift */; };
-		04FEE3712386B282002446DA /* ConnectivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3532386B282002446DA /* ConnectivityHandler.swift */; };
-		04FEE3722386B282002446DA /* UnauthorizedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3542386B282002446DA /* UnauthorizedHandler.swift */; };
 		04FEE3732386B282002446DA /* PostsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3572386B282002446DA /* PostsDataSource.swift */; };
 		04FEE3752386B282002446DA /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3592386B282002446DA /* PostsRepository.swift */; };
 		04FEE3762386B282002446DA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE35B2386B282002446DA /* Post.swift */; };
@@ -111,20 +100,36 @@
 		04FEE37F2386B282002446DA /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3662386B282002446DA /* RootBuilder.swift */; };
 		04FEE3802386B282002446DA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3672386B282002446DA /* NavigationController.swift */; };
 		062369DFCC3959E796417B9C /* Pods_RxRequesterMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B4C56DCF71458C98F81BC /* Pods_RxRequesterMoya.framework */; };
+		1A54F08712B1CBB8C21E58AD /* TimeoutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F7B0FAB4E1A009DBB877 /* TimeoutHandler.swift */; };
 		1A54F26077D18114273C19A2 /* MoyaErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F061865F7D5634FE848E /* MoyaErrorHandler.swift */; };
 		1A54F34369A72B447E5A7B38 /* MoyaHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F0136DE4771DAA723A2D /* MoyaHandlers.swift */; };
 		1A54F37A14AC4ACA5D444525 /* AlamofireUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FD1D0C414423DE26D555 /* AlamofireUnderlyingErrorHandler.swift */; };
+		1A54F3EBE6263D373D23D735 /* MyErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FD4911B301576FF61C3D /* MyErrorHandler.swift */; };
+		1A54F3FE24245D5A62E83010 /* BadRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FB70AA5150694495292C /* BadRequestHandler.swift */; };
 		1A54F410D34FBCB12387363A /* JsonSerializationFailedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6C96103C74258016B2D /* JsonSerializationFailedHandler.swift */; };
 		1A54F5229C28B9A5BDE59C57 /* AlamofireHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F434A86AA243B3097BF5 /* AlamofireHandlers.swift */; };
+		1A54F57D808266198DECDF9E /* UnauthorizedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F9CD2C54CADC038CD62E /* UnauthorizedHandler.swift */; };
 		1A54F5BAAE11A23012D83FE0 /* AlamofireStatusCodeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FAACF86B471BE4A4185B /* AlamofireStatusCodeHandler.swift */; };
 		1A54F5C0C2A13A61C464ABB9 /* MoyaUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F01E65BF6142B23EF9FE /* MoyaUnderlyingErrorHandler.swift */; };
+		1A54F5FBAF3E5CD1233AF4FE /* RxRequesterSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F1CBF6A9ABF85C3493D4 /* RxRequesterSetup.swift */; };
 		1A54F64290CD534D90DF92D0 /* EncodableMappingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F1110F9EF4E18FCE26B7 /* EncodableMappingErrorHandler.swift */; };
 		1A54F655C5674B344B474A6E /* MoyaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FBCDAF3CA744AA9F3262 /* MoyaTest.swift */; };
 		1A54F779312A5A27BBBE3388 /* MoyaStatusCodeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FA859F50F83A1F59A30B /* MoyaStatusCodeHandler.swift */; };
+		1A54F8C1CF6CE9DE27062CE4 /* RxRequesterSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FF4F5FCC4EAD58FEB37E /* RxRequesterSetup.swift */; };
+		1A54F8EA0CEFFBDD5BAF163A /* MyUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FA1AB182E042B981331A /* MyUnderlyingErrorHandler.swift */; };
+		1A54F9249DC1F39BAB5089C5 /* JsonSerializationFailedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FB07390D518775CDA293 /* JsonSerializationFailedHandler.swift */; };
+		1A54FA5F97E4BC0D6CA66F9D /* MyUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FA686F63820FBEBF00DA /* MyUnderlyingErrorHandler.swift */; };
+		1A54FAA8223048F92411D29D /* ConnectivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F379865E14E428051B13 /* ConnectivityHandler.swift */; };
+		1A54FAE44EEBF5A9FE5862A8 /* EncodableMappingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FF9789B7138CD734C26E /* EncodableMappingErrorHandler.swift */; };
 		1A54FB9C455A7E15D36FEAAA /* MyErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F0B93FFDC435982AC25C /* MyErrorHandler.swift */; };
+		1A54FC5236FB7C18964D17D1 /* MyErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FD4911B301576FF61C3D /* MyErrorHandler.swift */; };
+		1A54FCE122CC69FB10FB5697 /* ConnectivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F379865E14E428051B13 /* ConnectivityHandler.swift */; };
+		1A54FD7F4E6D0B71EAC64642 /* TimeoutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F7B0FAB4E1A009DBB877 /* TimeoutHandler.swift */; };
 		1A54FE16A131E5D83D341E88 /* MockPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6ADB38F4C972234511C /* MockPresentable.swift */; };
 		1A54FF280033E75A18076FCF /* AlamofireErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6B794E5BE536F248527 /* AlamofireErrorHandler.swift */; };
 		1A54FF6259BD59BB8A988070 /* MyUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FA25D46EFFD5A46A85DC /* MyUnderlyingErrorHandler.swift */; };
+		1A54FF7A7F22711C58C91FF4 /* UnauthorizedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F9CD2C54CADC038CD62E /* UnauthorizedHandler.swift */; };
+		1A54FFCEC8746CA2F1B245D9 /* BadRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F46DCDE3D5B525D4D2C5 /* BadRequestHandler.swift */; };
 		24F3FD7709E9B82B439EA04F /* Pods_RxRequesterAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BA80F17B54B42523875A74 /* Pods_RxRequesterAlamofire.framework */; };
 		38C93CE539D645267C6B096F /* Pods_RxRequesterAlamofire_RxRequesterAlamofireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8F0CC71B253F748CBA64C2 /* Pods_RxRequesterAlamofire_RxRequesterAlamofireTests.framework */; };
 		534D24D3D5D6894477D87FB3 /* Pods_RxRequesterMoya_RxRequesterMoyaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74CF4E1DB6095DCEAA8EA58 /* Pods_RxRequesterMoya_RxRequesterMoyaTests.framework */; };
@@ -315,11 +320,6 @@
 		04FEE34C2386B282002446DA /* PostsBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsBuilder.swift; sourceTree = "<group>"; };
 		04FEE34D2386B282002446DA /* PostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		04FEE34E2386B282002446DA /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
-		04FEE3502386B282002446DA /* BadRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadRequestHandler.swift; sourceTree = "<group>"; };
-		04FEE3512386B282002446DA /* RxRequesterSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxRequesterSetup.swift; sourceTree = "<group>"; };
-		04FEE3522386B282002446DA /* TimeoutHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeoutHandler.swift; sourceTree = "<group>"; };
-		04FEE3532386B282002446DA /* ConnectivityHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityHandler.swift; sourceTree = "<group>"; };
-		04FEE3542386B282002446DA /* UnauthorizedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnauthorizedHandler.swift; sourceTree = "<group>"; };
 		04FEE3572386B282002446DA /* PostsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsDataSource.swift; sourceTree = "<group>"; };
 		04FEE3582386B282002446DA /* PostsApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsApi.swift; sourceTree = "<group>"; };
 		04FEE3592386B282002446DA /* PostsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
@@ -344,16 +344,28 @@
 		1A54F0B93FFDC435982AC25C /* MyErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyErrorHandler.swift; sourceTree = "<group>"; };
 		1A54F1110F9EF4E18FCE26B7 /* EncodableMappingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodableMappingErrorHandler.swift; sourceTree = "<group>"; };
 		1A54F19353AEEEA0D7C9A9D4 /* PluggableErrorProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluggableErrorProcessor.swift; sourceTree = "<group>"; };
+		1A54F1CBF6A9ABF85C3493D4 /* RxRequesterSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxRequesterSetup.swift; sourceTree = "<group>"; };
+		1A54F379865E14E428051B13 /* ConnectivityHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityHandler.swift; sourceTree = "<group>"; };
 		1A54F434A86AA243B3097BF5 /* AlamofireHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHandlers.swift; sourceTree = "<group>"; };
+		1A54F46DCDE3D5B525D4D2C5 /* BadRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadRequestHandler.swift; sourceTree = "<group>"; };
 		1A54F6ADB38F4C972234511C /* MockPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPresentable.swift; sourceTree = "<group>"; };
 		1A54F6B794E5BE536F248527 /* AlamofireErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireErrorHandler.swift; sourceTree = "<group>"; };
 		1A54F6C96103C74258016B2D /* JsonSerializationFailedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializationFailedHandler.swift; sourceTree = "<group>"; };
+		1A54F7B0FAB4E1A009DBB877 /* TimeoutHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeoutHandler.swift; sourceTree = "<group>"; };
 		1A54F8153D8039499673AEB2 /* MyUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
+		1A54F9CD2C54CADC038CD62E /* UnauthorizedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnauthorizedHandler.swift; sourceTree = "<group>"; };
+		1A54FA1AB182E042B981331A /* MyUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
 		1A54FA25D46EFFD5A46A85DC /* MyUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
+		1A54FA686F63820FBEBF00DA /* MyUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
 		1A54FA859F50F83A1F59A30B /* MoyaStatusCodeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaStatusCodeHandler.swift; sourceTree = "<group>"; };
 		1A54FAACF86B471BE4A4185B /* AlamofireStatusCodeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireStatusCodeHandler.swift; sourceTree = "<group>"; };
+		1A54FB07390D518775CDA293 /* JsonSerializationFailedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializationFailedHandler.swift; sourceTree = "<group>"; };
+		1A54FB70AA5150694495292C /* BadRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadRequestHandler.swift; sourceTree = "<group>"; };
 		1A54FBCDAF3CA744AA9F3262 /* MoyaTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaTest.swift; sourceTree = "<group>"; };
 		1A54FD1D0C414423DE26D555 /* AlamofireUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
+		1A54FD4911B301576FF61C3D /* MyErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyErrorHandler.swift; sourceTree = "<group>"; };
+		1A54FF4F5FCC4EAD58FEB37E /* RxRequesterSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxRequesterSetup.swift; sourceTree = "<group>"; };
+		1A54FF9789B7138CD734C26E /* EncodableMappingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodableMappingErrorHandler.swift; sourceTree = "<group>"; };
 		1E15582FB52CE08015201CBF /* Pods-AlamofireExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireExample.release.xcconfig"; path = "Target Support Files/Pods-AlamofireExample/Pods-AlamofireExample.release.xcconfig"; sourceTree = "<group>"; };
 		212D33579BC3B3FE7D3F460B /* Pods-RxRequesterAlamofire-RxRequesterAlamofireTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRequesterAlamofire-RxRequesterAlamofireTests.release.xcconfig"; path = "Target Support Files/Pods-RxRequesterAlamofire-RxRequesterAlamofireTests/Pods-RxRequesterAlamofire-RxRequesterAlamofireTests.release.xcconfig"; sourceTree = "<group>"; };
 		21E9594B46ECA4B3034EC10D /* Pods-RxRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRequester.debug.xcconfig"; path = "Target Support Files/Pods-RxRequester/Pods-RxRequester.debug.xcconfig"; sourceTree = "<group>"; };
@@ -658,6 +670,7 @@
 				04FEE30C2386AB22002446DA /* AppDelegate.swift */,
 				04FEE30E2386AB22002446DA /* SceneDelegate.swift */,
 				04FEE31A2386AB24002446DA /* Info.plist */,
+				1A54F16DE5D47D12DEC2C7E5 /* RxRequester */,
 			);
 			path = AlamofireExample;
 			sourceTree = "<group>";
@@ -670,6 +683,7 @@
 				04FEE3242386AB48002446DA /* AppDelegate.swift */,
 				04FEE3262386AB48002446DA /* SceneDelegate.swift */,
 				04FEE3322386AB49002446DA /* Info.plist */,
+				1A54F21943AA170863BBD513 /* RxRequester */,
 			);
 			path = MoyaExample;
 			sourceTree = "<group>";
@@ -741,11 +755,7 @@
 		04FEE34F2386B282002446DA /* RxRequester */ = {
 			isa = PBXGroup;
 			children = (
-				04FEE3502386B282002446DA /* BadRequestHandler.swift */,
-				04FEE3512386B282002446DA /* RxRequesterSetup.swift */,
-				04FEE3522386B282002446DA /* TimeoutHandler.swift */,
-				04FEE3532386B282002446DA /* ConnectivityHandler.swift */,
-				04FEE3542386B282002446DA /* UnauthorizedHandler.swift */,
+				1A54F3F47B391EC7CC6DFD99 /* Handlers */,
 			);
 			path = RxRequester;
 			sourceTree = "<group>";
@@ -817,6 +827,55 @@
 				B74CF4E1DB6095DCEAA8EA58 /* Pods_RxRequesterMoya_RxRequesterMoyaTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A54F16DE5D47D12DEC2C7E5 /* RxRequester */ = {
+			isa = PBXGroup;
+			children = (
+				1A54F9BE917AB5F45318E1E1 /* Handlers */,
+				1A54FF4F5FCC4EAD58FEB37E /* RxRequesterSetup.swift */,
+			);
+			path = RxRequester;
+			sourceTree = "<group>";
+		};
+		1A54F21943AA170863BBD513 /* RxRequester */ = {
+			isa = PBXGroup;
+			children = (
+				1A54F5B8D67CDE742BD833AE /* Handlers */,
+				1A54F1CBF6A9ABF85C3493D4 /* RxRequesterSetup.swift */,
+			);
+			path = RxRequester;
+			sourceTree = "<group>";
+		};
+		1A54F3F47B391EC7CC6DFD99 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				1A54F379865E14E428051B13 /* ConnectivityHandler.swift */,
+				1A54F9CD2C54CADC038CD62E /* UnauthorizedHandler.swift */,
+				1A54F7B0FAB4E1A009DBB877 /* TimeoutHandler.swift */,
+				1A54FD4911B301576FF61C3D /* MyErrorHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		1A54F5B8D67CDE742BD833AE /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				1A54F46DCDE3D5B525D4D2C5 /* BadRequestHandler.swift */,
+				1A54FA686F63820FBEBF00DA /* MyUnderlyingErrorHandler.swift */,
+				1A54FF9789B7138CD734C26E /* EncodableMappingErrorHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		1A54F9BE917AB5F45318E1E1 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				1A54FB70AA5150694495292C /* BadRequestHandler.swift */,
+				1A54FA1AB182E042B981331A /* MyUnderlyingErrorHandler.swift */,
+				1A54FB07390D518775CDA293 /* JsonSerializationFailedHandler.swift */,
+			);
+			path = Handlers;
 			sourceTree = "<group>";
 		};
 		1A54FA3CC68CC6289D6038EA /* Handler */ = {
@@ -1146,7 +1205,6 @@
 			files = (
 				04FEE37E2386B282002446DA /* Root.storyboard in Resources */,
 				04FEE3682386B282002446DA /* Posts.storyboard in Resources */,
-				04EC6222238B23DE005643F5 /* Info.plist in Resources */,
 				04FEE3192386AB24002446DA /* LaunchScreen.storyboard in Resources */,
 				04FEE36C2386B282002446DA /* PostCell.xib in Resources */,
 				04FEE3162386AB24002446DA /* Assets.xcassets in Resources */,
@@ -1534,22 +1592,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FEE3752386B282002446DA /* PostsRepository.swift in Sources */,
-				04FEE3722386B282002446DA /* UnauthorizedHandler.swift in Sources */,
 				04FEE37D2386B282002446DA /* RootViewModel.swift in Sources */,
 				04FEE3772386B282002446DA /* PostResponse.swift in Sources */,
-				04FEE36E2386B282002446DA /* BadRequestHandler.swift in Sources */,
 				04FEE36D2386B282002446DA /* PostCell.swift in Sources */,
 				04FEE3692386B282002446DA /* PostsViewController.swift in Sources */,
 				04FEE3802386B282002446DA /* NavigationController.swift in Sources */,
 				04FEE36B2386B282002446DA /* PostsBuilder.swift in Sources */,
-				04FEE3702386B282002446DA /* TimeoutHandler.swift in Sources */,
 				04FEE37A2386B282002446DA /* ViewControllerProtocol.swift in Sources */,
-				04FEE3712386B282002446DA /* ConnectivityHandler.swift in Sources */,
 				04FEE3732386B282002446DA /* PostsDataSource.swift in Sources */,
 				0468CEB423882E8D005415EC /* AlamofireDataSource.swift in Sources */,
 				04FEE37B2386B282002446DA /* ViewModelProtocol.swift in Sources */,
 				04FEE36A2386B282002446DA /* PostsViewModel.swift in Sources */,
-				04FEE36F2386B282002446DA /* RxRequesterSetup.swift in Sources */,
 				04FEE37C2386B282002446DA /* RootViewController.swift in Sources */,
 				04FEE3762386B282002446DA /* Post.swift in Sources */,
 				04FEE30D2386AB22002446DA /* AppDelegate.swift in Sources */,
@@ -1557,6 +1610,14 @@
 				04FEE3782386B282002446DA /* Reportable.swift in Sources */,
 				04FEE30F2386AB22002446DA /* SceneDelegate.swift in Sources */,
 				04FEE37F2386B282002446DA /* RootBuilder.swift in Sources */,
+				1A54FAA8223048F92411D29D /* ConnectivityHandler.swift in Sources */,
+				1A54F57D808266198DECDF9E /* UnauthorizedHandler.swift in Sources */,
+				1A54FD7F4E6D0B71EAC64642 /* TimeoutHandler.swift in Sources */,
+				1A54FC5236FB7C18964D17D1 /* MyErrorHandler.swift in Sources */,
+				1A54F3FE24245D5A62E83010 /* BadRequestHandler.swift in Sources */,
+				1A54F8EA0CEFFBDD5BAF163A /* MyUnderlyingErrorHandler.swift in Sources */,
+				1A54F9249DC1F39BAB5089C5 /* JsonSerializationFailedHandler.swift in Sources */,
+				1A54F8C1CF6CE9DE27062CE4 /* RxRequesterSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1568,27 +1629,30 @@
 				0468CEA123882B80005415EC /* Reportable.swift in Sources */,
 				0468CEB623883132005415EC /* MoyaDataSource.swift in Sources */,
 				0468CEA523882B90005415EC /* RootViewController.swift in Sources */,
-				0468CEAD23882BB1005415EC /* ConnectivityHandler.swift in Sources */,
 				0468CE9E23882B74005415EC /* PostsRepository.swift in Sources */,
 				0468CEA623882B93005415EC /* RootViewModel.swift in Sources */,
 				0468CE9623882B39005415EC /* PostsViewModel.swift in Sources */,
-				0468CEAA23882BA9005415EC /* BadRequestHandler.swift in Sources */,
 				0468CE9F23882B79005415EC /* Post.swift in Sources */,
 				0468CEA823882B9E005415EC /* RootBuilder.swift in Sources */,
 				0468CEA023882B7C005415EC /* PostResponse.swift in Sources */,
 				0468CE9523882B37005415EC /* PostsViewController.swift in Sources */,
 				04FEE3252386AB48002446DA /* AppDelegate.swift in Sources */,
-				0468CEAC23882BAE005415EC /* TimeoutHandler.swift in Sources */,
 				0468CEA323882B89005415EC /* ViewControllerProtocol.swift in Sources */,
 				0468CEA223882B82005415EC /* ActivityIndicatable.swift in Sources */,
 				04FEE3272386AB48002446DA /* SceneDelegate.swift in Sources */,
 				0468CE9D23882B72005415EC /* PostsApi.swift in Sources */,
 				0468CE9823882B44005415EC /* PostCell.swift in Sources */,
-				0468CEAE23882BB3005415EC /* UnauthorizedHandler.swift in Sources */,
 				0468CEA423882B8B005415EC /* ViewModelProtocol.swift in Sources */,
 				0468CEA923882BA1005415EC /* NavigationController.swift in Sources */,
 				0468CE9C23882B6F005415EC /* PostsDataSource.swift in Sources */,
-				0468CEAB23882BAB005415EC /* RxRequesterSetup.swift in Sources */,
+				1A54FCE122CC69FB10FB5697 /* ConnectivityHandler.swift in Sources */,
+				1A54FF7A7F22711C58C91FF4 /* UnauthorizedHandler.swift in Sources */,
+				1A54F08712B1CBB8C21E58AD /* TimeoutHandler.swift in Sources */,
+				1A54F3EBE6263D373D23D735 /* MyErrorHandler.swift in Sources */,
+				1A54FFCEC8746CA2F1B245D9 /* BadRequestHandler.swift in Sources */,
+				1A54FA5F97E4BC0D6CA66F9D /* MyUnderlyingErrorHandler.swift in Sources */,
+				1A54FAE44EEBF5A9FE5862A8 /* EncodableMappingErrorHandler.swift in Sources */,
+				1A54F5FBAF3E5CD1233AF4FE /* RxRequesterSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

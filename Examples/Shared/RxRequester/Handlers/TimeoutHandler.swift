@@ -12,7 +12,7 @@ struct TimeoutHandler: NSErrorHandler {
     ]
 
     func handle(error: NSError, presentable: Presentable?) {
-//        rootViewController.showError(message: L10n.connectionTooSlow)
+        presentable?.showError(error: error.localizedDescription)
     }
 
 }

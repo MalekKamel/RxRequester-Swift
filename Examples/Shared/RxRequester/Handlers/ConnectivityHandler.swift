@@ -3,7 +3,6 @@
 // Copyright (c) 2019 A. All rights reserved.
 //
 
-import Foundation
 import RxRequester
 
 struct ConnectivityHandler: NSErrorHandler {
@@ -14,8 +13,6 @@ struct ConnectivityHandler: NSErrorHandler {
     ]
 
     func handle(error: NSError, presentable: Presentable?) {
-//        rootViewController.showError(message: L10n.networkOffline)
+        presentable?.showError(error: error.localizedDescription)
     }
-
-
 }

@@ -2,41 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4801185-1692-427a-8471-3f3713904545" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Tests/Handlers/BadRequestHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Tests/Handlers/JsonSerializationFailedHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Tests/Handlers/MyUnderlyingErrorHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Tests/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/Tests/Handlers/BadRequestHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/Tests/Handlers/EncodableMappingErrorHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/Tests/Handlers/MyUnderlyingErrorHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/Tests/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/Tests/MoyaTest.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/ErrorProcessortTest.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/Handlers/ConnectivityHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/Handlers/MyErrorHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/Handlers/UnauthorizedHandler.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/MockPresentable.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/Handlers/BadRequestHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/Handlers/JsonSerializationFailedHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/Handlers/MyUnderlyingErrorHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/Handlers/BadRequestHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/Handlers/EncodableMappingErrorHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/Handlers/MyUnderlyingErrorHandler.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/RxRequesterSetup.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Shared/RxRequester/Handlers/MyErrorHandler.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Shared/RxRequester/BadRequestHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/RxRequester/BadRequestHandler.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Shared/RxRequester/RxRequesterSetup.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/RxRequester/RxRequesterSetup.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Shared/RxRequester/BadRequestHandler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Shared/RxRequester/ConnectivityHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/RxRequester/Handlers/ConnectivityHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Shared/RxRequester/RxRequesterSetup.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/RxRequesterSetup.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Shared/RxRequester/TimeoutHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/RxRequester/Handlers/TimeoutHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Shared/RxRequester/UnauthorizedHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/RxRequester/Handlers/UnauthorizedHandler.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RxRequesterAlamofireTests/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RxRequesterAlamofireTests/RxRequesterAlamofireTests.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RxRequesterMoyaTests/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RxRequesterMoyaTests/RxRequesterMoyaTests.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RxRequesterTests/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RxRequesterTests/RxRequesterTests.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Handler/AlamofireStatusCodeHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Handler/AlamofireStatusCodeHandler.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Tests/RxRequesterAlamofireTest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/Tests/AlamofireTest.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Moya/MoyaHandlers.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Moya/MoyaHandlers.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/ErrorProcessor.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/ErrorProcessor.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/Handler/Error/ErrorHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/Handler/Error/ErrorHandler.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/Handler/Http/HttpErrorHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/Handler/Http/HTTPURLResponseHandler.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/RequestOptions.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/RequestOptions.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/RxRequester.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/RxRequester.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/SchedulerProvider.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/SchedulerProvider.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/Tests/RxRequesterTest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/RxRequesterTest.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/AlamofireHandlers.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester+Alamofire/AlamofireHandlers.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/RxRequester/Tests/Handlers/MyErrorHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/RxRequester/Tests/Handlers/MyErrorHandler.swift" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +36,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="RxRequesterAlamofireTests" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="AlamofireExample" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/RxRequester+Moya/Handler" />
@@ -80,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="XCTest.AlamofireTest">
+  <component name="RunManager" selected="Application.AlamofireExample">
     <configuration name="AlamofireExample" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="AlamofireExample" CONFIG_NAME="Debug" SCHEME_NAME="AlamofireExample" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="RxRequester" RUN_TARGET_NAME="AlamofireExample" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
@@ -104,7 +86,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlamofireTest.testStatusCodeHandlers" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="RxRequesterAlamofireTests" CONFIG_NAME="Debug" SCHEME_NAME="AlamofireTest.testStatusCodeHandlers" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="AlamofireTest" TEST_METHOD="testStatusCodeHandlers" TEST_MODE="SUITE_TEST">
+    <configuration name="AlamofireTest.testErrorHandlers" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="RxRequesterAlamofireTests" CONFIG_NAME="Debug" SCHEME_NAME="AlamofireTest.testErrorHandlers" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="AlamofireTest" TEST_METHOD="testErrorHandlers" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -129,12 +111,12 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MoyaTest.testErrorHandlers" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="RxRequesterMoyaTests" CONFIG_NAME="Debug" SCHEME_NAME="MoyaTest.testErrorHandlers" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="MoyaTest" TEST_METHOD="testErrorHandlers" TEST_MODE="SUITE_TEST">
+    <configuration name="MoyaTest" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="RxRequesterMoyaTests" CONFIG_NAME="Debug" SCHEME_NAME="MoyaTest" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="MoyaTest" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MoyaTest.testUnderlyingHandlers" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="RxRequesterMoyaTests" CONFIG_NAME="Debug" SCHEME_NAME="MoyaTest.testUnderlyingHandlers" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="MoyaTest" TEST_METHOD="testUnderlyingHandlers" TEST_MODE="SUITE_TEST">
+    <configuration name="RxRequesterTest" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxRequester" TARGET_NAME="RxRequesterTests" CONFIG_NAME="Debug" SCHEME_NAME="RxRequesterTest" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="RxRequesterTest" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -148,19 +130,19 @@
       <item itemvalue="XCTest.All in RxRequesterTests" />
       <item itemvalue="XCTest.All in RxRequesterAlamofireTests" />
       <item itemvalue="XCTest.All in RxRequesterMoyaTests" />
-      <item itemvalue="XCTest.MoyaTest.testUnderlyingHandlers" />
-      <item itemvalue="XCTest.MoyaTest.testErrorHandlers" />
-      <item itemvalue="XCTest.AlamofireTest.testStatusCodeHandlers" />
       <item itemvalue="XCTest.AlamofireTest.testUnderlyingHandlers" />
       <item itemvalue="XCTest.AlamofireTest" />
+      <item itemvalue="XCTest.AlamofireTest.testErrorHandlers" />
+      <item itemvalue="XCTest.MoyaTest" />
+      <item itemvalue="XCTest.RxRequesterTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="XCTest.RxRequesterTest" />
         <item itemvalue="XCTest.AlamofireTest" />
+        <item itemvalue="XCTest.MoyaTest" />
+        <item itemvalue="XCTest.AlamofireTest.testErrorHandlers" />
         <item itemvalue="XCTest.AlamofireTest.testUnderlyingHandlers" />
-        <item itemvalue="XCTest.AlamofireTest.testStatusCodeHandlers" />
-        <item itemvalue="XCTest.MoyaTest.testErrorHandlers" />
-        <item itemvalue="XCTest.MoyaTest.testUnderlyingHandlers" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +162,8 @@
       <workItem from="1574453245387" duration="22000" />
       <workItem from="1574453306592" duration="4254000" />
       <workItem from="1574520150632" duration="6239000" />
-      <workItem from="1574609471858" duration="17065000" />
+      <workItem from="1574609471858" duration="17725000" />
+      <workItem from="1574693271832" duration="2549000" />
     </task>
     <servers />
   </component>

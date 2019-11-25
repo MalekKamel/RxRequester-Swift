@@ -105,6 +105,7 @@
 		1A54F26077D18114273C19A2 /* MoyaErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F061865F7D5634FE848E /* MoyaErrorHandler.swift */; };
 		1A54F34369A72B447E5A7B38 /* MoyaHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F0136DE4771DAA723A2D /* MoyaHandlers.swift */; };
 		1A54F37A14AC4ACA5D444525 /* AlamofireUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FD1D0C414423DE26D555 /* AlamofireUnderlyingErrorHandler.swift */; };
+		1A54F3823C48733EA3BBDECC /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F932CE3B65A918E4C516 /* Mapper.swift */; };
 		1A54F3EBE6263D373D23D735 /* MyErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FD4911B301576FF61C3D /* MyErrorHandler.swift */; };
 		1A54F3FE24245D5A62E83010 /* NotFoundHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FB70AA5150694495292C /* NotFoundHandler.swift */; };
 		1A54F410D34FBCB12387363A /* JsonSerializationFailedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6C96103C74258016B2D /* JsonSerializationFailedHandler.swift */; };
@@ -134,6 +135,7 @@
 		1A54FF6259BD59BB8A988070 /* MyUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FA25D46EFFD5A46A85DC /* MyUnderlyingErrorHandler.swift */; };
 		1A54FF7A7F22711C58C91FF4 /* UnauthorizedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F9CD2C54CADC038CD62E /* UnauthorizedHandler.swift */; };
 		1A54FFCEC8746CA2F1B245D9 /* NotFoundHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F46DCDE3D5B525D4D2C5 /* NotFoundHandler.swift */; };
+		1A54FFD91D5BC8E07DEF4575 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F932CE3B65A918E4C516 /* Mapper.swift */; };
 		24F3FD7709E9B82B439EA04F /* Pods_RxRequesterAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BA80F17B54B42523875A74 /* Pods_RxRequesterAlamofire.framework */; };
 		38C93CE539D645267C6B096F /* Pods_RxRequesterAlamofire_RxRequesterAlamofireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8F0CC71B253F748CBA64C2 /* Pods_RxRequesterAlamofire_RxRequesterAlamofireTests.framework */; };
 		534D24D3D5D6894477D87FB3 /* Pods_RxRequesterMoya_RxRequesterMoyaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74CF4E1DB6095DCEAA8EA58 /* Pods_RxRequesterMoya_RxRequesterMoyaTests.framework */; };
@@ -358,6 +360,7 @@
 		1A54F6C96103C74258016B2D /* JsonSerializationFailedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializationFailedHandler.swift; sourceTree = "<group>"; };
 		1A54F7B0FAB4E1A009DBB877 /* TimeoutHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeoutHandler.swift; sourceTree = "<group>"; };
 		1A54F8153D8039499673AEB2 /* MyUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
+		1A54F932CE3B65A918E4C516 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		1A54F97DFBA0EF14A6929943 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		1A54F9CD2C54CADC038CD62E /* UnauthorizedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnauthorizedHandler.swift; sourceTree = "<group>"; };
 		1A54FA1AB182E042B981331A /* MyUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
@@ -773,6 +776,7 @@
 				04FEE35A2386B282002446DA /* Model */,
 				1A54F47C0FDB67A86067F5F6 /* Defaults */,
 				1A54F6B97FBF01FA29DBE52D /* Endpoint.swift */,
+				1A54F932CE3B65A918E4C516 /* Mapper.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1636,6 +1640,7 @@
 				1A54F8C1CF6CE9DE27062CE4 /* RxRequesterSetup.swift in Sources */,
 				1A54F0365A3335AF6C87A143 /* Endpoint.swift in Sources */,
 				1A54F96FF8DA3A5B0BF3C37D /* Defaults.swift in Sources */,
+				1A54FFD91D5BC8E07DEF4575 /* Mapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1673,6 +1678,7 @@
 				1A54F5FBAF3E5CD1233AF4FE /* RxRequesterSetup.swift in Sources */,
 				1A54F7570C4990554A6B220A /* Endpoint.swift in Sources */,
 				1A54FD241DC09C8155011A14 /* Defaults.swift in Sources */,
+				1A54F3823C48733EA3BBDECC /* Mapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

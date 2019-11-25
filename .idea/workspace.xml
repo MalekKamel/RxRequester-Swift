@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4801185-1692-427a-8471-3f3713904545" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Examples/Shared/Assets.xcassets/Plus.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/Shared/Assets.xcassets/Plus.imageset/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/Shared/Data/Defaults/Defaults.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examples/Shared/Data/Endpoint.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/Shared/Data/Mapper.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/AlamofireDataSource.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/Handlers/BadRequestHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/Handlers/NotFoundHandler.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/RxRequesterSetup.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AlamofireExample/RxRequester/RxRequesterSetup.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/MoyaExample/MoyaDataSource.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/MoyaDataSource.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/MoyaExample/PostsApi.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/PostsApi.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/Handlers/BadRequestHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/Handlers/NotFoundHandler.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/RxRequesterSetup.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/MoyaExample/RxRequester/RxRequesterSetup.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Shared/Modules/Posts/Posts.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/Modules/Posts/Posts.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Shared/Modules/Posts/PostsViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/Modules/Posts/PostsViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Shared/Data/Model/PostResponse.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/Data/Model/PostResponse.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Shared/Modules/Posts/PostsViewModel.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Shared/Modules/Posts/PostsViewModel.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/RxRequester.xcodeproj/project.pbxproj" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -161,7 +151,7 @@
       <workItem from="1574453306592" duration="4254000" />
       <workItem from="1574520150632" duration="6239000" />
       <workItem from="1574609471858" duration="17725000" />
-      <workItem from="1574693271832" duration="9813000" />
+      <workItem from="1574693271832" duration="15871000" />
     </task>
     <servers />
   </component>

@@ -15,7 +15,7 @@ final class PostsViewModel: ViewModelProtocol {
 
      func posts() -> Single<[Post]> {
         rxRequester.request { [weak self] in
-            self!.postsRepository.all().map { $0.toPresent() }
+            self!.postsRepository.all().map { ListMapper(PostMapper()).map($0) }
         }
     }
 

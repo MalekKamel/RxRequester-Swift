@@ -9,17 +9,13 @@ public struct PostResponse: Decodable {
     let id: Int
     let title: String
     let body: String
-
-    func toPost() -> Post {
-         Post(
-                id: id,
-                title: title,
-                body: body
-        )
-    }
-
 }
 
-public extension Array where Element == PostResponse {
-    func toPresent() -> [Post] { self.map{ $0.toPost() } }
+struct PostMapper: Mapper {
+    typealias I = PostResponse
+    typealias O = Post
+
+    func map(_ input: PostResponse) -> Post {
+        Post(id: input.id, title: input.title, body: input.body)
+    }
 }

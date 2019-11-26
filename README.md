@@ -82,6 +82,24 @@ RxReqeuster provides support for handling **Alamofire** and **Moya** errors. che
 | **MoyaUnderlyingErrorHandler**       |   Handles underlying error        |
 | **MoyaErrorHandler**                 |   Handles any `MoyaError`         |
 
+## Customizing Requests
+RxRequester gives you the full controll over any request
+- [ ] Inline error handling
+- [ ] Enable/Disable loading indicators
+- [ ] Set subscribeOn Scheduler
+- [ ] Set observeOn Scheduler
+
+``` swift
+    let options = RequestOptions.Builder()
+         .showLoading(true)
+         .inlineErrorHandling{ false })
+         .observeOnScheduler(MainScheduler.instance)
+         .subscribeOnScheduler(ConcurrentDispatchQueueScheduler(qos: .background))
+         .build()
+     rxRequester.request(options: options) { .. }
+     }
+```
+
 ### License
 
 ```

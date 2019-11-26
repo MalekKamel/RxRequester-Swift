@@ -17,7 +17,6 @@ extension ViewController: Presentable {
     public func showLoading() { showLoading(show: true) }
     public func hideLoading() { showLoading(show: false) }
     public func onHandleErrorFailed(error: Error) { show(error: "Oops, something went wrong!") }
-    
 }
 
 class ViewModel {

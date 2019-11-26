@@ -21,24 +21,20 @@ class AlamofireDataSource: PostsDataSource {
                 return Disposables.create()
             }
 
-            Alamofire.request(url,
-                            method: .get)
+            AF.request(url, method: .get)
                     .debugLog()
                     .validate()
                     .responseJSON { response in
-                        guard response.result.isSuccess else {
-                            single(.error(response.result.error!))
-                            return
-                        }
-
-                        do {
-                            let posts = try JSONDecoder().decode([PostResponse].self, from: response.data! )
-                            return single(.success(posts))
-                        } catch let e {
-                            return single(.error(e))
+                        switch response.result {
+                        case .success:
+                            do {
+                                let posts = try JSONDecoder().decode([PostResponse].self, from: response.data! )
+                                return single(.success(posts))
+                            } catch let e { return single(.error(e)) }
+                        case .failure(let error):
+                            single(.error(error))
                         }
                     }
-
             return Disposables.create()
         })
     }

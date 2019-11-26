@@ -34,6 +34,7 @@ class ViewModel {
     }
 
     func login(credentials: Credentials) -> Observable<User> {
+      // request
       rxRequester.request { loginApi.login(credentials: credentials) }
     }
 ```

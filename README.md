@@ -57,13 +57,17 @@ struct ConnectivityHandler: NSErrorHandler {
 ```
 
 ## Error Handler Types
-1- **NSErrorHandler**
-2- **ResumableHandler**
-3- **ErrorHandler**
 
 |     **Handler Type**     |                 **Description**               |
 |--------------------------|-----------------------------------------------|
 | **NSErrorHandler**       |   Handles NSError                             |
 | **ResumableHandler**     |   provides a request to be invoked after <br> the error and before resuming <br>the main request.                                                                   |
 | **ErrorHandler**         |     Handles any Swift.Error                   |
+
+## Alamofire Handlers
+|     **Handler Type**                 |     **Description**               |
+|--------------------------------------|-----------------------------------|
+| **AlamofireStatusCodeHandler**       |   Handles HTTP status code        |
+| **AlamofireUnderlyingErrorHandler**  |   Handles underlying error        |
+| **AlamofireErrorHandler**            |     Handles any AFError           |
 

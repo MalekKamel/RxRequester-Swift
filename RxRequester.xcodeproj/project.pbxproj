@@ -56,12 +56,7 @@
 		04CF89DA238739D800E42FB2 /* RxRequester.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2B72386A8CC002446DA /* RxRequester.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04CF89DD238739D800E42FB2 /* RxRequesterAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2D32386AA89002446DA /* RxRequesterAlamofire.framework */; };
 		04CF89DE238739D800E42FB2 /* RxRequesterAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2D32386AA89002446DA /* RxRequesterAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		04CF89E523873A0F00E42FB2 /* RxRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2B72386A8CC002446DA /* RxRequester.framework */; };
-		04CF89E623873A0F00E42FB2 /* RxRequester.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2B72386A8CC002446DA /* RxRequester.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		04CF89EA23873A1400E42FB2 /* RxRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2B72386A8CC002446DA /* RxRequester.framework */; };
-		04CF89EB23873A1400E42FB2 /* RxRequester.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2B72386A8CC002446DA /* RxRequester.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04CF89EF23873A4900E42FB2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE3862387053C002446DA /* RxSwift.framework */; };
-		04CF89F023873A4900E42FB2 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE3862387053C002446DA /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04CF89F323873BE800E42FB2 /* PluggableErrorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F19353AEEEA0D7C9A9D4 /* PluggableErrorProcessor.swift */; };
 		04EC61F4238AF0B9005643F5 /* MockPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6ADB38F4C972234511C /* MockPresentable.swift */; };
 		04EC61F5238AF0BA005643F5 /* MockPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6ADB38F4C972234511C /* MockPresentable.swift */; };
@@ -230,7 +225,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				04CF89E623873A0F00E42FB2 /* RxRequester.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +235,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				04CF89EB23873A1400E42FB2 /* RxRequester.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +245,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				04CF89F023873A4900E42FB2 /* RxSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,7 +435,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CF89E523873A0F00E42FB2 /* RxRequester.framework in Frameworks */,
 				24F3FD7709E9B82B439EA04F /* Pods_RxRequesterAlamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,7 +443,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CF89EA23873A1400E42FB2 /* RxRequester.framework in Frameworks */,
 				062369DFCC3959E796417B9C /* Pods_RxRequesterMoya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

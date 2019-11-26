@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 Simple & Clean RxJava requester for Android
 DESC
 
-  s.homepage         = 'https://github.com/ShabanKamell/RxRequester-iOS'
+  s.homepage         = 'https://github.com/ShabanKamell/RxRequester-Swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'ShabanKamell' => 'sh3ban.kamel@gmail.com' }
@@ -35,18 +35,18 @@ DESC
   s.default_subspec = "Core"
 
   s.subspec "Core" do |ss|
-    ss.source_files  = "Sources/Core/**/*"
+    ss.source_files  = "Sources/RxRequester/**/*"
     ss.framework  = "Foundation"
     ss.dependency "RxSwift", "~> 4.0"
   end
 
   s.subspec "Alamofire" do |ss|
-    ss.source_files  = "Sources/Alamofire/**/*"
+    ss.source_files  = "Sources/RxRequester+Alamofire/**/*"
     ss.dependency "RxRequester/Core"
   end
 
   s.subspec "Moya" do |ss|
-    ss.source_files  = "Sources/Moya/**/*"
+    ss.source_files  = "Sources/RxRequester+Moya/**/*"
     ss.dependency "RxRequester/Core"
     ss.dependency "Moya", "~> 13.0"
   end

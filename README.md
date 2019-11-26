@@ -39,7 +39,7 @@ class ViewModel {
     }
 ```
 
-## Error Handling
+### Error Handling
 **RxRequester** shines in error handling. Errors in RxRequesters can be handled by providing a handler for each error.
 If you want to handle connectivity error `NSURLErrorNotConnectedToInternet`, for example, you must provide a handler as the following
 
@@ -56,11 +56,11 @@ struct ConnectivityHandler: NSErrorHandler {
 
 ```
 
-## Alamofire & Moya
+### Alamofire & Moya
 RxReqeuster provides support for handling **Alamofire** and **Moya**errors. check handler types below.
 
 
-## Error Handler Types
+### Error Handler Types
 
 |     **Handler Type**     |                 **Description**               |
 |--------------------------|-----------------------------------------------|
@@ -69,14 +69,14 @@ RxReqeuster provides support for handling **Alamofire** and **Moya**errors. chec
 | **ErrorHandler**         |     Handles any Swift.Error                   |
 
 
-## Alamofire Handlers
+### Alamofire Handlers
 |       **Handler Type**               |        **Description**            |
 |--------------------------------------|-----------------------------------|
 | **AlamofireStatusCodeHandler**       |   Handles HTTP status code        |
 | **AlamofireUnderlyingErrorHandler**  |   Handles underlying error        |
 | **AlamofireErrorHandler**            |   Handles any `AFError`           |
 
-## Moya Handlers
+### Moya Handlers
 |       **Handler Type**               |         **Description**           |
 |--------------------------------------|-----------------------------------|
 | **MoyaStatusCodeHandler**            |   Handles HTTP status code        |

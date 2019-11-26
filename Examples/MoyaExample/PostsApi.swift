@@ -43,17 +43,31 @@ extension PostsApi: TargetType {
 
 // MARK: - Response Handlers
 
-private func jsonResponseDataFormatter(_ data: Data) -> Data {
+private func jsonResponseDataFormatter(_ data: Data) -> String {
     do {
         let dataAsJSON = try JSONSerialization.jsonObject(with: data)
         let prettyData =  try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
-        return prettyData
-    } catch { return data }
+        return String(decoding: prettyData, as: UTF8.self)
+    } catch { return String(decoding: data, as: UTF8.self) }
 }
 
-let postsApi = MoyaProvider<PostsApi>(
-        plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: jsonResponseDataFormatter)]
-)
+let postsApi = createProvider()
+
+private func createProvider() -> MoyaProvider<PostsApi> {
+    var config = NetworkLoggerPlugin.Configuration()
+
+    // Log Options
+    var logOptions = NetworkLoggerPlugin.Configuration.LogOptions()
+    logOptions.insert(NetworkLoggerPlugin.Configuration.LogOptions.verbose)
+    config.logOptions = logOptions
+
+    // Formatter
+    config.formatter = NetworkLoggerPlugin.Configuration.Formatter(responseData: jsonResponseDataFormatter)
+
+    let logger = NetworkLoggerPlugin(configuration: config)
+
+    return MoyaProvider<PostsApi>(plugins: [logger])
+}
 
 enum PostsApi {
     case posts

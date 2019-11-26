@@ -61,9 +61,11 @@ struct ConnectivityHandler: NSErrorHandler {
 2- **ResumableHandler**
 3- **ErrorHandler**
 
-|     **Handler Type**     |    **Description**   |
-|--------------------------|----------------------|
-| **NSErrorHandler**       |   Handles NSError                   |
-| **ResumableHandler**     |   provides a request to be invoked after <br> the error and before resuming the the main request. request will be   |
-| **ErrorHandler**         |     Handles any Swift.Error                 |
-|                          |                      |
+|     **Handler Type**     |                 **Description**               |
+|--------------------------|-----------------------------------------------|
+| **NSErrorHandler**       |   Handles NSError                             |
+| **ResumableHandler**     |   provides a request to be invoked after 
+                               <br> the error and before resuming 
+                               <br>the main request.                       |
+| **ErrorHandler**         |     Handles any Swift.Error                   |
+

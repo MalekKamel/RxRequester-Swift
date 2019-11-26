@@ -101,6 +101,8 @@ RxRequester gives you the full controll over any request
      rxRequester.request(options: options) { .. }
 ```
 
+#### Look at 'Examples' group for the full code.
+
 ### License
 
 ```

@@ -6,20 +6,6 @@
 [![Platform](https://img.shields.io/cocoapods/p/SwiftMessages.svg?style=flat)](http://cocoadocs.org/docsets/SwiftMessages)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-## 🔥 View Controllers 🔥
-
-SwiftMessages can now present view controllers using the `SwiftMessagesSegue` custom modal segue!
-
-<p align="center">
-  <img src="./Design/SwiftMessagesSegue.gif" />
-</p>
-
-[`SwiftMessagesSegue`](./SwiftMessages/SwiftMessagesSegue.swift) is a subclass of `UIStoryboardSegue` that integrates directly into Interface Builder as a custom modal segue, enabling view controllers to take advantage of SwiftMessages layouts, animations and more. `SwiftMessagesSegue` works with any UIKIt project — storyboards are not required. Refer to the View Controllers readme below for more information.
-
-#### [View Controllers Readme](./ViewControllers.md)
-
-And check out our blog post [Elegant Custom UIViewController Transitioning](http://www.swiftkickmobile.com/elegant-custom-uiviewcontroller-transitioning-uiviewcontrollertransitioningdelegate-uiviewcontrolleranimatedtransitioning/) to learn a great technique you can use to build your own custom segues that utilize `UIViewControllerTransitioningDelegate` and `UIViewControllerAnimatedTransitioning`.
-
 <p align="center">
   <img src="./Design/swiftmessages.png" />
 </p>
@@ -45,6 +31,20 @@ Try exploring [the demo app via appetize.io](http://goo.gl/KXw4nD) to get a feel
 <p align="center">
 	<a href="http://goo.gl/KXw4nD"><img src="./Demo/appetize.png" /></a>
 </p>
+
+## View Controllers
+
+SwiftMessages can present view controllers using the `SwiftMessagesSegue` custom modal segue!
+
+<p align="center">
+  <img src="./Design/SwiftMessagesSegue.gif" />
+</p>
+
+[`SwiftMessagesSegue`](./SwiftMessages/SwiftMessagesSegue.swift) is a subclass of `UIStoryboardSegue` that integrates directly into Interface Builder as a custom modal segue, enabling view controllers to take advantage of SwiftMessages layouts, animations and more. `SwiftMessagesSegue` works with any UIKIt project — storyboards are not required. Refer to the View Controllers readme below for more information.
+
+#### [View Controllers Readme](./ViewControllers.md)
+
+And check out our blog post [Elegant Custom UIViewController Transitioning](http://www.swiftkickmobile.com/elegant-custom-uiviewcontroller-transitioning-uiviewcontrollertransitioningdelegate-uiviewcontrolleranimatedtransitioning/) to learn a great technique you can use to build your own custom segues that utilize `UIViewControllerTransitioningDelegate` and `UIViewControllerAnimatedTransitioning`.
 
 ## Installation
 
@@ -96,7 +96,7 @@ view.configureDropShadow()
 
 // Set message title, body, and icon. Here, we're overriding the default warning
 // image with an emoji character.
-let iconText = ["🤔", "😳", "🙄", "😶"].sm_random()!
+let iconText = ["🤔", "😳", "🙄", "😶"].randomElement()!
 view.configureContent(title: "Warning", body: "Consider yourself warned.", iconText: iconText)
 
 // Increase the external margin around the card. In general, the effect of this setting
@@ -178,6 +178,17 @@ SwiftMessages provides excellent VoiceOver support out-of-the-box.
 * If the message is shown with a dim view using `config.dimMode`, elements below the dim view are not focusable until the message is hidden. If `config.dimMode.interactive == true`, the dim view itself will be focusable and read out "dismiss" followed by "button". The former text can be customized by setting the `config.dimModeAccessibilityLabel` property.
 
 See the `AccessibleMessage` protocol for implementing proper accessibility support in custom views.
+
+### Keyboard Avoidance
+
+The `KeyboardTrackingView` class can be used to cause the message view to avoid the keyboard by sliding up when the keyboard gets too close.
+
+````swift
+var config = SwiftMessages.defaultConfig
+config.keyboardTrackingView = KeyboardTrackingView()
+````
+
+You can incorporate `KeyboardTrackingView` into your app even when you're not using SwiftMessages. Install into your view hierarchy by pinning `KeyboardTrackingView` to the bottom, leading, and trailing edges of the screen. Then pin the bottom of your content that should avoid the keyboard to the top `KeyboardTrackingView`. Use an equality constraint to strictly track the keyboard or an inequality constraint to only move when the keyboard gets too close. `KeyboardTrackingView` works by observing keyboard notifications and adjusting its height to maintain its top edge above the keyboard, thereby pushing your content up. See the comments in `KeyboardTrackingView` for configuration options.
 
 ### Message Queueing
 

@@ -25,10 +25,10 @@ DESC
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'ShabanKamell' => 'sh3ban.kamel@gmail.com' }
-  s.source           = { :git => 'https://github.com/ShabanKamell/RxRequester-iOS.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ShabanKamell/RxRequester-Swift.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/ShaAhKa'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
   
 
   s.swift_version = '5.1.2'
@@ -36,19 +36,23 @@ DESC
 
   s.subspec "Core" do |ss|
     ss.source_files  = "Sources/RxRequester/**/*"
+    ss.exclude_files = "Sources/RxRequester/Tests/**/*"
     ss.framework  = "Foundation"
-    ss.dependency "RxSwift", "~> 4.0"
+    ss.dependency "RxSwift", "~> 5.0"
   end
 
   s.subspec "Alamofire" do |ss|
     ss.source_files  = "Sources/RxRequester+Alamofire/**/*"
+    ss.exclude_files = "Sources/RxRequester+Alamofire/Tests/**/*"
     ss.dependency "RxRequester/Core"
-  end
+    ss.dependency "Alamofire", "~> 5.0.0-rc.3"
+ end
 
   s.subspec "Moya" do |ss|
     ss.source_files  = "Sources/RxRequester+Moya/**/*"
+    ss.exclude_files = "Sources/RxRequester+Moya/Tests/**/*"
     ss.dependency "RxRequester/Core"
-    ss.dependency "Moya", "~> 13.0"
+    ss.dependency "Moya/RxSwift", "~> 14.0.0-beta.5"
   end
 
 end

@@ -277,19 +277,12 @@
 		04EC6206238B1B3A005643F5 /* BadRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadRequestHandler.swift; sourceTree = "<group>"; };
 		04EC620A238B1B48005643F5 /* BadRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadRequestHandler.swift; sourceTree = "<group>"; };
 		04EC620F238B1BC9005643F5 /* UnauthorizedHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnauthorizedHandler.swift; sourceTree = "<group>"; };
-		04EC6221238B23DE005643F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
-		04EC622E238B2413005643F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04EC6231238B2427005643F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04EC6233238B24A2005643F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FEE2B72386A8CC002446DA /* RxRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FEE2B92386A8CC002446DA /* RxRequester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxRequester.h; sourceTree = "<group>"; };
-		04FEE2BA2386A8CC002446DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FEE2D32386AA89002446DA /* RxRequesterAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRequesterAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FEE2D52386AA89002446DA /* RxRequesterAlamofire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxRequesterAlamofire.h; sourceTree = "<group>"; };
-		04FEE2D62386AA89002446DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FEE2EF2386AAC1002446DA /* RxRequesterMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRequesterMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FEE2F12386AAC1002446DA /* RxRequesterMoya.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxRequesterMoya.h; sourceTree = "<group>"; };
-		04FEE2F22386AAC1002446DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FEE30A2386AB22002446DA /* AlamofireExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FEE30C2386AB22002446DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FEE30E2386AB22002446DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -350,6 +343,7 @@
 		1A54F6B794E5BE536F248527 /* AlamofireErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireErrorHandler.swift; sourceTree = "<group>"; };
 		1A54F6B97FBF01FA29DBE52D /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		1A54F6C96103C74258016B2D /* JsonSerializationFailedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializationFailedHandler.swift; sourceTree = "<group>"; };
+		1A54F786431190133D6137FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		1A54F7B0FAB4E1A009DBB877 /* TimeoutHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeoutHandler.swift; sourceTree = "<group>"; };
 		1A54F8153D8039499673AEB2 /* MyUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
 		1A54F932CE3B65A918E4C516 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
@@ -473,7 +467,6 @@
 		0433BF402389974300293728 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				04EC6233238B24A2005643F5 /* Info.plist */,
 				04EC6204238B18F2005643F5 /* Handlers */,
 				0433BF3E2389973B00293728 /* RxRequesterTest.swift */,
 				1A54F6ADB38F4C972234511C /* MockPresentable.swift */,
@@ -485,7 +478,6 @@
 		0433BF4123899C4B00293728 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				04EC6231238B2427005643F5 /* Info.plist */,
 				04EC6209238B1B48005643F5 /* Handlers */,
 				0433BF6623899DE900293728 /* AlamofireTest.swift */,
 			);
@@ -495,7 +487,6 @@
 		0433BF4223899C5D00293728 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				04EC622E238B2413005643F5 /* Info.plist */,
 				04EC6205238B1B3A005643F5 /* Handlers */,
 				0433BF6323899DA800293728 /* RxRequesterMoyaTest.swift */,
 				1A54FBCDAF3CA744AA9F3262 /* MoyaTest.swift */,
@@ -558,6 +549,7 @@
 				04FEE2B82386A8CC002446DA /* RxRequester */,
 				04FEE2D42386AA89002446DA /* RxRequester+Alamofire */,
 				04FEE2F02386AAC1002446DA /* RxRequester+Moya */,
+				1A54F786431190133D6137FB /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -628,7 +620,6 @@
 				04FEE3432386AC90002446DA /* RxRequester.swift */,
 				04FEE3452386AC90002446DA /* SchedulerProvider.swift */,
 				04FEE2B92386A8CC002446DA /* RxRequester.h */,
-				04FEE2BA2386A8CC002446DA /* Info.plist */,
 				1A54F19353AEEEA0D7C9A9D4 /* PluggableErrorProcessor.swift */,
 				0433BF402389974300293728 /* Tests */,
 			);
@@ -641,7 +632,6 @@
 				1A54FA3CC68CC6289D6038EA /* Handler */,
 				04FEE3462386ACA0002446DA /* ErrorProcessor+Alamofire.swift */,
 				04FEE2D52386AA89002446DA /* RxRequesterAlamofire.h */,
-				04FEE2D62386AA89002446DA /* Info.plist */,
 				1A54F434A86AA243B3097BF5 /* AlamofireHandlers.swift */,
 				0433BF4123899C4B00293728 /* Tests */,
 			);
@@ -651,11 +641,9 @@
 		04FEE2F02386AAC1002446DA /* RxRequester+Moya */ = {
 			isa = PBXGroup;
 			children = (
-				04EC6221238B23DE005643F5 /* Info.plist */,
 				1A54FB7AF0E4335927E98315 /* Handler */,
 				04FEE3362386AC6C002446DA /* ErrorProcessor+Moya.swift */,
 				04FEE2F12386AAC1002446DA /* RxRequesterMoya.h */,
-				04FEE2F22386AAC1002446DA /* Info.plist */,
 				1A54F0136DE4771DAA723A2D /* MoyaHandlers.swift */,
 				0433BF4223899C5D00293728 /* Tests */,
 			);
@@ -1971,7 +1959,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Sources/RxRequester/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2004,7 +1992,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Sources/RxRequester/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2032,7 +2020,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/RxRequester+Alamofire/Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2059,7 +2047,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/RxRequester+Alamofire/Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2086,7 +2074,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/RxRequester+Moya/Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2113,7 +2101,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/RxRequester+Moya/Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

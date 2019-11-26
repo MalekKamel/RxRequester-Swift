@@ -1,27 +1,25 @@
-# platform :ios, '9.0'
+platform :ios, '11.0'
 
 def alamofire
-  pod 'Alamofire', '~> 4.1'
+  pod 'Alamofire', '~> 5.0.0-rc.3'
 end
 
 def rxSwift
-  pod 'RxSwift', '~> 4.0'
+  pod 'RxSwift', '~> 5.0'
 end
 
 def moya
-  pod 'Moya/RxSwift', '~> 13.0.0'
+  pod 'Moya/RxSwift', '~> 14.0.0-beta.5'
 end
 
 def examples_pods
   rxSwift
-  pod 'SwiftMessages', '6.0.1'
+  pod 'SwiftMessages'
 end
 
 def test_pods
   pod 'RxTest'
   pod 'RxBlocking'
-  pod 'Quick'
-  pod 'Nimble'
 end
 
 

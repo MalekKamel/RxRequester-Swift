@@ -1,56 +1,44 @@
 PODS:
-  - Alamofire (4.9.1)
-  - Moya/Core (13.0.1):
-    - Alamofire (~> 4.1)
-    - Result (~> 4.1)
-  - Moya/RxSwift (13.0.1):
+  - Alamofire (5.0.0-rc.3)
+  - Moya/Core (14.0.0-beta.5):
+    - Alamofire (= 5.0.0-rc.3)
+  - Moya/RxSwift (14.0.0-beta.5):
     - Moya/Core
-    - RxSwift (~> 4.0)
-  - Nimble (8.0.4)
-  - Quick (2.2.0)
-  - Result (4.1.0)
-  - RxBlocking (4.5.0):
-    - RxSwift (>= 4.4.2, ~> 4.4)
-  - RxSwift (4.5.0)
-  - RxTest (4.5.0):
-    - RxSwift (>= 4.4.2, ~> 4.4)
-  - SwiftMessages (6.0.1):
-    - SwiftMessages/App (= 6.0.1)
-  - SwiftMessages/App (6.0.1)
+    - RxSwift (~> 5.0)
+  - RxBlocking (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - RxTest (5.0.1):
+    - RxSwift (~> 5)
+  - SwiftMessages (7.0.1):
+    - SwiftMessages/App (= 7.0.1)
+  - SwiftMessages/App (7.0.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.1)
-  - Moya/RxSwift (~> 13.0.0)
-  - Nimble
-  - Quick
+  - Alamofire (~> 5.0.0-rc.3)
+  - Moya/RxSwift (~> 14.0.0-beta.5)
   - RxBlocking
-  - RxSwift (~> 4.0)
+  - RxSwift (~> 5.0)
   - RxTest
-  - SwiftMessages (= 6.0.1)
+  - SwiftMessages
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Moya
-    - Nimble
-    - Quick
-    - Result
     - RxBlocking
     - RxSwift
     - RxTest
     - SwiftMessages
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
-  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  RxBlocking: 79413e4d916f44bb3e113c5b2cc059e36fe58910
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
-  RxTest: 3ccb66bfbace0bf7df1c43a7c75d046f8ce60372
-  SwiftMessages: 42ed7b6e1f2f1ead9ee667dc61a0ae87e4f49570
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  Moya: 2c16c3fe92eda302070213452281b59198f946d8
+  RxBlocking: c5e090f42d046df8b0e7752742510f349963710f
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  RxTest: 0132f952a61da82d5233abedaa559df91e5330e5
+  SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
 
-PODFILE CHECKSUM: 3c1844f4c50877626bd18fffec3714805cb392ba
+PODFILE CHECKSUM: 9ba11824bb68a2698895d50ecff04aa74477a53d
 
 COCOAPODS: 1.8.4

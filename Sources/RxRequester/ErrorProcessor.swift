@@ -14,7 +14,7 @@ public class ErrorProcessor {
         if let pluggableProcessor = self as? PluggableErrorProcessor,
            pluggableProcessor.handle(error: error, presentable: presentable) { return }
 
-        if handle(nsError: error as NSError, presentable: presentable) { return }
+        if handle(nsError: error, presentable: presentable) { return }
 
         if handle(error: error , presentable: presentable) { return }
 
@@ -33,14 +33,14 @@ private func handle(error: Swift.Error, presentable: Presentable?) -> Bool {
     return true
 }
 
-private func handle(nsError: NSError, presentable: Presentable?) -> Bool {
+private func handle(nsError: Swift.Error, presentable: Presentable?) -> Bool {
     let handler: NSErrorHandler? = RxRequester.nsErrorHandlers.first(where: {
-        $0.canHandle(error: nsError)
+        $0.canHandle(error: nsError as NSError)
     })
 
     guard handler != nil else { return false }
 
-    handler!.handle(error: nsError, presentable: presentable)
+    handler!.handle(error: nsError as NSError, presentable: presentable)
     return true
 }
 

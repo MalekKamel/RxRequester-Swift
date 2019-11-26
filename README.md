@@ -92,12 +92,11 @@ RxRequester gives you the full controll over any request
 ``` swift
     let options = RequestOptions.Builder()
          .showLoading(true)
-         .inlineErrorHandling{ false })
+         .inlineErrorHandling { error in false }
          .observeOnScheduler(MainScheduler.instance)
          .subscribeOnScheduler(ConcurrentDispatchQueueScheduler(qos: .background))
          .build()
      rxRequester.request(options: options) { .. }
-     }
 ```
 
 ### License

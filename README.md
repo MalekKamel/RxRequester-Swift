@@ -86,6 +86,7 @@ RxReqeuster provides support for handling **Alamofire** and **Moya** errors. che
 RxRequester gives you the full controll over any request
 - [ ] Inline error handling
 - [ ] Enable/Disable loading indicators
+- [ ] Invoke code on error.
 - [ ] Set subscribeOn Scheduler
 - [ ] Set observeOn Scheduler
 
@@ -93,6 +94,7 @@ RxRequester gives you the full controll over any request
     let options = RequestOptions.Builder()
          .showLoading(true)
          .inlineErrorHandling { error in false }
+         .doOnError { error in }
          .observeOnScheduler(MainScheduler.instance)
          .subscribeOnScheduler(ConcurrentDispatchQueueScheduler(qos: .background))
          .build()

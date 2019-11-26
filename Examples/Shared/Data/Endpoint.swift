@@ -5,8 +5,6 @@
 
 import Foundation
 
-let endPointKey = "Endpoint"
-
 enum Endpoint: String {
     case posts = "/posts"
     case error404 = "/error/404"

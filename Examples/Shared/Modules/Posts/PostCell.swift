@@ -15,9 +15,7 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var ivAvatar: UIImageView!
     @IBOutlet weak var btnMore: UIButton!
 
-    var item: Post! {
-        didSet { setup() }
-    }
+    var item: Post! { didSet { setup() } }
 
      private func setup() {
         lblTitle.text = item.title

@@ -1,6 +1,6 @@
 # RxRequester-Swift
 
-A simple wrapper for RxSwift & Alamofire & Moya that helps you:
+A simple wrapper for RxSwift, Alamofire and Moya that helps you:
 - [ ] Make clean RxSwift requests.
 - [ ] Inline & Global error handling.
 - [ ] Resume the current request after errors like token expired error.

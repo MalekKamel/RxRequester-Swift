@@ -57,7 +57,7 @@ struct ConnectivityHandler: NSErrorHandler {
 ```
 
 ### Alamofire & Moya
-RxReqeuster provides support for handling **Alamofire** and **Moya**errors. check handler types below.
+RxReqeuster provides support for handling **Alamofire** and **Moya** errors. check handler types below.
 
 
 ### Error Handler Types

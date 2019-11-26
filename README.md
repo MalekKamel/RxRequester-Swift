@@ -56,6 +56,10 @@ struct ConnectivityHandler: NSErrorHandler {
 
 ```
 
+## Alamofire & Moya
+RxReqeuster provides support for handling **Alamofire** and **Moya**errors. check handler types below.
+
+
 ## Error Handler Types
 
 |     **Handler Type**     |                 **Description**               |
@@ -64,10 +68,33 @@ struct ConnectivityHandler: NSErrorHandler {
 | **ResumableHandler**     |   provides a request to be invoked after <br> the error and before resuming <br>the main request.                                                                   |
 | **ErrorHandler**         |     Handles any Swift.Error                   |
 
+
 ## Alamofire Handlers
-|     **Handler Type**                 |     **Description**               |
+|       **Handler Type**               |        **Description**            |
 |--------------------------------------|-----------------------------------|
 | **AlamofireStatusCodeHandler**       |   Handles HTTP status code        |
 | **AlamofireUnderlyingErrorHandler**  |   Handles underlying error        |
-| **AlamofireErrorHandler**            |     Handles any AFError           |
+| **AlamofireErrorHandler**            |   Handles any `AFError`           |
 
+## Moya Handlers
+|       **Handler Type**               |         **Description**           |
+|--------------------------------------|-----------------------------------|
+| **MoyaStatusCodeHandler**            |   Handles HTTP status code        |
+| **MoyaUnderlyingErrorHandler**       |   Handles underlying error        |
+| **MoyaErrorHandler**                 |   Handles any `MoyaError`         |
+
+### License
+
+```
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```

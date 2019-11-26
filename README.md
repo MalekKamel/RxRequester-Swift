@@ -38,3 +38,32 @@ class ViewModel {
       rxRequester.request { loginApi.login(credentials: credentials) }
     }
 ```
+
+## Error Handling
+**RxRequester** shines in error handling. Errors in RxRequesters can be handled by providing a handler for each error.
+If you want to handle connectivity error `NSURLErrorNotConnectedToInternet`, for example, you must provide a handler as the following
+
+``` swift
+import RxRequester
+
+struct ConnectivityHandler: NSErrorHandler {
+    var supportedErrors: [Int] = [NSURLErrorNotConnectedToInternet]
+
+    func handle(error: NSError, presentable: Presentable?) {
+        presentable?.showError(error: error.localizedDescription)
+    }
+}
+
+```
+
+## Error Handler Types
+1- **NSErrorHandler**
+2- **ResumableHandler**
+3- **ErrorHandler**
+
+|     **Handler Type**     |    **Description**   |
+|--------------------------|----------------------|
+| **NSErrorHandler**       |   Handles NSError                   |
+| **ResumableHandler**     |   provides a request to be invoked after <br> the error and before resuming the the main request. request will be   |
+| **ErrorHandler**         |     Handles any Swift.Error                 |
+|                          |                      |

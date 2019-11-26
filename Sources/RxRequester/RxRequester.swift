@@ -63,6 +63,8 @@ extension Observable {
                 .do(onError: { [weak self] error in
                     guard self != nil else { return }
 
+                    options.doOnError?(error)
+
                     if options.showLoading { presentable?.hideLoading() }
 
                     if options.inlineHandling?(error) == true { return }

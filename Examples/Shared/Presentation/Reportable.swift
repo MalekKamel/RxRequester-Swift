@@ -111,8 +111,6 @@ fileprivate func showSwiftMessage(
         theme: Theme,
         feedbackType: UINotificationFeedbackGenerator.FeedbackType
 ) {
-    DispatchQueue.main.async {
-
         UINotificationFeedbackGenerator().notificationOccurred(feedbackType)
 
         let view = MessageView.viewFromNib(layout: layout)
@@ -143,5 +141,4 @@ fileprivate func showSwiftMessage(
         }
 
         SwiftMessages.show(config: config, view: view)
-    }
 }

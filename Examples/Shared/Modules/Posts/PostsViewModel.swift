@@ -13,8 +13,15 @@ final class PostsViewModel: ViewModelProtocol {
         self.postsRepository = postsRepository
     }
 
-     func posts() -> Single<[Post]> {
-        rxRequester.request { [weak self] in
+    func posts() -> Single<[Post]> {
+        let options = RequestOptions.Builder()
+                .showLoading(true)
+                .inlineErrorHandling { error in false }
+                .doOnError { error in }
+                .observeOnScheduler(MainScheduler.instance)
+                .subscribeOnScheduler(ConcurrentDispatchQueueScheduler(qos: .background))
+                .build()
+        return rxRequester.request(options: options) { [weak self] in
             self!.postsRepository.all().map { ListMapper(PostMapper()).map($0) }
         }
     }

@@ -464,41 +464,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0433BF402389974300293728 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				04EC6204238B18F2005643F5 /* Handlers */,
-				0433BF3E2389973B00293728 /* RxRequesterTest.swift */,
-				1A54F6ADB38F4C972234511C /* MockPresentable.swift */,
-				04EC61F6238B1792005643F5 /* ErrorProcessortTest.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		0433BF4123899C4B00293728 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				04EC6209238B1B48005643F5 /* Handlers */,
-				0433BF6623899DE900293728 /* AlamofireTest.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		0433BF4223899C5D00293728 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				04EC6205238B1B3A005643F5 /* Handlers */,
-				0433BF6323899DA800293728 /* RxRequesterMoyaTest.swift */,
-				1A54FBCDAF3CA744AA9F3262 /* MoyaTest.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		0446C6192385B00E00195C17 = {
 			isa = PBXGroup;
 			children = (
 				0446C75C2385C60D00195C17 /* Sources */,
 				0446C6242385B00E00195C17 /* Examples */,
+				04A0F5EE238F010800ED64EE /* Tests */,
 				0446C6232385B00E00195C17 /* Products */,
 				04FEE38123870519002446DA /* Frameworks */,
 				04CCB22C62635C3CD04E7A95 /* Pods */,
@@ -547,11 +518,51 @@
 			isa = PBXGroup;
 			children = (
 				04FEE2B82386A8CC002446DA /* RxRequester */,
-				04FEE2D42386AA89002446DA /* RxRequester+Alamofire */,
-				04FEE2F02386AAC1002446DA /* RxRequester+Moya */,
+				04FEE2D42386AA89002446DA /* RxRequesterAlamofire */,
+				04FEE2F02386AAC1002446DA /* RxRequesterMoya */,
 				1A54F786431190133D6137FB /* Info.plist */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		04A0F5EE238F010800ED64EE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				04A0F5F1238F019300ED64EE /* RxRequesterAlamofire */,
+				04A0F5F0238F018900ED64EE /* RxRequesterMoya */,
+				04A0F5EF238F017A00ED64EE /* RxRequester */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		04A0F5EF238F017A00ED64EE /* RxRequester */ = {
+			isa = PBXGroup;
+			children = (
+				04EC6204238B18F2005643F5 /* Handlers */,
+				0433BF3E2389973B00293728 /* RxRequesterTest.swift */,
+				1A54F6ADB38F4C972234511C /* MockPresentable.swift */,
+				04EC61F6238B1792005643F5 /* ErrorProcessortTest.swift */,
+			);
+			path = RxRequester;
+			sourceTree = "<group>";
+		};
+		04A0F5F0238F018900ED64EE /* RxRequesterMoya */ = {
+			isa = PBXGroup;
+			children = (
+				04EC6205238B1B3A005643F5 /* Handlers */,
+				0433BF6323899DA800293728 /* RxRequesterMoyaTest.swift */,
+				1A54FBCDAF3CA744AA9F3262 /* MoyaTest.swift */,
+			);
+			path = RxRequesterMoya;
+			sourceTree = "<group>";
+		};
+		04A0F5F1238F019300ED64EE /* RxRequesterAlamofire */ = {
+			isa = PBXGroup;
+			children = (
+				04EC6209238B1B48005643F5 /* Handlers */,
+				0433BF6623899DE900293728 /* AlamofireTest.swift */,
+			);
+			path = RxRequesterAlamofire;
 			sourceTree = "<group>";
 		};
 		04CCB22C62635C3CD04E7A95 /* Pods */ = {
@@ -621,33 +632,30 @@
 				04FEE3452386AC90002446DA /* SchedulerProvider.swift */,
 				04FEE2B92386A8CC002446DA /* RxRequester.h */,
 				1A54F19353AEEEA0D7C9A9D4 /* PluggableErrorProcessor.swift */,
-				0433BF402389974300293728 /* Tests */,
 			);
 			path = RxRequester;
 			sourceTree = "<group>";
 		};
-		04FEE2D42386AA89002446DA /* RxRequester+Alamofire */ = {
+		04FEE2D42386AA89002446DA /* RxRequesterAlamofire */ = {
 			isa = PBXGroup;
 			children = (
 				1A54FA3CC68CC6289D6038EA /* Handler */,
 				04FEE3462386ACA0002446DA /* ErrorProcessor+Alamofire.swift */,
 				04FEE2D52386AA89002446DA /* RxRequesterAlamofire.h */,
 				1A54F434A86AA243B3097BF5 /* AlamofireHandlers.swift */,
-				0433BF4123899C4B00293728 /* Tests */,
 			);
-			path = "RxRequester+Alamofire";
+			path = RxRequesterAlamofire;
 			sourceTree = "<group>";
 		};
-		04FEE2F02386AAC1002446DA /* RxRequester+Moya */ = {
+		04FEE2F02386AAC1002446DA /* RxRequesterMoya */ = {
 			isa = PBXGroup;
 			children = (
 				1A54FB7AF0E4335927E98315 /* Handler */,
 				04FEE3362386AC6C002446DA /* ErrorProcessor+Moya.swift */,
 				04FEE2F12386AAC1002446DA /* RxRequesterMoya.h */,
 				1A54F0136DE4771DAA723A2D /* MoyaHandlers.swift */,
-				0433BF4223899C5D00293728 /* Tests */,
 			);
-			path = "RxRequester+Moya";
+			path = RxRequesterMoya;
 			sourceTree = "<group>";
 		};
 		04FEE30B2386AB22002446DA /* AlamofireExample */ = {

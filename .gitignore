@@ -38,3 +38,8 @@ Carthage/Build
 
 /.idea/workspace.xml
 /.idea/libraries
+
+# Swift Package Manager
+.build
+Packages
+Package.pins

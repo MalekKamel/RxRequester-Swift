@@ -43,3 +43,8 @@ Carthage/Build
 .build
 Packages
 Package.pins
+
+# Carthage
+Carthage.pkg
+CarthageApp.pkg
+Carthage.xcodeproj/

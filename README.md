@@ -18,24 +18,13 @@ extension ViewController: Presentable {
     public func hideLoading() { showLoading(show: false) }
     public func onHandleErrorFailed(error: Error) { show(error: "Oops, something went wrong!") }
 }
-
-class ViewModel {
-    var presentable: Presentable!
-
-    func setupRxRequester() {
-      // initialize
-      rxRequester = RxRequester(presentable: presentable)
-    
-      // set handlers
-      RxRequester.nsErrorHandlers = [ConnectivityHandler()]
-      RxRequester.errorHandlers = [MyErrorHandler()]
-      RxRequester.resumableHandlers = [UnauthorizedHandler()]
-    }
-
-    func login(credentials: Credentials) -> Observable<User> {
-      // request
-      rxRequester.request { loginApi.login(credentials: credentials) }
-    }
+    // Set handlers
+    RxRequester.nsErrorHandlers = [ConnectivityHandler()]
+    RxRequester.errorHandlers = [MyErrorHandler()]
+    RxRequester.resumableHandlers = [UnauthorizedHandler()]
+      
+    // Request
+    RxRequester(presentable: self).request { loginApi.login() }
 ```
 
 ### Error Handling

@@ -1,14 +1,10 @@
 # RxRequester-Swift
 
-A simple wrapper for RxSwift, Alamofire and Moya that abstracts repetitive code  helps you:
+A wrapper for **RxSwift** abstracts away all those nasty details you don't really care about and provides default configurations for schedulers, loading indicators, and error handling.
+Using **RxRequester** you can:
 - [ ] Make clean RxSwift requests.
 - [ ] Inline & Global error handling.
-- [ ] Resume the current request after errors like token expired error.
-- [ ] Easy control of loading indicators.
-
-``` swift
-
-```
+- [ ] Toggle loading indicators easily.
 
 ## Usage
 ``` swift

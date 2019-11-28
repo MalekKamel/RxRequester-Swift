@@ -1,2 +1,0 @@
-apply plugin: Plugins.androidLibrary
-apply from: "$rootDir/common.gradle"

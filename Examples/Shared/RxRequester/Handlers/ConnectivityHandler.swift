@@ -3,6 +3,7 @@
 // Copyright (c) 2019 A. All rights reserved.
 //
 
+import Foundation
 import RxRequester
 
 struct ConnectivityHandler: NSErrorHandler {

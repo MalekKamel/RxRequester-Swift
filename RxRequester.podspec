@@ -13,8 +13,12 @@ DESC
   s.social_media_url = 'https://twitter.com/ShaAhKa'
 
   s.ios.deployment_target = '11.0'
-  s.osx.deployment_target = '10.10'
-  s.tvos.deployment_target = '9.0'
+  s.osx.deployment_target = '10.12'
+  s.tvos.deployment_target = '10.0'
+  s.watchos.deployment_target = '3.0'
+
+  s.osx.deployment_target = '10.12'
+  s.tvos.deployment_target = '10.0'
   s.watchos.deployment_target = '3.0'
 
   s.swift_version = '5.1.2'

@@ -9,7 +9,7 @@ Using **RxRequester** you can:
 
 ### Before RxRequester
 ``` swift
-respository.all()
+respository.posts()
           .do(onNext: { _ in showLoading() })
           .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
           .observeOn(MainScheduler.instance)
@@ -22,10 +22,12 @@ respository.all()
 
 ### After RxRequester
 ``` swift
-  rxRequester.request { postsRepository.all() }
+  rxRequester.request { repository.posts() }
 ```
 
 ## Usage
+See [Usage]()
+
 ``` swift
 extension ViewController: Presentable {
     public func showError(error: String) { show(error: error) }

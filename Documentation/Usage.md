@@ -18,22 +18,6 @@
   RxRequester(presentable: self).request { loginApi.login() }
 ```
 
-### Error Handling
-**RxRequester** shines when you need to handle errors. Errors in RxRequester can be handled by providing a handler for each error. For example, if you want to handle connectivity error `NSURLErrorNotConnectedToInternet`, you must provide a handler as the following
-
-``` swift
-import RxRequester
-
-struct ConnectivityHandler: NSErrorHandler {
-    var supportedErrors: [Int] = [NSURLErrorNotConnectedToInternet]
-
-    func handle(error: NSError, presentable: Presentable?) {
-        presentable?.showError(error: error.localizedDescription)
-    }
-}
-
-```
-
 ## Customizing Requests
 RxRequester gives you the full controll over any request
 - [ ] Inline error handling
@@ -51,6 +35,21 @@ RxRequester gives you the full controll over any request
          .subscribeOnScheduler(ConcurrentDispatchQueueScheduler(qos: .background))
          .build()
      rxRequester.request(options: options) { .. }
+```
+
+### Error Handling
+**RxRequester** shines when you need to handle errors. Errors in RxRequester can be handled by providing a handler for each error. For example, if you want to handle connectivity error `NSURLErrorNotConnectedToInternet`, you must provide a handler as the following
+
+``` swift
+import RxRequester
+
+struct ConnectivityHandler: NSErrorHandler {
+    var supportedErrors: [Int] = [NSURLErrorNotConnectedToInternet]
+
+    func handle(error: NSError, presentable: Presentable?) {
+        presentable?.showError(error: error.localizedDescription)
+    }
+}
 ```
 
 ### Alamofire & Moya Error Handling

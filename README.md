@@ -95,7 +95,7 @@ generated framework they'd like, `RxRequester`, `RxRequesterAlamofire`, or `RxRe
 Make the following entry in your Cartfile:
 
 ```
-github "ShabanKamell/RxRequester" ~> 0.4.0
+github "ShabanKamell/RxRequester-Swift" ~> 0.4.0
 ```
 
 Then run `carthage update`.

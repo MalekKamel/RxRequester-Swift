@@ -26,23 +26,9 @@ respository.posts()
 ```
 
 ## Usage
-See [Usage]()
+See [Usage](https://github.com/ShabanKamell/RxRequester-Swift/blob/master/Documentation/Usage.md)
 
-``` swift
-extension ViewController: Presentable {
-    public func showError(error: String) { show(error: error) }
-    public func showLoading() { showLoading(show: true) }
-    public func hideLoading() { showLoading(show: false) }
-    public func onHandleErrorFailed(error: Error) { show(error: "Oops, something went wrong!") }
-}
-    // Set handlers
-    RxRequester.nsErrorHandlers = [ConnectivityHandler()]
-    RxRequester.errorHandlers = [MyErrorHandler()]
-    RxRequester.resumableHandlers = [UnauthorizedHandler()]
-      
-    // Request
-    RxRequester(presentable: self).request { loginApi.login() }
-```
+
 ## Installation
 
 ### Swift Package Manager
@@ -139,49 +125,6 @@ struct ConnectivityHandler: NSErrorHandler {
 
 ### Alamofire & Moya
 RxReqeuster provides support for handling **Alamofire** and **Moya** errors. check handler types below.
-
-
-### Error Handler Types
-
-|     **Handler Type**     |                 **Description**               |
-|--------------------------|-----------------------------------------------|
-| **NSErrorHandler**       |   Handles NSError                             |
-| **ResumableHandler**     |   provides a request to be invoked after <br> the error and before resuming <br>the main request.                                                                   |
-| **ErrorHandler**         |     Handles any Swift.Error                   |
-
-
-### Alamofire Handlers
-|       **Handler Type**               |        **Description**            |
-|--------------------------------------|-----------------------------------|
-| **AlamofireStatusCodeHandler**       |   Handles HTTP status code        |
-| **AlamofireUnderlyingErrorHandler**  |   Handles underlying error        |
-| **AlamofireErrorHandler**            |   Handles any `AFError`           |
-
-### Moya Handlers
-|       **Handler Type**               |         **Description**           |
-|--------------------------------------|-----------------------------------|
-| **MoyaStatusCodeHandler**            |   Handles HTTP status code        |
-| **MoyaUnderlyingErrorHandler**       |   Handles underlying error        |
-| **MoyaErrorHandler**                 |   Handles any `MoyaError`         |
-
-## Customizing Requests
-RxRequester gives you the full controll over any request
-- [ ] Inline error handling
-- [ ] Enable/Disable loading indicators
-- [ ] Invoke code on error.
-- [ ] Set subscribeOn Scheduler
-- [ ] Set observeOn Scheduler
-
-``` swift
-    let options = RequestOptions.Builder()
-         .showLoading(true)
-         .inlineErrorHandling { error in false }
-         .doOnError { error in }
-         .observeOnScheduler(MainScheduler.instance)
-         .subscribeOnScheduler(ConcurrentDispatchQueueScheduler(qos: .background))
-         .build()
-     rxRequester.request(options: options) { .. }
-```
 
 #### Look at 'Examples' group for the full code.
 

@@ -33,7 +33,7 @@ extension ViewController: Presentable {
 To integrate using Apple's Swift package manager, add the following as a dependency to your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/ShabanKamell/RxRequester-Swift.git", .upToNextMajor(from: "0.3.0"))
+.package(url: "https://github.com/ShabanKamell/RxRequester-Swift.git", .upToNextMajor(from: "0.4.0"))
 ```
 
 and then specify `"RxRequester"` as a dependency of the Target in which you wish to use RxRequester.
@@ -52,7 +52,7 @@ let package = Package(
             targets: ["MyPackage"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ShabanKamell/RxRequester-Swift.git", .upToNextMajor(from: "0.3.0"))
+        .package(url: "https://github.com/ShabanKamell/RxRequester-Swift.git", .upToNextMajor(from: "0.4.0"))
     ],
     targets: [
         .target(
@@ -71,21 +71,21 @@ let package = Package(
 For RxRequester, use the following entry in your Podfile:
 
 ```rb
-pod 'RxRequester', '~> 0.3.0'
+pod 'RxRequester', '~> 0.4.0'
 
 # or 
 
-pod 'RxRequester/Alamofire', '~> 0.3.0'
+pod 'RxRequester/Alamofire', '~> 0.4.0'
 
 # or
 
-pod 'RxRequester/Moya', '~> 0.3.0'
+pod 'RxRequester/Moya', '~> 0.4.0'
 ```
 
 Then run `pod install`.
 
 In any file you'd like to use RxRequester in, don't forget to
-import the framework with `import RxRequester`. for Alamofire, `import RxRequesterAlamofire`. For Moya, `import RxRequesterMoya`
+import the framework with `import RxRequester`.
 
 ### Carthage
 
@@ -95,7 +95,7 @@ generated framework they'd like, `RxRequester`, `RxRequesterAlamofire`, or `RxRe
 Make the following entry in your Cartfile:
 
 ```
-github "ShabanKamell/RxRequester" ~> 13.0
+github "ShabanKamell/RxRequester" ~> 0.4.0
 ```
 
 Then run `carthage update`.

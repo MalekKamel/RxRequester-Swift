@@ -1,6 +1,6 @@
 # Usage
 
-# Setup
+## Setup
 ``` swift
 
   extension ViewController: Presentable {

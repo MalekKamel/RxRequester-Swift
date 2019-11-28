@@ -28,7 +28,6 @@ respository.posts()
 ## Usage
 See [Usage](https://github.com/ShabanKamell/RxRequester-Swift/blob/master/Documentation/Usage.md)
 
-
 ## Installation
 
 ### Swift Package Manager
@@ -106,25 +105,6 @@ Then run `carthage update`.
 If this is your first time using Carthage in the project, you'll need to go through some additional steps as explained [over at Carthage](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application).
 
 > NOTE: At this time, Carthage does not provide a way to build only specific repository submodules. All submodules and their dependencies will be built with the above command. However, you don't need to copy frameworks you aren't using into your project. For instance, if you aren't using `RxRequesterAlamofire`, feel free to delete that framework along with `RxRequesterMoya` from the Carthage Build directory after `carthage update` completes.
-
-### Error Handling
-**RxRequester** shines when you need to handle errors. Errors in RxRequester can be handled by providing a handler for each error. For example, if you want to handle connectivity error `NSURLErrorNotConnectedToInternet`, you must provide a handler as the following
-
-``` swift
-import RxRequester
-
-struct ConnectivityHandler: NSErrorHandler {
-    var supportedErrors: [Int] = [NSURLErrorNotConnectedToInternet]
-
-    func handle(error: NSError, presentable: Presentable?) {
-        presentable?.showError(error: error.localizedDescription)
-    }
-}
-
-```
-
-### Alamofire & Moya
-RxReqeuster provides support for handling **Alamofire** and **Moya** errors. check handler types below.
 
 #### Look at 'Examples' group for the full code.
 

@@ -66,9 +66,7 @@
 		04EC620C238B1B48005643F5 /* BadRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC620A238B1B48005643F5 /* BadRequestHandler.swift */; };
 		04EC6212238B1BF6005643F5 /* UnauthorizedHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC620F238B1BC9005643F5 /* UnauthorizedHandler.swift */; };
 		04EC6236238B453A005643F5 /* MyUnderlyingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F8153D8039499673AEB2 /* MyUnderlyingErrorHandler.swift */; };
-		04FEE2C72386A8CC002446DA /* RxRequester.h in Headers */ = {isa = PBXBuildFile; fileRef = 04FEE2B92386A8CC002446DA /* RxRequester.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04FEE2E32386AA89002446DA /* RxRequesterAlamofire.h in Headers */ = {isa = PBXBuildFile; fileRef = 04FEE2D52386AA89002446DA /* RxRequesterAlamofire.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04FEE2FF2386AAC1002446DA /* RxRequesterMoya.h in Headers */ = {isa = PBXBuildFile; fileRef = 04FEE2F12386AAC1002446DA /* RxRequesterMoya.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04FEE30D2386AB22002446DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE30C2386AB22002446DA /* AppDelegate.swift */; };
 		04FEE30F2386AB22002446DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE30E2386AB22002446DA /* SceneDelegate.swift */; };
 		04FEE3162386AB24002446DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FEE3152386AB24002446DA /* Assets.xcassets */; };
@@ -517,6 +515,7 @@
 		0446C75C2385C60D00195C17 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				04E8A028238FF67300BEF1F1 /* Supporting Files */,
 				04FEE2B82386A8CC002446DA /* RxRequester */,
 				04FEE2D42386AA89002446DA /* RxRequesterAlamofire */,
 				04FEE2F02386AAC1002446DA /* RxRequesterMoya */,
@@ -590,6 +589,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		04E8A028238FF67300BEF1F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04FEE2B92386A8CC002446DA /* RxRequester.h */,
+				04FEE2F12386AAC1002446DA /* RxRequesterMoya.h */,
+				04FEE2D52386AA89002446DA /* RxRequesterAlamofire.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		04EC6204238B18F2005643F5 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
@@ -630,7 +639,6 @@
 				04FEE3422386AC90002446DA /* RequestOptions.swift */,
 				04FEE3432386AC90002446DA /* RxRequester.swift */,
 				04FEE3452386AC90002446DA /* SchedulerProvider.swift */,
-				04FEE2B92386A8CC002446DA /* RxRequester.h */,
 				1A54F19353AEEEA0D7C9A9D4 /* PluggableErrorProcessor.swift */,
 			);
 			path = RxRequester;
@@ -641,7 +649,6 @@
 			children = (
 				1A54FA3CC68CC6289D6038EA /* Handler */,
 				04FEE3462386ACA0002446DA /* ErrorProcessor+Alamofire.swift */,
-				04FEE2D52386AA89002446DA /* RxRequesterAlamofire.h */,
 				1A54F434A86AA243B3097BF5 /* AlamofireHandlers.swift */,
 			);
 			path = RxRequesterAlamofire;
@@ -652,7 +659,6 @@
 			children = (
 				1A54FB7AF0E4335927E98315 /* Handler */,
 				04FEE3362386AC6C002446DA /* ErrorProcessor+Moya.swift */,
-				04FEE2F12386AAC1002446DA /* RxRequesterMoya.h */,
 				1A54F0136DE4771DAA723A2D /* MoyaHandlers.swift */,
 			);
 			path = RxRequesterMoya;
@@ -911,7 +917,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04FEE2C72386A8CC002446DA /* RxRequester.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,7 +932,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04FEE2FF2386AAC1002446DA /* RxRequesterMoya.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

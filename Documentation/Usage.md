@@ -1,125 +1,22 @@
-# RxRequester-Swift
+# Usage
 
-A wrapper for **RxSwift** abstracts away all those nasty details you don't really care about and provides default configurations for schedulers, loading indicators, and error handling.
-
-Using **RxRequester** you can:
-- [ ] Make clean RxSwift requests.
-- [ ] Inline & Global error handling.
-- [ ] Toggle loading indicators easily.
-
-### Before RxRequester
+# Setup
 ``` swift
-respository.posts()
-          .do(onNext: { _ in showLoading() })
-          .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
-          .observeOn(MainScheduler.instance)
-          .do(onNext: { _ in hideLoading() })
-          .subscribe(onSuccess: { response in },
-                     onError: { error in
-                           // handle error
-                     })
-```
 
-### After RxRequester
-``` swift
-  rxRequester.request { repository.posts() }
-```
-
-## Usage
-See [Usage]()
-
-``` swift
-extension ViewController: Presentable {
+  extension ViewController: Presentable {
     public func showError(error: String) { show(error: error) }
     public func showLoading() { showLoading(show: true) }
     public func hideLoading() { showLoading(show: false) }
     public func onHandleErrorFailed(error: Error) { show(error: "Oops, something went wrong!") }
-}
-    // Set handlers
-    RxRequester.nsErrorHandlers = [ConnectivityHandler()]
-    RxRequester.errorHandlers = [MyErrorHandler()]
-    RxRequester.resumableHandlers = [UnauthorizedHandler()]
+  }
+  // Set handlers
+  RxRequester.nsErrorHandlers = [ConnectivityHandler()]
+  RxRequester.errorHandlers = [MyErrorHandler()]
+  RxRequester.resumableHandlers = [UnauthorizedHandler()]
       
-    // Request
-    RxRequester(presentable: self).request { loginApi.login() }
+  // Request
+  RxRequester(presentable: self).request { loginApi.login() }
 ```
-## Installation
-
-### Swift Package Manager
-
-To integrate using Apple's Swift package manager, add the following as a dependency to your `Package.swift`:
-
-```swift
-.package(url: "https://github.com/ShabanKamell/RxRequester-Swift.git", .upToNextMajor(from: "0.4.0"))
-```
-
-and then specify `"RxRequester"` as a dependency of the Target in which you wish to use RxRequester.
-If you want to use **Alamofire** or **Moya**, add also `"RxRequesterAlamofire"` or `"RxRequesterMoya"` as your Target dependency respectively.
-Here's an example `PackageDescription`:
-
-```swift
-// swift-tools-version:5.0
-import PackageDescription
-
-let package = Package(
-    name: "MyPackage",
-    products: [
-        .library(
-            name: "MyPackage",
-            targets: ["MyPackage"]),
-    ],
-    dependencies: [
-        .package(url: "https://github.com/ShabanKamell/RxRequester-Swift.git", .upToNextMajor(from: "0.4.0"))
-    ],
-    targets: [
-        .target(
-            name: "MyPackage",
-            dependencies: ["RxRequesterAlamofire"])
-    ]
-)
-```
-
-### Accio
-
-[Accio](https://github.com/JamitLabs/Accio) is a dependency manager based on SwiftPM which can build frameworks for iOS/macOS/tvOS/watchOS. Therefore the integration steps of RxRequester are exactly the same as described above. Once your `Package.swift` file is configured, run `accio update` instead of `swift package update`.
-
-### CocoaPods
-
-For RxRequester, use the following entry in your Podfile:
-
-```rb
-pod 'RxRequester', '~> 0.4.0'
-
-# or 
-
-pod 'RxRequester/Alamofire', '~> 0.4.0'
-
-# or
-
-pod 'RxRequester/Moya', '~> 0.4.0'
-```
-
-Then run `pod install`.
-
-In any file you'd like to use RxRequester in, don't forget to
-import the framework with `import RxRequester`.
-
-### Carthage
-
-Carthage users can point to this repository and use whichever
-generated framework they'd like, `RxRequester`, `RxRequesterAlamofire`, or `RxRequesterMoya`.
-
-Make the following entry in your Cartfile:
-
-```
-github "ShabanKamell/RxRequester-Swift" ~> 0.4.0
-```
-
-Then run `carthage update`.
-
-If this is your first time using Carthage in the project, you'll need to go through some additional steps as explained [over at Carthage](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application).
-
-> NOTE: At this time, Carthage does not provide a way to build only specific repository submodules. All submodules and their dependencies will be built with the above command. However, you don't need to copy frameworks you aren't using into your project. For instance, if you aren't using `RxRequesterAlamofire`, feel free to delete that framework along with `RxRequesterMoya` from the Carthage Build directory after `carthage update` completes.
 
 ### Error Handling
 **RxRequester** shines when you need to handle errors. Errors in RxRequester can be handled by providing a handler for each error. For example, if you want to handle connectivity error `NSURLErrorNotConnectedToInternet`, you must provide a handler as the following
@@ -137,8 +34,27 @@ struct ConnectivityHandler: NSErrorHandler {
 
 ```
 
-### Alamofire & Moya
-RxReqeuster provides support for handling **Alamofire** and **Moya** errors. check handler types below.
+## Customizing Requests
+RxRequester gives you the full controll over any request
+- [ ] Inline error handling
+- [ ] Enable/Disable loading indicators
+- [ ] Invoke code on error.
+- [ ] Set subscribeOn Scheduler
+- [ ] Set observeOn Scheduler
+
+``` swift
+    let options = RequestOptions.Builder()
+         .showLoading(true)
+         .inlineErrorHandling { error in false }
+         .doOnError { error in }
+         .observeOnScheduler(MainScheduler.instance)
+         .subscribeOnScheduler(ConcurrentDispatchQueueScheduler(qos: .background))
+         .build()
+     rxRequester.request(options: options) { .. }
+```
+
+### Alamofire & Moya Error Handling
+RxReqeuster provides error handlers for the most common errors in **Alamofire** & **Moya**. check handler types below.
 
 
 ### Error Handler Types
@@ -164,23 +80,190 @@ RxReqeuster provides support for handling **Alamofire** and **Moya** errors. che
 | **MoyaUnderlyingErrorHandler**       |   Handles underlying error        |
 | **MoyaErrorHandler**                 |   Handles any `MoyaError`         |
 
-## Customizing Requests
-RxRequester gives you the full controll over any request
-- [ ] Inline error handling
-- [ ] Enable/Disable loading indicators
-- [ ] Invoke code on error.
-- [ ] Set subscribeOn Scheduler
-- [ ] Set observeOn Scheduler
-
+## NSErrorHandler
 ``` swift
-    let options = RequestOptions.Builder()
-         .showLoading(true)
-         .inlineErrorHandling { error in false }
-         .doOnError { error in }
-         .observeOnScheduler(MainScheduler.instance)
-         .subscribeOnScheduler(ConcurrentDispatchQueueScheduler(qos: .background))
-         .build()
-     rxRequester.request(options: options) { .. }
+public protocol NSErrorHandler {
+    var supportedErrors: [Int] { get set }
+    func canHandle(error: NSError) -> Bool
+    func handle(error: NSError, presentable: Presentable?)
+}
+```
+#### Example 
+``` swift
+struct ConnectivityHandler: NSErrorHandler {
+    var supportedErrors: [Int] = [
+        NSURLErrorNotConnectedToInternet,
+        NSURLErrorCannotConnectToHost,
+        NSURLErrorNetworkConnectionLost
+    ]
+
+    func handle(error: NSError, presentable: Presentable?) {
+        presentable?.showError(error: error.localizedDescription)
+    }
+}
+```
+
+## ResumableHandler
+``` swift
+public protocol ResumableHandler {
+    func canHandle(error: Swift.Error) -> Bool
+    func handle(error: Swift.Error, presentable: Presentable?) -> Observable<Any>
+}
+```
+#### Example 
+``` swift
+struct UnauthorizedHandler: ResumableHandler {
+    func canHandle(error: Swift.Error) -> Bool { error is UnauthorizedError }
+    func handle(error: Error, presentable: Presentable?)  -> Observable<Any> {
+        // put the API that refresh the token here
+        Observable.just("")
+    }
+}
+```
+
+## ErrorHandler
+``` swift
+public protocol ErrorHandler {
+    func canHandle(error: Swift.Error) -> Bool
+    func handle(error: Swift.Error, presentable: Presentable?)
+}
+```
+#### Example 
+``` swift
+class MyErrorHandler: ErrorHandler {
+    func canHandle(error: Error) -> Bool { error is MyError }
+    func handle(error: Error, presentable: Presentable?) {
+        presentable?.showError(error: error.localizedDescription)
+    }
+}
+```
+
+## AlamofireStatusCodeHandler
+``` swift
+public protocol AlamofireStatusCodeHandler {
+    var supportedErrorCodes: [Int] { get set }
+    func canHandle(error: AFError) -> Bool
+    func handle(error: AFError, presentable: Presentable?)
+}
+```
+#### Example 
+``` swift
+struct NotFoundHandler: AlamofireStatusCodeHandler {
+    var supportedErrorCodes: [Int] = [404]
+
+    func handle(error: AFError, presentable: Presentable?) {
+        presentable?.showError(error: "Sorry, posts not found!")
+    }
+}
+```
+
+## AlamofireUnderlyingErrorHandler
+``` swift
+public protocol AlamofireUnderlyingErrorHandler {
+    func canHandle(error: Swift.Error) -> Bool
+    func handle(error: Swift.Error, presentable: Presentable?)
+}
+```
+#### Example 
+``` swift
+class MyUnderlyingErrorHandler: AlamofireUnderlyingErrorHandler {
+    func canHandle(error: Swift.Error) -> Bool {
+        error is MyUnderlyingError
+    }
+    func handle(error: Error, presentable: Presentable?) {
+        presentable?.showError(error: error.localizedDescription)
+    }
+}
+```
+
+## AlamofireErrorHandler
+``` swift
+public protocol AlamofireErrorHandler {
+    func canHandle(error: AFError) -> Bool
+    func handle(error: AFError, presentable: Presentable?)
+}
+```
+#### Example 
+``` swift
+class JsonSerializationFailedHandler: AlamofireErrorHandler {
+
+    func canHandle(error: AFError) -> Bool {
+        switch error {
+        case .responseSerializationFailed(let reason):
+            switch reason {
+            case .jsonSerializationFailed(let error):
+                return error is JsonSerializationFailedError
+            default: return false
+            }
+        default: return false
+        }
+    }
+
+    func handle(error: AFError, presentable: Presentable?) {
+        presentable?.showError(error: error.localizedDescription)
+    }
+}
+```
+
+## MoyaStatusCodeHandler
+``` swift
+public protocol MoyaStatusCodeHandler {
+    var supportedErrorCodes: [Int] { get set }
+    func canHandle(error: MoyaError) -> Bool
+    func handle(error: MoyaError, presentable: Presentable?)
+}
+```
+#### Example 
+``` swift
+struct NotFoundHandler: MoyaStatusCodeHandler {
+    var supportedErrorCodes: [Int] = [404]
+
+    func handle(error: MoyaError, presentable: Presentable?) {
+        presentable?.showError(error: "Sorry, posts not found!")
+    }
+}
+```
+
+## MoyaUnderlyingErrorHandler
+``` swift
+public protocol MoyaUnderlyingErrorHandler {
+    func canHandle(error: Swift.Error, response: Response?) -> Bool
+    func handle(error: Swift.Error, response: Response?, presentable: Presentable?)
+}
+```
+#### Example 
+``` swift
+class MyUnderlyingErrorHandler: MoyaUnderlyingErrorHandler {
+    func canHandle(error: Swift.Error, response: Response?) -> Bool {
+        error is MyUnderlyingError
+    }
+    func handle(error: Error, response: Response?, presentable: Presentable?) {
+        presentable?.showError(error: error.localizedDescription)
+    }
+}
+```
+
+## MoyaErrorHandler
+``` swift
+public protocol MoyaErrorHandler {
+    func canHandle(error: MoyaError) -> Bool
+    func handle(error: MoyaError, presentable: Presentable?)
+}
+```
+#### Example 
+``` swift
+class EncodableMappingErrorHandler: MoyaErrorHandler {
+    func canHandle(error: MoyaError) -> Bool {
+        switch error {
+        case .encodableMapping(let error):
+            return error is EncodableMappingError
+        default: return false
+        }
+    }
+    func handle(error: MoyaError, presentable: Presentable?) {
+        presentable?.showError(error: error.localizedDescription)
+    }
+}
 ```
 
 #### Look at 'Examples' group for the full code.

@@ -37,14 +37,14 @@ RxRequester gives you the full controll over any request
 - [ ] Set observeOn Scheduler
 
 ``` swift
-    let options = RequestOptions.Builder()
-         .showLoading(true)
-         .inlineErrorHandling { error in false }
-         .doOnError { error in }
-         .observeOnScheduler(MainScheduler.instance)
-         .subscribeOnScheduler(ConcurrentDispatchQueueScheduler(qos: .background))
-         .build()
-     rxRequester.request(options: options) { .. }
+let options = RequestOptions.Builder()
+     .showLoading(true)
+     .inlineErrorHandling { error in false }
+     .doOnError { error in }
+     .observeOnScheduler(MainScheduler.instance)
+     .subscribeOnScheduler(ConcurrentDispatchQueueScheduler(qos: .background))
+     .build()
+ rxRequester.request(options: options) { .. }
 ```
 
 ### Error Handling
@@ -68,26 +68,47 @@ RxReqeuster provides error handlers for the most common errors in **Alamofire** 
 
 ### Error Handler Types
 
+#### Core Errors
 |     **Handler Type**     |                 **Description**               |
 |--------------------------|-----------------------------------------------|
 | **NSErrorHandler**       |   Handles NSError                             |
 | **ResumableHandler**     |   provides a request to be invoked after <br> the error and before resuming <br>the main request.                                                                   |
 | **ErrorHandler**         |     Handles any Swift.Error                   |
 
+To set core error handlers
+``` swift
+  RxRequester.nsErrorHandlers = [ConnectivityHandler()]
+  RxRequester.errorHandlers = [MyErrorHandler()]
+  RxRequester.resumableHandlers = [UnauthorizedHandler()]
+```
 
-### Alamofire Handlers
+#### Alamofire Handlers
 |       **Handler Type**               |        **Description**            |
 |--------------------------------------|-----------------------------------|
 | **AlamofireStatusCodeHandler**       |   Handles HTTP status code        |
 | **AlamofireUnderlyingErrorHandler**  |   Handles underlying error        |
 | **AlamofireErrorHandler**            |   Handles any `AFError`           |
 
-### Moya Handlers
+To set Alamofire error handlers
+``` swift
+  AlamofireHandlers.statusCodeHandlers = [NotFoundHandler()]
+  AlamofireHandlers.underlyingErrorHandlers = [MyUnderlyingErrorHandler()]
+  AlamofireHandlers.errorHandlers = [JsonSerializationFailedHandler()]
+```
+
+#### Moya Handlers
 |       **Handler Type**               |         **Description**           |
 |--------------------------------------|-----------------------------------|
 | **MoyaStatusCodeHandler**            |   Handles HTTP status code        |
 | **MoyaUnderlyingErrorHandler**       |   Handles underlying error        |
 | **MoyaErrorHandler**                 |   Handles any `MoyaError`         |
+
+To set Moya error handlers
+``` swift
+  MoyaHandlers.statusCodeHandlers = [NotFoundHandler()]
+  MoyaHandlers.underlyingErrorHandlers = [MyUnderlyingErrorHandler()]
+  MoyaHandlers.errorHandlers = [EncodableMappingErrorHandler()]
+```
 
 ## NSErrorHandler
 ``` swift

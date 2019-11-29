@@ -13,6 +13,10 @@ import RxRequester
     public func hideLoading() { showLoading(show: false) }
     public func onHandleErrorFailed(error: Error) { show(error: "Oops, something went wrong!") }
   }
+  // Set scheduler provider to provide default schedulers if no one is set in
+  // RequestOptions.
+  RxRequester.schedulerProvider = MySchedulerProvider.shared
+  
   // Set handlers
   RxRequester.nsErrorHandlers = [ConnectivityHandler()]
   RxRequester.errorHandlers = [MyErrorHandler()]
@@ -50,6 +54,16 @@ let options = RequestOptions.Builder()
      .build()
  rxRequester.request(options: options) { .. }
 ```
+### Schudelr Provider
+You can set schduler provider to set the default schdeulers to be used in each reqeust if no schduler is set in `RequestOptions`.
+
+``` swift
+RxRequester.schedulerProvider = MySchedulerProvider.shared
+```
+
+`DefSchedulerProvider` is the default provider, it provides
+`MainScheduler.instance` for `observeOn` scheduler.
+`ConcurrentDispatchQueueScheduler(qos: .background)` for `subscriveOn` scheduler.
 
 ### Error Handling
 **RxRequester** shines when you need to handle errors. Errors in RxRequester can be handled by providing a handler for each error. For example, if you want to handle connectivity error `NSURLErrorNotConnectedToInternet`, you must provide a handler as the following

@@ -1,7 +1,11 @@
 # Usage
 
 ## Setup
+
+Don't forget to import `RxRequester`
+
 ``` swift
+import RxRequester
 
   extension ViewController: Presentable {
     public func showError(error: String) { show(error: error) }

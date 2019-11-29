@@ -22,6 +22,9 @@ public class RequestOptions {
     /// show loading indicator
     var showLoading: Bool = true
 
+    /// hide loading indicator
+    var hideLoading: Bool = true
+
     /// subscribeOn scheduler
     var subscribeOnScheduler: ImmediateSchedulerType? = nil
 
@@ -61,6 +64,13 @@ public class RequestOptions {
             options.showLoading = show
             return self
         }
+
+        /// Hide loading indicator. True by default
+        public func hideLoading(_ hide: Bool) -> Builder {
+            options.hideLoading = hide
+            return self
+        }
+
         /// Provide subscribeOn Scheduler
         public func subscribeOnScheduler(_ scheduler: ImmediateSchedulerType) -> Builder {
             options.subscribeOnScheduler = scheduler

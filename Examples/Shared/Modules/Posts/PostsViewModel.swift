@@ -16,6 +16,7 @@ final class PostsViewModel: ViewModelProtocol {
     func posts() -> Single<[Post]> {
         let options = RequestOptions.Builder()
                 .showLoading(true)
+                .hideLoading(true)
                 .inlineErrorHandling { error in false }
                 .doOnError { error in }
                 .observeOnScheduler(MainScheduler.instance)

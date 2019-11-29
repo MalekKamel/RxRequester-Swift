@@ -77,14 +77,14 @@ extension Observable {
 
                     options.doOnError?(error)
 
-                    if options.showLoading { presentable?.hideLoading() }
+                    if options.hideLoading { presentable?.hideLoading() }
 
                     if options.inlineHandling?(error) == true { return }
 
                     ErrorProcessor.shared.process(error: error, presentable: presentable)
                 })
                 .do(onNext: { _ in
-                    if options.showLoading { presentable?.hideLoading() }
+                    if options.hideLoading { presentable?.hideLoading() }
                 })
     }
 }

@@ -22,6 +22,10 @@ public class RxRequester {
     /// Set Error handlers
     public static var errorHandlers: Array<ErrorHandler> = []
 
+    /// Set scheduler provider that provides default schedulers.
+    /// Setting schedulers in RequestOptions will override this provider.
+    public static var schedulerProvider: SchedulerProvider = DefSchedulerProvider.shared
+
     public init(presentable: Presentable) {
         self.presentable = presentable
     }

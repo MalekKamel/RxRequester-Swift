@@ -29,11 +29,11 @@ public class RequestOptions {
     var observeOnScheduler: ImmediateSchedulerType? = nil
 
     func subscribeOn() -> ImmediateSchedulerType {
-        subscribeOnScheduler ?? DefSchedulerProvider.shared.subscribeOn
+        subscribeOnScheduler ?? RxRequester.schedulerProvider.subscribeOn
     }
 
     func observeOn() -> ImmediateSchedulerType {
-        observeOnScheduler ?? DefSchedulerProvider.shared.observeOn
+        observeOnScheduler ?? RxRequester.schedulerProvider.observeOn
     }
 
     public class Builder {

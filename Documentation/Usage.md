@@ -110,6 +110,19 @@ To set Moya error handlers
   MoyaHandlers.errorHandlers = [..]
 ```
 
+## What is Resumable Handler?
+There're cases where you want to handle the error and resume the current request as normal. Here's where ResumableHandler shines!
+Imagine you received `401 token expired` error and you want to refresh the token then resume the original request. This can be done as easy as like this!
+``` swift
+struct UnauthorizedHandler: ResumableHandler {
+    func canHandle(error: Swift.Error) -> Bool { error is UnauthorizedError }
+    func handle(error: Error, presentable: Presentable?)  -> Observable<Any> {
+        // put the API that refresh the token here
+        Observable.just("")
+    }
+}
+```
+
 # Handlers structure
 
 ## NSErrorHandler
@@ -147,7 +160,7 @@ public protocol ResumableHandler {
 struct UnauthorizedHandler: ResumableHandler {
     func canHandle(error: Swift.Error) -> Bool { error is UnauthorizedError }
     func handle(error: Error, presentable: Presentable?)  -> Observable<Any> {
-        // put the API that refresh the token here
+        // put the API that refreshes the token here
         Observable.just("")
     }
 }

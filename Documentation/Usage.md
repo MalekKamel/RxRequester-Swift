@@ -53,6 +53,7 @@ RxRequester gives you the full controll over any request
 ``` swift
 let options = RequestOptions.Builder()
      .showLoading(true)
+     .hideLoading(true)
      .inlineErrorHandling { error in false }
      .doOnError { error in }
      .observeOnScheduler(MainScheduler.instance)

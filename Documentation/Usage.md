@@ -37,13 +37,13 @@ import RxRequester
   RxRequester(presentable: self).request { loginApi.login() }
 ```
 
-## Default Request Configurations
+### Default Request Configurations
 Each request has default configurations as follows
 - [ ] Show/Hide loading indicatos
 - [ ] observeOnScheduler(MainScheduler.instance)
 - [ ] subscribeOnScheduler(ConcurrentDispatchQueueScheduler(qos: .background))
 
-## Customizing Request Configurations
+### Customizing Request Configurations
 RxRequester gives you the full controll over any request
 - [ ] Inline error handling
 - [ ] Enable/Disable loading indicators

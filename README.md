@@ -1,6 +1,6 @@
 # RxRequester-Swift
 
-A wrapper for **RxSwift** abstracts away all those nasty details you don't really care about and provides default configurations for schedulers, loading indicators, and error handling.
+A wrapper for **RxSwift** abstracts away all those nasty details you don't really care about in every Rx request and provides default configurations for schedulers, loading indicators, and error handling.
 
 Using **RxRequester** you can:
 - [ ] Make clean RxSwift requests.
@@ -106,7 +106,7 @@ If this is your first time using Carthage in the project, you'll need to go thro
 
 > NOTE: At this time, Carthage does not provide a way to build only specific repository submodules. All submodules and their dependencies will be built with the above command. However, you don't need to copy frameworks you aren't using into your project. For instance, if you aren't using `RxRequesterAlamofire`, feel free to delete that framework along with `RxRequesterMoya` from the Carthage Build directory after `carthage update` completes.
 
-#### Look at 'Examples' group for the full code.
+#### Look at 'Examples' for the full exmples.
 
 ### License
 

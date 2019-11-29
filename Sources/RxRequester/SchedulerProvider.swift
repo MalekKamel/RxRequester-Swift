@@ -6,11 +6,14 @@
 import Foundation
 import RxSwift
 
+/// Provide schedulers to be used in each request
+/// The schedulers provided by RequestOptions will override these schedulers
 public protocol SchedulerProvider {
     var observeOn: ImmediateSchedulerType { get }
     var subscribeOn: ImmediateSchedulerType { get }
 }
 
+/// Default schedulers
 public class DefSchedulerProvider: SchedulerProvider {
     static let shared = DefSchedulerProvider()
 

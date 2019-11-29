@@ -13,5 +13,4 @@ struct NotFoundHandler: MoyaStatusCodeHandler {
     func handle(error: MoyaError, presentable: Presentable?) {
         presentable?.showError(error: "Sorry, posts not found!")
     }
-
 }

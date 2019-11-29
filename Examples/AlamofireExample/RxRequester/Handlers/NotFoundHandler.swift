@@ -13,5 +13,4 @@ struct NotFoundHandler: AlamofireStatusCodeHandler {
     func handle(error: AFError, presentable: Presentable?) {
         presentable?.showError(error: "Sorry, posts not found!")
     }
-
 }

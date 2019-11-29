@@ -13,14 +13,20 @@ public typealias CompletableRequest = () -> Completable
 public class RxRequester {
     var presentable: Presentable?
 
+    /// Set NSError handlers
     public static var nsErrorHandlers: Array<NSErrorHandler> = []
+
+    /// Set Resubalble handlers
     public static var resumableHandlers: Array<ResumableHandler> = []
+
+    /// Set Error handlers
     public static var errorHandlers: Array<ErrorHandler> = []
 
     public init(presentable: Presentable) {
         self.presentable = presentable
     }
 
+    /// invoke an Observable request
     public func request<T>(
             options: RequestOptions = RequestOptions.defaultOptions(),
             request: @escaping Request<T>) -> Observable<T> {
@@ -30,6 +36,7 @@ public class RxRequester {
                 .request(options: options, presentable: presentable)
     }
 
+    /// invoke a Single request
     public func request<T>(
             options: RequestOptions = RequestOptions.defaultOptions(),
             singleRequest: @escaping SingleRequest<T>) -> Single<T> {
@@ -40,6 +47,7 @@ public class RxRequester {
                 .asSingle()
     }
 
+    /// invoke a Completable request
     public func request(
             options: RequestOptions = RequestOptions.defaultOptions(),
             completableRequest: @escaping CompletableRequest) -> Completable {

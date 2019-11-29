@@ -41,36 +41,45 @@ public class RequestOptions {
 
         public init() {}
 
+        /// Provide a callback to handle the error inline.
+        /// Returning true means that the error has been handled inline
+        /// Returning false means the error couldn't be handled inline, and in this case
+        /// the error will be passed to global handlers to handle it.
         public func inlineErrorHandling(_ callback: ((Error) -> Bool)?) -> Builder {
             options.inlineHandling = callback
             return self
         }
 
+        /// Provide a callback to be invoked when an error occurs.
         public func doOnError(_ callback: ((Error) -> Void)?) -> Builder {
             options.doOnError = callback
             return self
         }
 
+        /// Show loading indicator. True by default
         public func showLoading(_ show: Bool) -> Builder {
             options.showLoading = show
             return self
         }
-
+        /// Provide subscribeOn Scheduler
         public func subscribeOnScheduler(_ scheduler: ImmediateSchedulerType) -> Builder {
             options.subscribeOnScheduler = scheduler
             return self
         }
 
+        /// Provide observeOn Scheduler
         public func observeOnScheduler(_ scheduler: ImmediateSchedulerType) -> Builder {
             options.observeOnScheduler = scheduler
             return self
         }
 
+        /// Build the Object
         public func build() -> RequestOptions {
             options
         }
     }
 
+    /// Default options
     public static func defaultOptions() -> RequestOptions {
         Builder().build()
     }

@@ -5,26 +5,18 @@
 
 import Foundation
 
+/// This protocol is responsible for presenting UI
 public protocol Presentable {
 
-    /**
-      show error string
-      error: message
-    */
+    ///  show error string
     func showError(error: String)
 
-    /**
-     show loading indicator
-     */
+    /// show loading indicator
     func showLoading()
 
-    /**
-     hide loading indicator
-     */
+    /// hide loading indicator
     func hideLoading()
 
-    /**
-      called when no error handler can handle the exception
-     */
+    /// called when no error handler can handle the exception
     func onHandleErrorFailed(error: Error)
 }

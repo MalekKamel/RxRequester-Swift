@@ -7,6 +7,7 @@ import Foundation
 
 let errorProcessor = ErrorProcessor()
 
+/// The class that processes the error and passes it to correct handlers
 public class ErrorProcessor {
     static let shared = ErrorProcessor()
 

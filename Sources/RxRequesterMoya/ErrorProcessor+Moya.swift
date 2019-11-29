@@ -7,6 +7,7 @@ import Foundation
 import RxRequester
 import Moya
 
+/// Extension for ErrorProcessor to support Moya
 extension ErrorProcessor: PluggableErrorProcessor {
 
     public func handle(error: Error, presentable: Presentable?) -> Bool {

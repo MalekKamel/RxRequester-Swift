@@ -5,6 +5,7 @@
 
 import RxRequester
 
+/// Handler Alamofire underlying errors.
 public protocol AlamofireUnderlyingErrorHandler {
     func canHandle(error: Swift.Error) -> Bool
     func handle(error: Swift.Error, presentable: Presentable?)

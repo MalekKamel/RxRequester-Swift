@@ -7,6 +7,7 @@ import Foundation
 import RxRequester
 import Alamofire
 
+/// Extension for ErrorProcessor to support Alamofire
 extension ErrorProcessor: PluggableErrorProcessor {
     
     public func handle(error: Error, presentable: Presentable?) -> Bool {

@@ -6,6 +6,7 @@
 import Alamofire
 import RxRequester
 
+/// Handler Alamofire status code errors.
 public protocol AlamofireStatusCodeHandler {
     var supportedErrorCodes: [Int] { get set }
     func canHandle(error: AFError) -> Bool

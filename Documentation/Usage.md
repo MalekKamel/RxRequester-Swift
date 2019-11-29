@@ -77,9 +77,9 @@ RxReqeuster provides error handlers for the most common errors in **Alamofire** 
 
 To set core error handlers
 ``` swift
-  RxRequester.nsErrorHandlers = [ConnectivityHandler()]
-  RxRequester.errorHandlers = [MyErrorHandler()]
-  RxRequester.resumableHandlers = [UnauthorizedHandler()]
+  RxRequester.nsErrorHandlers = [..]
+  RxRequester.errorHandlers = [..]
+  RxRequester.resumableHandlers = [..]
 ```
 
 #### Alamofire Handlers
@@ -91,9 +91,9 @@ To set core error handlers
 
 To set Alamofire error handlers
 ``` swift
-  AlamofireHandlers.statusCodeHandlers = [NotFoundHandler()]
-  AlamofireHandlers.underlyingErrorHandlers = [MyUnderlyingErrorHandler()]
-  AlamofireHandlers.errorHandlers = [JsonSerializationFailedHandler()]
+  AlamofireHandlers.statusCodeHandlers = [..]
+  AlamofireHandlers.underlyingErrorHandlers = [..]
+  AlamofireHandlers.errorHandlers = [..]
 ```
 
 #### Moya Handlers
@@ -105,10 +105,12 @@ To set Alamofire error handlers
 
 To set Moya error handlers
 ``` swift
-  MoyaHandlers.statusCodeHandlers = [NotFoundHandler()]
-  MoyaHandlers.underlyingErrorHandlers = [MyUnderlyingErrorHandler()]
-  MoyaHandlers.errorHandlers = [EncodableMappingErrorHandler()]
+  MoyaHandlers.statusCodeHandlers = [..]
+  MoyaHandlers.underlyingErrorHandlers = [..]
+  MoyaHandlers.errorHandlers = [..]
 ```
+
+# Handlers structure
 
 ## NSErrorHandler
 ``` swift

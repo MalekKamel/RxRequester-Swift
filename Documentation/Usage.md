@@ -14,6 +14,16 @@
   RxRequester.errorHandlers = [MyErrorHandler()]
   RxRequester.resumableHandlers = [UnauthorizedHandler()]
       
+  // Moya Handlers
+  MoyaHandlers.statusCodeHandlers = [NotFoundHandler()]
+  MoyaHandlers.underlyingErrorHandlers = [MyUnderlyingErrorHandler()]
+  MoyaHandlers.errorHandlers = [EncodableMappingErrorHandler()]
+  
+  // Alamofire Handlers
+  AlamofireHandlers.statusCodeHandlers = [NotFoundHandler()]
+  AlamofireHandlers.underlyingErrorHandlers = [MyUnderlyingErrorHandler()]
+  AlamofireHandlers.errorHandlers = [JsonSerializationFailedHandler()]
+        
   // Request
   RxRequester(presentable: self).request { loginApi.login() }
 ```

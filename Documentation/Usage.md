@@ -13,6 +13,7 @@ import RxRequester
     public func hideLoading() { showLoading(show: false) }
     public func onHandleErrorFailed(error: Error) { show(error: "Oops, something went wrong!") }
   }
+  
   // Set scheduler provider to provide default schedulers if no one is set in
   // RequestOptions.
   RxRequester.schedulerProvider = MySchedulerProvider.shared

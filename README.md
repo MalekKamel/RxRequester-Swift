@@ -1,4 +1,6 @@
-# RxRequester-Swift
+RxRequester-Swift
+======================
+![platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-333333.svg) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 A wrapper for **RxSwift** abstracts away all those nasty details you don't really care about in every Rx request and provides default configurations for schedulers, loading indicators, and error handling.
 

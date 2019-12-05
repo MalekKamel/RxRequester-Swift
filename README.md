@@ -28,7 +28,7 @@ respository.posts()
 ```
 
 ## Usage
-See [Usage](https://github.com/ShabanKamell/RxRequester-Swift/blob/master/Documentation/Usage.md)
+🤙See [Usage](https://github.com/ShabanKamell/RxRequester-Swift/blob/master/Documentation/Usage.md)
 
 ## Installation
 
@@ -112,6 +112,11 @@ If this is your first time using Carthage in the project, you'll need to go thro
 
 ### License
 
+<details>
+    <summary>
+        click to reveal License
+    </summary>
+    
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -125,3 +130,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+</details>

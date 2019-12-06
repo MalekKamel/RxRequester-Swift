@@ -28,7 +28,7 @@ respository.posts()
 ```
 
 ## Usage
-🤙See [Usage](https://github.com/ShabanKamell/RxRequester-Swift/blob/master/Documentation/Usage.md)
+ **👉** See [Usage](https://github.com/ShabanKamell/RxRequester-Swift/blob/master/Documentation/Usage.md)
 
 ## Installation
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0433BF382389969B00293728 /* RxRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2B72386A8CC002446DA /* RxRequester.framework */; };
-		0433BF3F2389973B00293728 /* RxRequesterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF3E2389973B00293728 /* RxRequesterTest.swift */; };
 		0433BF4C23899CE200293728 /* RxRequesterAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2D32386AA89002446DA /* RxRequesterAlamofire.framework */; };
 		0433BF5B23899CF000293728 /* RxRequesterMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEE2EF2386AAC1002446DA /* RxRequesterMoya.framework */; };
 		0433BF6523899DA800293728 /* RxRequesterMoyaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433BF6323899DA800293728 /* RxRequesterMoyaTest.swift */; };
@@ -262,7 +261,6 @@
 
 /* Begin PBXFileReference section */
 		0433BF332389969B00293728 /* RxRequesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxRequesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0433BF3E2389973B00293728 /* RxRequesterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RxRequesterTest.swift; path = Sources/RxRequester/Tests/RxRequesterTest.swift; sourceTree = SOURCE_ROOT; };
 		0433BF4723899CE100293728 /* RxRequesterAlamofireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxRequesterAlamofireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0433BF5623899CF000293728 /* RxRequesterMoyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxRequesterMoyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0433BF6323899DA800293728 /* RxRequesterMoyaTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxRequesterMoyaTest.swift; sourceTree = "<group>"; };
@@ -337,6 +335,7 @@
 		1A54F6B794E5BE536F248527 /* AlamofireErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireErrorHandler.swift; sourceTree = "<group>"; };
 		1A54F6B97FBF01FA29DBE52D /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		1A54F6C96103C74258016B2D /* JsonSerializationFailedHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializationFailedHandler.swift; sourceTree = "<group>"; };
+		1A54F77A1F7958D20940B52B /* RxRequesterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxRequesterTest.swift; sourceTree = "<group>"; };
 		1A54F786431190133D6137FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		1A54F7B0FAB4E1A009DBB877 /* TimeoutHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeoutHandler.swift; sourceTree = "<group>"; };
 		1A54F8153D8039499673AEB2 /* MyUnderlyingErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUnderlyingErrorHandler.swift; sourceTree = "<group>"; };
@@ -536,9 +535,9 @@
 			isa = PBXGroup;
 			children = (
 				04EC6204238B18F2005643F5 /* Handlers */,
-				0433BF3E2389973B00293728 /* RxRequesterTest.swift */,
 				1A54F6ADB38F4C972234511C /* MockPresentable.swift */,
 				04EC61F6238B1792005643F5 /* ErrorProcessortTest.swift */,
+				1A54F77A1F7958D20940B52B /* RxRequesterTest.swift */,
 			);
 			path = RxRequester;
 			sourceTree = "<group>";
@@ -1488,7 +1487,6 @@
 			files = (
 				04EC6212238B1BF6005643F5 /* UnauthorizedHandler.swift in Sources */,
 				04EC6203238B18ED005643F5 /* ConnectivityHandler.swift in Sources */,
-				0433BF3F2389973B00293728 /* RxRequesterTest.swift in Sources */,
 				1A54FE16A131E5D83D341E88 /* MockPresentable.swift in Sources */,
 				04EC61F7238B1792005643F5 /* ErrorProcessortTest.swift in Sources */,
 				1A54FB9C455A7E15D36FEAAA /* MyErrorHandler.swift in Sources */,
@@ -1703,7 +1701,7 @@
 			baseConfigurationReference = 5E4ABC665A2BE9C28601636E /* Pods-RxRequester-RxRequesterTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/RxRequester/Tests/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1721,7 +1719,7 @@
 			baseConfigurationReference = FB7E952F150B724D33DFB595 /* Pods-RxRequester-RxRequesterTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/RxRequester/Tests/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1739,7 +1737,7 @@
 			baseConfigurationReference = BFA971E9A73C415EA89CBA00 /* Pods-RxRequesterAlamofire-RxRequesterAlamofireTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Sources/RxRequester+Alamofire/Tests/Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1757,7 +1755,7 @@
 			baseConfigurationReference = 212D33579BC3B3FE7D3F460B /* Pods-RxRequesterAlamofire-RxRequesterAlamofireTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Sources/RxRequester+Alamofire/Tests/Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1775,7 +1773,7 @@
 			baseConfigurationReference = ADDE5530DA9D8453681892CC /* Pods-RxRequesterMoya-RxRequesterMoyaTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Sources/RxRequester+Moya/Tests/Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1793,7 +1791,7 @@
 			baseConfigurationReference = AEEB6CF9435BF518E7E00F29 /* Pods-RxRequesterMoya-RxRequesterMoyaTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Sources/RxRequester+Moya/Tests/Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

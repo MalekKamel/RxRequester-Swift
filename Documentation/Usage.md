@@ -13,6 +13,7 @@ import RxRequester
     public func hideLoading() { showLoading(show: false) }
     public func onHandleErrorFailed(error: Error) { show(error: "Oops, something went wrong!") }
   }
+  
   // Set scheduler provider to provide default schedulers if no one is set in
   // RequestOptions.
   RxRequester.schedulerProvider = MySchedulerProvider.shared
@@ -36,7 +37,13 @@ import RxRequester
   RxRequester(presentable: self).request { loginApi.login() }
 ```
 
-## Customizing Requests
+### Default Request Configurations
+Each request has default configurations as follows
+- [ ] Show/Hide loading indicatos
+- [ ] observeOnScheduler(MainScheduler.instance)
+- [ ] subscribeOnScheduler(ConcurrentDispatchQueueScheduler(qos: .background))
+
+### Customizing Request Configurations
 RxRequester gives you the full controll over any request
 - [ ] Inline error handling
 - [ ] Enable/Disable loading indicators
@@ -47,6 +54,7 @@ RxRequester gives you the full controll over any request
 ``` swift
 let options = RequestOptions.Builder()
      .showLoading(true)
+     .hideLoading(true)
      .inlineErrorHandling { error in false }
      .doOnError { error in }
      .observeOnScheduler(MainScheduler.instance)

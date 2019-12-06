@@ -1,4 +1,6 @@
-# RxRequester-Swift
+RxRequester-Swift
+======================
+![platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-333333.svg) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 A wrapper for **RxSwift** abstracts away all those nasty details you don't really care about in every Rx request and provides default configurations for schedulers, loading indicators, and error handling.
 
@@ -26,7 +28,7 @@ respository.posts()
 ```
 
 ## Usage
-See [Usage](https://github.com/ShabanKamell/RxRequester-Swift/blob/master/Documentation/Usage.md)
+See **👉** [Usage](https://github.com/ShabanKamell/RxRequester-Swift/blob/master/Documentation/Usage.md)
 
 ## Installation
 
@@ -110,6 +112,11 @@ If this is your first time using Carthage in the project, you'll need to go thro
 
 ### License
 
+<details>
+    <summary>
+        click to reveal License
+    </summary>
+    
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -123,3 +130,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+</details>

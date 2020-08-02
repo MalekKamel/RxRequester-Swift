@@ -1,50 +1,52 @@
-# OS X
-.DS_Store
+Pods/
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+*.DS_Store
 
 # Xcode
-build/
 *.pbxuser
-!default.pbxuser
 *.mode1v3
-!default.mode1v3
 *.mode2v3
-!default.mode2v3
 *.perspectivev3
-!default.perspectivev3
+*.xcuserstate
+project.xcworkspace/
 xcuserdata/
-*.xccheckout
-profile
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
 
-# Bundler
-.bundle
+# Eclipse
+.classpath
+.project
+.settings
 
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
+# Generated files
+/web-app/WEB-INF
+build/
+*.o
+*.pyc
+target
+Carthage
 
-Carthage/Build
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
 
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-# 
-# Note: if you ignore the Pods directory, make sure to uncomment
-# `pod install` in .travis.yml
-#
-# Pods/
+# automatic backup files
+*~.nib
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
 
-/.idea/workspace.xml
-/.idea/libraries
+# Code coverage
+env.sh
+*.Genoa
+*.gcda
 
-# Swift Package Manager
-.build
-Packages
-Package.pins
-
-# Carthage
-Carthage.pkg
-CarthageApp.pkg
-Carthage.xcodeproj/
+.idea

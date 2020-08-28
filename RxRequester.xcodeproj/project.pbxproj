@@ -88,6 +88,7 @@
 		04FEE37F2386B282002446DA /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3662386B282002446DA /* RootBuilder.swift */; };
 		04FEE3802386B282002446DA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE3672386B282002446DA /* NavigationController.swift */; };
 		062369DFCC3959E796417B9C /* Pods_RxRequesterMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B4C56DCF71458C98F81BC /* Pods_RxRequesterMoya.framework */; };
+		18724F5424D6DBB00087CDE9 /* RxRequesterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F77A1F7958D20940B52B /* RxRequesterTest.swift */; };
 		1A54F02A44649527BA2D4ADF /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FE845B35DFF8F8ADA85B /* ErrorHandler.swift */; };
 		1A54F0365A3335AF6C87A143 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F6B97FBF01FA29DBE52D /* Endpoint.swift */; };
 		1A54F08712B1CBB8C21E58AD /* TimeoutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F7B0FAB4E1A009DBB877 /* TimeoutHandler.swift */; };
@@ -1489,6 +1490,7 @@
 				04EC6203238B18ED005643F5 /* ConnectivityHandler.swift in Sources */,
 				1A54FE16A131E5D83D341E88 /* MockPresentable.swift in Sources */,
 				04EC61F7238B1792005643F5 /* ErrorProcessortTest.swift in Sources */,
+				18724F5424D6DBB00087CDE9 /* RxRequesterTest.swift in Sources */,
 				1A54FB9C455A7E15D36FEAAA /* MyErrorHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

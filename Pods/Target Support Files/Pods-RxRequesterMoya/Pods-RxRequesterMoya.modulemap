@@ -1,6 +1,0 @@
-framework module Pods_RxRequesterMoya {
-  umbrella header "Pods-RxRequesterMoya-umbrella.h"
-
-  export *
-  module * { export * }
-}
